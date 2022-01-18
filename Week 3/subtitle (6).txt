@@ -1,0 +1,133 @@
+Now let's look at a particular
+kind of a file called a CSV file. CSV stands for comma separated value file. Let me give you a couple of examples. And this is a column basically for
+name and a column for phone number,
+separated by comma. In this case, there's a column for
+the day of the week and then a column for the meat on the menu and
+a column for each separate food. Let's go out to the file explorer and
+look at these. There's menu And there's a column for
+each of the foods. CSV files can be read by lots
+of different applications and they're often used To transfer data
+from one application to another. Now let's see how to read these files. I'll show you a program run first. Notice that this first row, George and
+his phone number, were read in to a list. Jackson and his phone number
+were read in to another list, each row of a CSV file
+is read into a list. Let's see how it looks. Here's our program. We import this library CSV so
+we can read and write with it. We open the file in the usual way, we close it in the usual way and
+what's different is this loop. Instead of saying for every row in f,
+we say for every row in csv.reader(f). So that we have the CSV
+library read everything in and separates it into the columns,
+in effect and then we print the row. No, CSV reader will return
+a role as a list, so when we print that row,
+it will print as a list. Next, let's look and another application. In this case, what we're doing
+is we're reading each row, and adding it into a bigger list. Now, remember, each row is a list. So, here's what one row. Here's another row and here's another
+row but they're all in this bigger list. Let's see how we do that. First of all,
+we're going to import to CSD library. We're going to open
+the file in the usual way. We're going to close it in the usual way. Now we've got one of our standard loops. We'll start off by initializing
+an empty list, which we'll call data. Then for every row that the csv
+reader returns from the file, we're going to append that row onto data. So we'll just loop through until
+we read all of the file in and stick each row into data as a sublist
+of the bigger list of data. Then when we get through,
+we'll just print the data list. Now I want you to try an exercise. I want you to convert
+read_csv_file to read_csv_file2. Actually, I've got that copied down as a starter file here, so that you
+print each row without the bracket. CSV file puts a bracket around everything
+because it reads in the rows as lists and we don't always want
+them to be displayed as lists. So I want you to modify this so that it
+prints without the brackets basically. You're going to open
+the file in the usual way. You're going to close
+the file in the usual way. You're going to read it in, in the usual
+way but now you gotta write code. So instead of it printing
+the whole row as a list, I want you to print each item in the list. Now of course, that means that you have to
+know how many items are in the row so that you can refer to them as row of whatever,
+row of whatever, row of whatever. Let me give you my solution, And then you write yours,
+so here's my solution. Let me talk about it for just a second. There's a column for the author's name,
+and then a comma, and then there's a comment. A column for
+the book name then a comma and then a column that tells you
+what kind of book it is. And notice that the authors
+name has a comma in it but the comma's used to separate the columns. So this author has to have his
+whole name enclosed in quotes. The CSV reader takes care of that for you. So you notice all the authors have a comma
+and so all the authors in enclosing quote. CSV reader automatically does that so
+that there's no confusion. When CSV reader reads something in it's
+going to read it into a list and so you have to know how to access each part
+of the list in order to print it out. How do you do that? Here is my solution. Read CSV file to a file name,
+of course I have to import CSV library. I open the file and
+I close the file and for every row in the CSV reader,
+I've got to print the data in that row. Well, I print the author is row of Item 0. The name of the book is row of Item 1 and the type of book it is is row of Item 2. Here's another example of
+writing to the CSV file. In this case we have
+a list of rows in the and we want to write them out to the CSV file. Let's run it first and
+then let's look at how the code works. Okay, so
+we wrote this list out to holidays.csv and then I've retyped it and
+we see that it is right there. Let's run it in Excel and see what Excel shows. So these are some US holidays. This day, Martin Luther King Day,
+that's a Federal holiday. This day is Groundhog Day,
+that's an observance. And here is the program [INAUDIBLE] and of course we're going to
+import the library CSV. We're ultimately going to open a file,
+and we're going to open it for write and we're going to set
+the new line equal to blank. That's because we don't
+want to double space. Every time we write out there,
+it'll do a complete line. If we don't have new line equal to blank, there will be a new line there and
+it'll skip two lines. One for the right and one for
+the new line at the end of the right. Item in the list l,
+we're going to use CSV writer on the file handle f to write
+the row consisting of item. Okay, so
+here is the list where we're writing. The first row will be date,
+name, and notes. The next row will have the date,
+Martin Luther King Day, federal holiday, and so on down the road. Now, let's write a modification of this. This modification will be to take the data
+from the keyboard and write it into file. Let me run mine first, and
+then we'll talk about it. Okay, here is a run of my program. Friend's name, Elaine Bends. Number (212) 431-1414, Jerry Seinfeld 212 555-1345. Cosmo Kramer. 212-18 4 1, 2, 3, 4. Now the way this works is if you press
+Return and not enter a name, it stops. Now we can see what the value looks like see if it has those three names and
+numbers in it. I'm here to do somewhat the same thing. I've got an example run here, That you can model everything after and
+here's a starter function. What you've got to do is
+open the CSV file and ultimately close it and there's a loop,
+says while true, that's always true. So this loop will loop forever. I'll show you how we end it, later. What we do is, we'll ask for the name. Enter friend's name, press return to end. Okay, so we enter friend's name. If the name is blank, we'll break out of the loop and
+that's what happened at the end. I pressed return here. There wasn't any name, and so
+it just ended the program. And then if the name wasn't blank
+it'll go into this next statement and it will print the name. So up here I entered Elaine Benes and her phone number, and it printed
+out Elaine Benes's phone number. Now, this particular version doesn't
+Input the phone number printed out. That's what you're going to add so
+the first thing you should do is to make sure this runs for you and
+then you add lines to build that row. You got the name you got
+the phone number to build a row you got to put the name and
+phone number into a list and then you need to write that
+list using CSD Writer. That's all you have to do,
+it's fairly short. Now, let me show you what My solution
+was I imported the CSV file, I used CSV file as a handle and opened
+the CSV file name that was given to me. I [INAUDIBLE] it from right I opened
+with a new line equal to blank so it wouldn't double space. Now while true, that was already there,
+next thing already is there, if the next name is blank, you break. Now, what we have to do, is get the next
+phone, and then we print the next name and the phone. Then, we've got to build the row,
+so, we'll have line = [], we'll append to that line the next name,
+we'll append to that line the next phone. And then we'll use csv.writer on
+this file handle to write the row. So what you would do is
+have to add this row, and this row, and
+all of this writing material. Now let's do another example. And what we're going to do is we're going to read in CSV file and updated. The particular one is
+fairly straightforward. What we're going to do,
+let me run it first. Now wait, let's see what that looks like. It has a date and a weight. I want to do with this is to compute
+the average weight over that time period and write that as the last line of the new file. So we're updating CSV We've got
+an old file name and a new file name. We're going to import the CSV library. We're going to open the old
+file name as the input file. We're going to open the new
+name as the output file and we're going to open it for right. We're going to set new
+line equal to blank. Here's what we have to do. We have to add up all the weights and
+we have divide by the number of weights. So, we've got to have two counters
+before we go into our loop. W have to have a counter set to zero
+to count the number of items and we have to set the total
+weight equal to zero. We'll add into those weights, all of that gets done In this loop. And then when we get out of the loop,
+we've got the total weight added up, and we divide it by the count,
+and that gives us the average. And so we have a new row that
+says Average in the first column, and this number that is
+the average in the second column. Then, when you CSV write it to write it to
+the output file, we'll write just one row. Namely, the row we just constructed. Then we'll close both the files. Now, let's look at the loop here,
+remember, count is 0. Total weight is 0. So for every row in CSV reader of. So if we look at every row and
+we let the CSV reader bring the row in so that it is broken up into
+the various columns, okay. The zero position is going to be the date. Notice the first row says date and weight, we can't average those in,
+so, we have to check the row. If it starts with the date
+If the item zero is date, we're just going to skip it, okay? So if the row is not date,
+then we're going to add one to the count, we've got a new good row,
+we're going to add to the total weight. The weight in the second column,
+which is item one. But we've got to convert
+it to a real number so that we can add it in
+because these are strings and then we will write the row out
+to the new file unchanged. So whether it says data or not, we're going to write the row
+out to the new file. If it doesn't say date,
+we're going to add one to the count and we're going to add the weight
+to our total weight. So when we get to the end, we've got
+the weight totaled up, we've got the count counted, we can divide the cannon to
+the total weight to get the average. And then we write the row out,
+that's all there is to it.

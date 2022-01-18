@@ -1,0 +1,272 @@
+WEBVTT
+
+1
+00:00:10.113 --> 00:00:13.180
+Now let's look at a simple
+function in Python.
+
+2
+00:00:14.320 --> 00:00:17.036
+The kernel that we have,
+percent, pound percent sent, and
+
+3
+00:00:17.036 --> 00:00:21.710
+pound percent sent, and
+they mark out a cell.
+
+4
+00:00:21.710 --> 00:00:24.840
+These lines show you
+the boundaries of the cell.
+
+5
+00:00:24.840 --> 00:00:27.550
+Here we have a function
+defined within a cell, and
+
+6
+00:00:27.550 --> 00:00:32.640
+we can execute that by typing Ctrl, Enter.
+
+7
+00:00:32.640 --> 00:00:34.795
+On a Macintosh it would be command return.
+
+8
+00:00:37.985 --> 00:00:41.345
+Now this function can be run by
+
+9
+00:00:44.565 --> 00:00:47.915
+typing in the console
+the name of the function.
+
+10
+00:00:47.915 --> 00:00:49.005
+Hello, world!
+
+11
+00:00:49.005 --> 00:00:51.795
+A couple of things to note about this.
+
+12
+00:00:51.795 --> 00:00:55.300
+One is it's got a single statement.
+
+13
+00:00:55.300 --> 00:00:57.690
+Print hello world.
+
+14
+00:00:57.690 --> 00:00:58.330
+And it does that.
+
+15
+00:00:58.330 --> 00:01:03.730
+And this statement is indented four
+spaces, one, two, three, four.
+
+16
+00:01:03.730 --> 00:01:09.330
+We always indent four spaces we don't
+use tabs that can sometimes cause
+
+17
+00:01:09.330 --> 00:01:11.460
+confusion on the part of python.
+
+18
+00:01:13.550 --> 00:01:18.910
+I've also got a string here
+enclosed in triple quotes.
+
+19
+00:01:18.910 --> 00:01:23.470
+This string can be used to
+document the program, and
+
+20
+00:01:23.470 --> 00:01:29.776
+if you notice up here in [INAUDIBLE]
+inspector,
+
+21
+00:01:29.776 --> 00:01:36.470
+you can get the definitions
+of various functions and
+
+22
+00:01:36.470 --> 00:01:40.620
+we can get the definition of our
+function by clicking on hello.
+
+23
+00:01:40.620 --> 00:01:45.800
+Yeah, I'm here type in control I.
+
+24
+00:01:45.800 --> 00:01:51.210
+Then our function shows up here in this
+triple queried string is a documentation
+
+25
+00:01:51.210 --> 00:01:55.330
+so that you can put instructions on how to
+run your program for example in that or
+
+26
+00:01:55.330 --> 00:01:55.850
+your function.
+
+27
+00:02:00.270 --> 00:02:01.670
+Now let's write another function.
+
+28
+00:02:02.990 --> 00:02:07.080
+Here's the area of a circle
+of a given radius.
+
+29
+00:02:07.080 --> 00:02:12.380
+Again we've got pound percent
+cent to mark out the cell.
+
+30
+00:02:12.380 --> 00:02:15.220
+We can execute this [INAUDIBLE]
+anywhere in the cell and
+
+31
+00:02:15.220 --> 00:02:20.267
+type in control enter or
+command return on a Macintosh.
+
+32
+00:02:21.720 --> 00:02:26.130
+That puts, that loads it into
+the console window over here.
+
+33
+00:02:26.130 --> 00:02:34.310
+And now we can run it by typing, Area
+of a circle, the name of the function.
+
+34
+00:02:34.310 --> 00:02:37.747
+And I'll give it a value of five for
+the radius.
+
+35
+00:02:37.747 --> 00:02:44.080
+It prints out the area of
+a circle of radius 5 is 78.5.
+
+36
+00:02:44.080 --> 00:02:47.570
+Now let's look at does that first of all,
+
+37
+00:02:47.570 --> 00:02:51.278
+we have the formula for
+the area of a circle.
+
+38
+00:02:51.278 --> 00:02:56.883
+Area is equal to pi,
+3.14 times the radius, squared.
+
+39
+00:02:56.883 --> 00:03:00.325
+Just a simple formula for
+the area of a circle.
+
+40
+00:03:00.325 --> 00:03:05.960
+Now, we print the phrase,
+the area of a circle of radius,
+
+41
+00:03:05.960 --> 00:03:13.500
+all about the radius is all
+about the area that we computed.
+
+42
+00:03:13.500 --> 00:03:18.290
+Now you try writing a function,
+here is an exercise to do.
+
+43
+00:03:18.290 --> 00:03:24.210
+Write a function def area triangle
+BH where B is the base and H
+
+44
+00:03:24.210 --> 00:03:29.410
+is the height of the triangle, to compute
+the area of a triangle the formula is area
+
+45
+00:03:29.410 --> 00:03:34.650
+equals one half base times the height,
+output should look like the following.
+
+46
+00:03:34.650 --> 00:03:38.586
+The area of a triangle of base 3 and
+height 5 is 7 and a half.
+
+47
+00:03:38.586 --> 00:03:41.935
+You can test your function by
+executing the following code.
+
+48
+00:03:41.935 --> 00:03:46.227
+Here's a triangle of base 3 and height 5,
+
+49
+00:03:46.227 --> 00:03:50.060
+here's one of base 2 and height 20.
+
+50
+00:03:50.060 --> 00:03:51.850
+Here is my run of this.
+
+51
+00:03:51.850 --> 00:03:57.071
+The area of a triangle of base 3 and
+height 5 is 7.5.
+
+52
+00:03:57.071 --> 00:04:00.940
+The area of a triangle of base 2 and
+height 20 is 20.
+
+53
+00:04:00.940 --> 00:04:05.043
+Now you try it, when you get through,
+press continue and
+
+54
+00:04:05.043 --> 00:04:07.106
+I'll show you my solution.
+
+55
+00:04:12.588 --> 00:04:14.753
+Okay, here is my solution.
+
+56
+00:04:19.323 --> 00:04:21.744
+Definition area of triangle,
+
+57
+00:04:21.744 --> 00:04:27.620
+bh is area equal one-half base times
+the height, just that same formula.
+
+58
+00:04:27.620 --> 00:04:33.738
+Print the area of a triangle of base,
+b, and height h, is area.

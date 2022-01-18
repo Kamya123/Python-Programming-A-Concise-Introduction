@@ -1,0 +1,157 @@
+WEBVTT
+
+1
+00:00:10.852 --> 00:00:14.882
+Now let's talk about Python data types.
+
+2
+00:00:14.882 --> 00:00:18.150
+Here are a number of examples.
+
+3
+00:00:18.150 --> 00:00:20.700
+I'll just execute that so
+you can see them.
+
+4
+00:00:22.270 --> 00:00:27.632
+First of all, x up there is an integer,
+y is called a float,
+
+5
+00:00:27.632 --> 00:00:32.479
+that's a real number,
+it's got a fractional part.
+
+6
+00:00:32.479 --> 00:00:37.335
+And z is a string, a string of characters.
+
+7
+00:00:37.335 --> 00:00:41.636
+z1 is also a string,
+it's a string of digits.
+
+8
+00:00:41.636 --> 00:00:45.642
+z2 is a string of digits as well.
+
+9
+00:00:48.269 --> 00:00:52.920
+Here is a list, it's a list of vowels.
+
+10
+00:00:54.230 --> 00:00:55.692
+Here, a list of numbers.
+
+11
+00:00:55.692 --> 00:01:02.247
+Actually, it's a list of strings
+each of which is a number string.
+
+12
+00:01:04.779 --> 00:01:11.660
+Here is another list, and
+this is a list of strings.
+
+13
+00:01:11.660 --> 00:01:14.290
+Twas brillig and slithy toves.
+
+14
+00:01:15.480 --> 00:01:19.401
+Did gyre and gimble in the wabe,
+so it has two strings in it.
+
+15
+00:01:21.505 --> 00:01:27.550
+Here is a boolean that's true,
+here's a boolean that's false.
+
+16
+00:01:29.090 --> 00:01:34.140
+Now generally speaking, you've gotta
+be a little bit careful about these.
+
+17
+00:01:34.140 --> 00:01:41.190
+For example, if you're trying to add z1+2,
+it can't convert it.
+
+18
+00:01:41.190 --> 00:01:43.340
+That's because z1 is a string.
+
+19
+00:01:46.632 --> 00:01:51.688
+I can actually do that if I change z1 to
+
+20
+00:01:51.688 --> 00:01:56.750
+an integer, then I can do it that way.
+
+21
+00:01:58.080 --> 00:02:03.214
+Also, if you take,
+let's write z1 is that, z2 is that.
+
+22
+00:02:03.214 --> 00:02:10.520
+Now z1 + z2, what's going to happen there?
+
+23
+00:02:10.520 --> 00:02:12.550
+Well, those are not integers and
+
+24
+00:02:12.550 --> 00:02:17.290
+they're not floating point numbers,
+so they won't add as numbers.
+
+25
+00:02:17.290 --> 00:02:18.524
+They won't give me 70.
+
+26
+00:02:19.885 --> 00:02:26.794
+They'll give me a string,
+which consists of z1 followed by z2.
+
+27
+00:02:26.794 --> 00:02:31.371
+Now I want to add those two as
+
+28
+00:02:31.371 --> 00:02:36.554
+numbers, I can do it this way.
+
+29
+00:02:41.654 --> 00:02:44.600
+Often you can convert
+from one type to another.
+
+30
+00:02:46.350 --> 00:02:52.600
+So if I want to take y,
+convert it to a string,
+
+31
+00:02:52.600 --> 00:02:57.380
+I just apply the string function.
+
+32
+00:02:58.440 --> 00:03:02.220
+I can do the same thing with x, but
+
+33
+00:03:02.220 --> 00:03:08.038
+I can't do that with z,
+because that's a walrus.
+
+34
+00:03:08.038 --> 00:03:13.301
+I can't convert the walrus and
+
+35
+00:03:13.301 --> 00:03:17.962
+the carpenter to a string.

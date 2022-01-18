@@ -1,0 +1,241 @@
+WEBVTT
+
+1
+00:00:11.622 --> 00:00:14.407
+The first stub that
+we're going to flesh in,
+
+2
+00:00:14.407 --> 00:00:17.840
+write the full function for,
+is show phones.
+
+3
+00:00:17.840 --> 00:00:20.061
+The reason for that is, if we did delete,
+
+4
+00:00:20.061 --> 00:00:22.794
+we wouldn't know whether
+something was deleted.
+
+5
+00:00:22.794 --> 00:00:26.120
+If we did new, we wouldn't know
+whether something new was done.
+
+6
+00:00:26.120 --> 00:00:27.120
+With show phones,
+
+7
+00:00:27.120 --> 00:00:31.230
+we can see whether these other things
+are working when we write them.
+
+8
+00:00:32.350 --> 00:00:36.336
+Let me run this one just a moment and
+show you what it does.
+
+9
+00:00:42.606 --> 00:00:44.439
+Nothing else really works.
+
+10
+00:00:48.084 --> 00:00:49.172
+Just show.
+
+11
+00:00:53.188 --> 00:01:00.503
+Now, the way we're doing this is,
+I've gotta have something to show.
+
+12
+00:01:00.503 --> 00:01:03.380
+So I create a list of phones here.
+
+13
+00:01:03.380 --> 00:01:06.750
+It has two phones, Jerry Seinfeld and
+his number, Cosmo Kramer and his number.
+
+14
+00:01:09.540 --> 00:01:13.600
+Each phone is a two-element list
+consisting of a name and number.
+
+15
+00:01:13.600 --> 00:01:17.624
+The name position is 0,
+a phone position is 1, and
+
+16
+00:01:17.624 --> 00:01:22.562
+I'm going to use name_pos and
+phone_pos, instead of 0 and 1,
+
+17
+00:01:22.562 --> 00:01:27.970
+to refer to these, so I don't get
+confused as to what I'm looking at.
+
+18
+00:01:29.210 --> 00:01:33.449
+There has to be a header for
+this name and phone number, and so
+
+19
+00:01:33.449 --> 00:01:36.959
+I create a header as though
+it were another phone.
+
+20
+00:01:41.344 --> 00:01:44.140
+Now here's the show phones function.
+
+21
+00:01:44.140 --> 00:01:49.849
+First of all, I'm going to show phone, the
+header, and I'll pass around this blank.
+
+22
+00:01:49.849 --> 00:01:53.805
+I'll show you what this
+blank is about later.
+
+23
+00:01:53.805 --> 00:01:57.210
+Then I'm going to step through the phones.
+
+24
+00:01:57.210 --> 00:02:00.113
+For every phone in phones,
+I'm going to show phone, and
+
+25
+00:02:00.113 --> 00:02:04.220
+I'm going to send this index so
+they're numbered, 1, 2, 3, 4, 5.
+
+26
+00:02:04.220 --> 00:02:08.337
+I'll start the index off at one,
+after I show a phone,
+
+27
+00:02:08.337 --> 00:02:10.940
+I'm going to bump the index up by 1.
+
+28
+00:02:10.940 --> 00:02:15.547
+And I'm going to pass to show phone,
+not only the phone itself, but the index.
+
+29
+00:02:17.997 --> 00:02:21.850
+And I'm not going to show
+the individual phone in this function.
+
+30
+00:02:21.850 --> 00:02:24.430
+I'm going to have another
+function that will do that.
+
+31
+00:02:25.740 --> 00:02:27.690
+And then at the end,
+I'm going to skip a line, so
+
+32
+00:02:27.690 --> 00:02:30.910
+that there's a little space
+after the list of phones.
+
+33
+00:02:32.070 --> 00:02:34.170
+Here's how we show an individual phone.
+
+34
+00:02:34.170 --> 00:02:38.788
+We'll pass the phone, but just remember,
+a list with two things in it, the name and
+
+35
+00:02:38.788 --> 00:02:40.790
+the phone number.
+
+36
+00:02:40.790 --> 00:02:41.710
+And we send the index.
+
+37
+00:02:43.790 --> 00:02:47.149
+We have a string, the index is
+going to occupy three spaces, and
+
+38
+00:02:47.149 --> 00:02:48.968
+it's going to be right justified.
+
+39
+00:02:51.772 --> 00:02:56.699
+The name is going to occupy 20 spaces,
+and it's going to be left justified.
+
+40
+00:02:56.699 --> 00:03:00.721
+The phone number is going to occupy 16
+spaces, and it'll be right justified.
+
+41
+00:03:03.847 --> 00:03:07.876
+We're going to use that output string,
+and we're going to format it, so
+
+42
+00:03:07.876 --> 00:03:11.580
+that index goes into
+the 0th element position.
+
+43
+00:03:11.580 --> 00:03:15.720
+Phone name goes into the 1 position, and
+
+44
+00:03:15.720 --> 00:03:21.470
+phone number goes into the 3rd position.
+
+45
+00:03:21.470 --> 00:03:25.470
+And there it is, index,
+name, phone number.
+
+46
+00:03:25.470 --> 00:03:27.150
+That's all there is to it.
+
+47
+00:03:27.150 --> 00:03:32.790
+You've got show phones,
+which is going to send the header.
+
+48
+00:03:32.790 --> 00:03:38.970
+It's going to step through the list of
+phones and send show phone each phone.
+
+49
+00:03:38.970 --> 00:03:44.065
+And the show phones are going to
+be formatted and printed.
+
+50
+00:03:44.065 --> 00:03:51.080
+Up here, we did create these things,
+and that's to get us by right now.
+
+51
+00:03:52.780 --> 00:03:56.513
+Ultimately, we'll set the phones
+list to the empty list.

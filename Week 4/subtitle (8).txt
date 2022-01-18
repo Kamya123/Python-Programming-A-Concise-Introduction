@@ -1,0 +1,30 @@
+Now we need to write the function that
+reads in the CSV file, and we're done. We're going to import another library OS. This library deals with
+the operating system, you'll see how that plays
+a role in just a moment. Scroll down and look at load function,
+notice that it's relatively small. In fact, most of these functions that
+we've been writing are very small. That's one of the values of breaking
+the program up into little functions, you only have to write small
+manageable functions to put it all together to do a much bigger job. First, we're going to check to
+see if the CSV file is there. This method of the OS library, OS.access will check and look for a file called MyPhones.csv in
+the current Directory, and if it returns os.F_OK then it's there. If it's there, then we can open it. We can read in the rows
+using csv.reader and we can append each row onto our
+phones list, then we close it. That is, if it's there, if it's not there,
+we don't need to load it. One of the thing to point out here,
+let's go back up to the beginning. Since we're going to read the phones and
+we can eliminate our phone's list that had two entries in it already and we
+can make this phone's list an empty list. Let's see where it is
+it's actually called. In the main loop, the first thing
+we do is load the fund list and the last thing we do is
+save the fund list, so that we save it when we exit,
+we read it in fresh when we enter. So that it's always either saved
+on disc or loaded in the program. Now let's run our program,
+and see the whole thing work. Show, there's Jerry Seinfeld,
+and Cosmo Kramer that we saved when we tested our
+previous version of the program. You can add new log. [SOUND]
+And there is there. But, you can hit it. Let's say that item 2, Cosmo Kramer 2. We'll press return and keep the name,
+we will change the phone. There's the phone is changed. We can show that the phone
+is actually changed. Cosmo Kramer's phone now is 8789. We can delete 1, delete Cosmo Kramer. Sure that he's deleted now,
+and then we quit. Now, let's run the program again. And when we run the program, the same file should be right in and
+there's what we have, George Seinfeld and George Costanza,
+we don't have Cosmo Kramer anymore. That's our program.

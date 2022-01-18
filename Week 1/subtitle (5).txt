@@ -1,0 +1,84 @@
+Now let's take up the if statement. Here's an example function
+that uses the if statement. And here's how it works. I'm going to set x = 5, y = 0 and z = 0. And then I'm going to test it. I'm going to test if x is greater than 0,
+current x is positive. If y is greater than 0,
+I'll print y is positive else, I'll print y is not positive. Let's see how that works. So x is 5. So when we get down to this statement, we're really comparing 5 to
+greater than 0, which is true. So, we'll print that x is positive. And there you see it's done, okay? If y is greater than 0,
+print y as positive else, it'll print y as not positive. But y is 0. So, y greater than 0 is not true so,
+it will not print this. It will print y is not positive
+instead and you see that is the case. And then, you've got an else if statement. Let's take z. We'll test to see if z is greater than 0. Well, that's not true, it is 0. So we won't print z is positive. Then we'll check if z is greater than 0,
+which it's not, else if. That's what elif means, else if z is
+less than 0, we'll print z is negative. Well, it's not negative either so
+that won't happen. And else will take care of anything else. It'll print z must be 0,
+and that's what it prints. Okay, if we change the values of these,
+things would work differently. Okay? So you got if, notice the if statement. There's a condition that you test
+to see whether it's true and then it ends on a colon. And then anything that's indented, four spaces underneath that,
+get's executed if this is true. In the case of this, here's another
+if statement, notice it end to colon. This stuff that's indented,
+if this is true, will get executed. Else, this gets executed. And this got executed,
+notice else has a colon. If z is greater than 0:
+print z is positive, else if z less than 0,
+print z is negative, notice the colon,
+else: print z is must be 0. Now I want to talk about equal signs for
+just a minute. Equal is an assignment, okay? If I want to set x equal to 5,
+I set it this way. If I want to test to see if x is
+equal to 5, I use double equals. If I want to check to see
+if x is not equal to 5, I put exclamation point equals. So this is assignment. This test for equality,
+this test test for not equals. Here are some examples. We give those x, y, and z values. And then,
+we'll try them out on these statements. Okay? This statement says print x = y, okay? So we test to see if x = y. And that will either be true or false. X is equal to y,
+is true so it prints true. This has a value of true and
+it prints that. Okay? Print x is not equal to y,
+so we'll test for not equal. Well, they are equal so this is false. X is not equals to y is false and
+that's what it prints. If x is equal to z,
+we'll text to see if x is equals to z. Well, x is 5 and z is 6 so
+that's just not true that x is equal to z. And x is equal to z since it's not true,
+it's false, okay? The last one is we'll check to
+see if x is not equal to z. And x is not equal to z,
+x is 5 and z is 6. So x not equal to z is true,
+and that's what it prints. Here's an example of a function that
+makes use of the double equals for comparison, as well as the equals for
+assignment, and does a computation. Here, let me run it first and
+then we'll talk about it. This function, it completes
+the area of a square or a circle. First of all, I've got to tell it
+whether we're talking about a circle or square, okay? If I tell it that we want
+the area of a circle, then I give it the radius of the circle,
+5, to say and
+it computes the area of the circle. If we say that we're computing
+the area of a square and I give it a 5,
+then it computes a different number. Let's see how it does that. Well, the definition of the function here,
+and I use a variable type,
+which will be either circle or square and I give either the radius if it's a circle
+or the length of a side if it's a square. Now we have our usual documentation here. Tells you how to run it,
+Now we compare type, To circle. Notice we used the double equal. If type == "circle",
+then we'll do the following. We'll do these two lines. They're both indented the same
+under that if statement. Else, if type == "square",
+then we'll do these two statements and they're both indented four
+spaces underneath the else if. Else will print. I don't know that one. Let's do an example of that, area of a parallelogram, 4, okay? So, and by the way,
+this unusual naming here is because type, I wanted to use type here and
+type is a keyword in Python. It's a word like print,
+that has a special meaning. Or elif, that has a special meaning,
+or if that has a special meaning, or else, that has a special meaning. Type names, the type of the variable, like I said if an integer, or
+a real number or a string, okay? Now, so, I put an underscore right after
+that to make it not just the word type. Just a little technical thing. Now, lets check this, if type == "circle", Notice we have the colon at
+the end of the equal, the if. We have double equals here for this is to check to see if they
+are equal that doesn't do an assignment. But here is an equal using assignment. We're going to set area equal to pi and
+x squared. That's the formula for
+the area of a circle. And then we'll print the area,
+elif type happens to equal to square. And again, we use the double equals for
+comparison. And we'll compute the area
+of a square if that is true. And that's the side spread. And we'll print that area,
+else we'll just print we don't know. We could expand this by repeating elifs,
+and add additional types of figures. Now, I want you to write a function
+that makes use of the if statement. I want you to compute
+the absolute value of a number. Here is my run of the program
+on these test data. Absolute value of 5 is 5. The absolute value of -5 is 5. The absolute value of 0 is 0. So there are three runs of my program. I think you should write the program and make the print out look like mine,
+the absolute value of. Write that string, and
+then give the number. And then is, and then compute the absolute
+value of that number and print that. Remember, that if
+the number is less than 0, you just multiply by minus 1
+to make it greater than 0. When you finish writing your program,
+press, The continue button to continue. Here's my solution. Definition, absolute value, number, colon. If the number is greater than or
+equal to 0, then the absolute value of
+the number is the number. Else, the absolute value of the number
+is the negative of the number. Or minus one times the number. And then,
+once you've computed the absolute value, then you could print the absolute
+value of num is abs_num.

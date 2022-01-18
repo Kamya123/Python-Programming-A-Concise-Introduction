@@ -1,0 +1,387 @@
+WEBVTT
+
+1
+00:00:11.306 --> 00:00:14.160
+Now let's look at a function
+that makes use of lists.
+
+2
+00:00:16.410 --> 00:00:18.210
+First of all,
+I'm going to define two lists.
+
+3
+00:00:24.070 --> 00:00:27.108
+Here's a list that has one A in it, and
+here's a list that has four A's in it.
+
+4
+00:00:27.108 --> 00:00:29.850
+I want to write a function that's just
+going to count the number of A's in
+
+5
+00:00:29.850 --> 00:00:30.390
+the list.
+
+6
+00:00:30.390 --> 00:00:32.190
+And this is it.
+
+7
+00:00:32.190 --> 00:00:33.300
+Count A.
+
+8
+00:00:38.215 --> 00:00:43.121
+To run it, type count_a of and
+then we'll pass it a list.
+
+9
+00:00:43.121 --> 00:00:43.945
+Now.
+
+10
+00:00:46.342 --> 00:00:49.470
+And it says there one
+letter A is in the list.
+
+11
+00:00:49.470 --> 00:00:56.320
+we'll say count A less one,
+we'll get four letter As in the list.
+
+12
+00:00:56.320 --> 00:00:57.520
+These are correct.
+
+13
+00:00:57.520 --> 00:00:59.278
+Let's see how that works.
+
+14
+00:00:59.278 --> 00:01:03.500
+First of all, we start off by
+setting a counter equal to zero.
+
+15
+00:01:03.500 --> 00:01:07.123
+We're going to count one, two, three,
+four, five, however many letters,
+
+16
+00:01:07.123 --> 00:01:09.840
+A, and we have to start with zero count.
+
+17
+00:01:09.840 --> 00:01:13.350
+When we go through the loop
+a number of times,
+
+18
+00:01:13.350 --> 00:01:14.470
+and then when we get out of the loop,
+
+19
+00:01:14.470 --> 00:01:18.450
+we're going to make use of that count and
+print our count letters A in the list.
+
+20
+00:01:18.450 --> 00:01:22.690
+Now let's see how the loop works.
+
+21
+00:01:22.690 --> 00:01:26.520
+This says for every letter in a list, so
+
+22
+00:01:26.520 --> 00:01:30.570
+it's going to look at the first letter
+in a list, and then later it's going to
+
+23
+00:01:30.570 --> 00:01:33.172
+look to the next letter in a list and
+the next letter in a list.
+
+24
+00:01:34.500 --> 00:01:37.650
+If that letter is an A,
+we use the double equals for
+
+25
+00:01:37.650 --> 00:01:40.050
+a comparison,
+we're going to add one to count.
+
+26
+00:01:41.900 --> 00:01:45.650
+Then we're going to double back and a get
+it another letter, compared it to A and
+
+27
+00:01:45.650 --> 00:01:47.690
+then add one to count if it is a letter A.
+
+28
+00:01:47.690 --> 00:01:51.010
+If it's not a letter
+A we won't do anything.
+
+29
+00:01:51.010 --> 00:01:53.350
+That's the way the function works.
+
+30
+00:01:53.350 --> 00:01:59.350
+Now let's look at the various
+aspects of writing this loop.
+
+31
+00:01:59.350 --> 00:02:04.420
+First of all, there was the initialization
+of this list counter, CT.
+
+32
+00:02:04.420 --> 00:02:06.810
+Next we went to the loop
+a number of times, and
+
+33
+00:02:06.810 --> 00:02:08.210
+in the loop we changed that counter.
+
+34
+00:02:08.210 --> 00:02:11.990
+And then when we got out we
+made use of the counter here.
+
+35
+00:02:11.990 --> 00:02:13.960
+So those three parts.
+
+36
+00:02:13.960 --> 00:02:19.240
+Initialize the counter, change the counter
+every time through the loop, and
+
+37
+00:02:19.240 --> 00:02:20.820
+then print the result out.
+
+38
+00:02:22.260 --> 00:02:26.250
+This is a design pattern that you will see
+over and over and over again in loops.
+
+39
+00:02:27.580 --> 00:02:31.320
+Now I want you to write a function
+that makes use of a loop and
+
+40
+00:02:31.320 --> 00:02:32.399
+makes use of a list.
+
+41
+00:02:33.430 --> 00:02:36.930
+This exercise is to write a function
+that computes the average
+
+42
+00:02:36.930 --> 00:02:38.730
+of the numbers in the list.
+
+43
+00:02:38.730 --> 00:02:41.460
+That means that you're going to have
+to write a loop that steps through each
+
+44
+00:02:41.460 --> 00:02:45.452
+element in the list, you're going to
+have to add up these elements,
+
+45
+00:02:45.452 --> 00:02:48.650
+you're going to have to
+count those elements, and
+
+46
+00:02:48.650 --> 00:02:52.650
+then you're going to have to
+divide that sum by the count.
+
+47
+00:02:54.480 --> 00:02:58.020
+Here are a couple of test lists that
+you can use to test your function.
+
+48
+00:03:01.200 --> 00:03:02.992
+This list should have an average of 41.5,
+
+49
+00:03:02.992 --> 00:03:04.710
+this list should have
+an average of minus 9.215.
+
+50
+00:03:04.710 --> 00:03:09.440
+Here's my run, this is a run on n list.
+
+51
+00:03:09.440 --> 00:03:14.940
+I listed the elements, I computed
+the average, and I wrote the count.
+
+52
+00:03:14.940 --> 00:03:22.720
+Here is my run on our r list,
+and I wrote each element out.
+
+53
+00:03:22.720 --> 00:03:24.490
+Here's the average and here's the count.
+
+54
+00:03:24.490 --> 00:03:26.540
+Now why did I write each element out?
+
+55
+00:03:26.540 --> 00:03:31.590
+Well, often when you go through a list,
+you miss the first element or
+
+56
+00:03:31.590 --> 00:03:33.160
+the last element.
+
+57
+00:03:33.160 --> 00:03:38.030
+And if you write the list out ,you
+can be sure that you got them all.
+
+58
+00:03:38.030 --> 00:03:41.570
+For example, n list starts with two and
+ends with one.
+
+59
+00:03:41.570 --> 00:03:44.940
+Mine starts with two and ends with one,
+so I know I got the whole list.
+
+60
+00:03:46.420 --> 00:03:49.480
+Our list starts with 3.14 and
+ends with four.
+
+61
+00:03:49.480 --> 00:03:52.310
+Here's 3.14 and here's four, so
+I know I got the whole list.
+
+62
+00:03:53.460 --> 00:03:58.772
+And your function should
+be average numlist and
+
+63
+00:03:58.772 --> 00:04:04.490
+use numlist as your list
+of variables throughout.
+
+64
+00:04:06.700 --> 00:04:10.466
+Don't use end list because
+it'll only work on this list.
+
+65
+00:04:10.466 --> 00:04:13.670
+Don't use our r list because
+it'll only work on this r list.
+
+66
+00:04:13.670 --> 00:04:18.500
+You've got to use a variable
+that will work on both of them.
+
+67
+00:04:21.370 --> 00:04:25.978
+Now you write this function and
+press Continue when you're finished and
+
+68
+00:04:25.978 --> 00:04:27.801
+I'll show you my solution.
+
+69
+00:04:30.579 --> 00:04:33.210
+Here's my solution, and
+there are others by the way.
+
+70
+00:04:34.820 --> 00:04:40.650
+Define average numlist colon now I
+start off with the sum equals zero,
+
+71
+00:04:40.650 --> 00:04:45.430
+and I write an underscore here because sum
+is a keyword and I want to use sum but
+
+72
+00:04:45.430 --> 00:04:47.720
+I don't want to use the keyword.
+
+73
+00:04:47.720 --> 00:04:51.319
+For i in the range from zero
+to the length of the list.
+
+74
+00:04:52.630 --> 00:04:55.470
+This is one way to step through the list.
+
+75
+00:04:55.470 --> 00:05:00.465
+Go through the proper number of times and
+add to that,
+
+76
+00:05:00.465 --> 00:05:04.477
+I'm going to take sum,
+sum plus the number.
+
+77
+00:05:04.477 --> 00:05:07.030
+And that will give me a new sum.
+
+78
+00:05:08.170 --> 00:05:11.950
+And then I'm going to print
+the number that I just used.
+
+79
+00:05:11.950 --> 00:05:13.940
+I got all of these.
+
+80
+00:05:13.940 --> 00:05:17.320
+And then the average is going to be
+the sum divided by the length of the list.
+
+81
+00:05:18.430 --> 00:05:21.470
+Now I'm going to print average is and
+I'll print the average.
+
+82
+00:05:21.470 --> 00:05:25.410
+Its count is n under the note.
+
+83
+00:05:26.540 --> 00:05:27.822
+That's one way to do this.

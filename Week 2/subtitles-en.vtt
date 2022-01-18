@@ -1,0 +1,555 @@
+WEBVTT
+
+1
+00:00:09.927 --> 00:00:12.610
+Python has lists.
+
+2
+00:00:12.610 --> 00:00:13.500
+Let's see how they work.
+
+3
+00:00:14.760 --> 00:00:20.652
+The empty list, Is just empty bracket.
+
+4
+00:00:20.652 --> 00:00:27.450
+A list with one element, let's say
+a letter a in it, would look like this.
+
+5
+00:00:27.450 --> 00:00:31.829
+A list with two letters
+would look like this.
+
+6
+00:00:33.160 --> 00:00:34.844
+A list can have numbers.
+
+7
+00:00:38.302 --> 00:00:40.390
+Like this.
+
+8
+00:00:40.390 --> 00:00:42.240
+A list can have strings.
+
+9
+00:00:46.004 --> 00:00:49.197
+Like that.
+
+10
+00:00:49.197 --> 00:00:50.752
+And it can have all of these things.
+
+11
+00:00:50.752 --> 00:00:54.766
+Hello, 3.14.
+
+12
+00:00:57.659 --> 00:00:58.796
+A number.
+
+13
+00:00:58.796 --> 00:01:05.027
+Let's define a list of letters.
+
+14
+00:01:05.027 --> 00:01:09.739
+Let me just execute this line, and
+
+15
+00:01:09.739 --> 00:01:14.135
+it gives us this list named lis.
+
+16
+00:01:15.610 --> 00:01:18.035
+And it's equal to the letters a through f.
+
+17
+00:01:18.035 --> 00:01:21.410
+If I type lis,
+you'll see that I get that list back.
+
+18
+00:01:22.620 --> 00:01:28.300
+Let's talk about how the items
+of a list are accessed.
+
+19
+00:01:28.300 --> 00:01:35.436
+This is item zero, this is item one,
+this is item two, and so on.
+
+20
+00:01:35.436 --> 00:01:41.030
+And notice that Python starts
+with item zero, not item one.
+
+21
+00:01:41.030 --> 00:01:44.950
+So zero, one, two, three, four, five.
+
+22
+00:01:44.950 --> 00:01:48.400
+That's the way these are accessed.
+
+23
+00:01:48.400 --> 00:01:52.830
+Let's take a look at how
+to pull an element out.
+
+24
+00:01:52.830 --> 00:01:56.594
+If you want item 0, you type lis[0].
+
+25
+00:01:56.594 --> 00:02:03.970
+If you want item 1, you type lis[1].
+
+26
+00:02:03.970 --> 00:02:07.780
+If you want to know how
+many items are in the list,
+
+27
+00:02:07.780 --> 00:02:13.020
+you can use the len function,
+the length function.
+
+28
+00:02:13.020 --> 00:02:18.780
+And it'll tell you that there's six,
+there's three, four, five, six.
+
+29
+00:02:18.780 --> 00:02:22.560
+Now, what if we wanted to get
+the last element of the list?
+
+30
+00:02:22.560 --> 00:02:26.670
+Well you might be tempted to ask for
+the following.
+
+31
+00:02:28.210 --> 00:02:30.168
+lis[6].
+
+32
+00:02:30.168 --> 00:02:33.680
+But let's see if that would work.
+
+33
+00:02:33.680 --> 00:02:39.290
+This is item zero, one,
+two, three, four, five so
+
+34
+00:02:39.290 --> 00:02:45.940
+the last item of this list is item five,
+not item six.
+
+35
+00:02:45.940 --> 00:02:50.609
+So this won't work, but
+I can say item five and get it.
+
+36
+00:02:50.609 --> 00:02:53.180
+That worked just fine.
+
+37
+00:02:53.180 --> 00:03:00.690
+There is a simpler way and
+that is that I can type -1.
+
+38
+00:03:00.690 --> 00:03:02.720
+That says count from
+the end of the list so
+
+39
+00:03:02.720 --> 00:03:05.350
+this is first one at the end of the list.
+
+40
+00:03:05.350 --> 00:03:10.814
+And the next to the last
+one will be lis[-2].
+
+41
+00:03:12.558 --> 00:03:15.930
+And so on, let me repeat the list.
+
+42
+00:03:15.930 --> 00:03:20.079
+Now I might want to get items two
+
+43
+00:03:20.079 --> 00:03:24.872
+through four back into it this way.
+
+44
+00:03:24.872 --> 00:03:29.408
+Now what that will tell me is,
+items two and
+
+45
+00:03:29.408 --> 00:03:32.944
+three but it will not print four.
+
+46
+00:03:32.944 --> 00:03:37.077
+Zero, one, two so item two is a c,
+so it'll start there and
+
+47
+00:03:37.077 --> 00:03:40.910
+it'll do three but
+it will not do four, which is the e.
+
+48
+00:03:42.130 --> 00:03:47.552
+Let's see that, zero, one, two.
+
+49
+00:03:47.552 --> 00:03:48.897
+There's the two.
+
+50
+00:03:50.648 --> 00:03:53.630
+Three, there's the third one.
+
+51
+00:03:53.630 --> 00:03:54.600
+Four is not there.
+
+52
+00:03:56.752 --> 00:04:01.790
+I want to get everything from item
+three on to the end, I can do that.
+
+53
+00:04:03.500 --> 00:04:05.900
+And not put an ending spot.
+
+54
+00:04:05.900 --> 00:04:12.370
+I want to get everything up to, but
+not including three, I can do that.
+
+55
+00:04:13.540 --> 00:04:16.035
+Zero, one, two, here's three.
+
+56
+00:04:16.035 --> 00:04:17.130
+It's d, it's not there.
+
+57
+00:04:19.870 --> 00:04:24.960
+If I want to add onto the end of the list,
+I can use a method of lis
+
+58
+00:04:24.960 --> 00:04:30.310
+called append and I can, in this case,
+add g on in this manner.
+
+59
+00:04:33.340 --> 00:04:37.090
+You see g is now added on
+to the end of the list.
+
+60
+00:04:37.090 --> 00:04:39.060
+We can ask whether
+something is in the list.
+
+61
+00:04:39.060 --> 00:04:42.900
+So I'm going to ask if d in lis.
+
+62
+00:04:42.900 --> 00:04:44.390
+I can make that assertion.
+
+63
+00:04:44.390 --> 00:04:46.974
+Python will tell me whether that's true or
+false.
+
+64
+00:04:46.974 --> 00:04:49.750
+It is true.
+
+65
+00:04:49.750 --> 00:04:55.240
+If I make the assertion that x is in
+the list, it'll tell me that it's false.
+
+66
+00:04:55.240 --> 00:05:00.700
+So I can tell whether something is in
+the list by doing an assertion and
+
+67
+00:05:00.700 --> 00:05:03.140
+see whether I get true or false.
+
+68
+00:05:03.140 --> 00:05:06.130
+Now let's look at a function
+that makes use of the list.
+
+69
+00:05:06.130 --> 00:05:09.930
+First of all I'll go over here and
+click on, in that cell, and execute it.
+
+70
+00:05:12.696 --> 00:05:17.890
+Who_is_there is the name of the function.
+
+71
+00:05:17.890 --> 00:05:24.105
+And I'll give it a simple
+list with just a lion in it.
+
+72
+00:05:29.173 --> 00:05:33.010
+And it prints, there's a lion.
+
+73
+00:05:33.010 --> 00:05:35.476
+There's no horse in the list and
+the list has one item.
+
+74
+00:05:35.476 --> 00:05:43.420
+Let's take a look at the code If bear's
+in the list, it'll do something.
+
+75
+00:05:43.420 --> 00:05:45.550
+But there's no bear in the list.
+
+76
+00:05:45.550 --> 00:05:47.230
+There's only lions in the list.
+
+77
+00:05:47.230 --> 00:05:50.240
+If lion is in the list,
+then it'll print there's a lion.
+
+78
+00:05:50.240 --> 00:05:51.936
+And it does that.
+
+79
+00:05:54.411 --> 00:05:58.066
+If daisy or iris is in the list,
+it'll print there are flowers, but
+
+80
+00:05:58.066 --> 00:05:59.230
+they're not there.
+
+81
+00:05:59.230 --> 00:06:02.210
+If they both are there,
+it'll print something.
+
+82
+00:06:02.210 --> 00:06:05.362
+If donkey's in the list,
+it'll print there's a donkey, but
+
+83
+00:06:05.362 --> 00:06:07.350
+that's not in the list.
+
+84
+00:06:07.350 --> 00:06:11.040
+And now let's look at
+this horse not in list.
+
+85
+00:06:12.480 --> 00:06:14.548
+The assertion horse not in list is true,
+
+86
+00:06:14.548 --> 00:06:19.140
+only a lion's in the list,
+so this is true.
+
+87
+00:06:19.140 --> 00:06:24.370
+If this is true, then it'll print there's
+no horse in the list, and it does.
+
+88
+00:06:25.380 --> 00:06:26.440
+The last line prints,
+
+89
+00:06:26.440 --> 00:06:30.403
+the list has a length of list items,
+and there's one item.
+
+90
+00:06:30.403 --> 00:06:36.007
+Let's execute it,
+
+91
+00:06:36.007 --> 00:06:41.943
+and let's say iris.
+
+92
+00:06:43.050 --> 00:06:44.394
+Put that in the list.
+
+93
+00:06:44.394 --> 00:06:50.898
+Now again the lion's in the list,
+so it prints there is a lion.
+
+94
+00:06:50.898 --> 00:06:56.484
+But now, it'll see this line,
+if daisy in list or
+
+95
+00:06:56.484 --> 00:07:00.879
+iris in list then, there are flowers.
+
+96
+00:07:02.120 --> 00:07:06.250
+Well, iris is in the list so
+it'll print flowers.
+
+97
+00:07:06.250 --> 00:07:08.860
+If it had seen daisy it
+would of print flowers too.
+
+98
+00:07:08.860 --> 00:07:09.693
+Either or.
+
+99
+00:07:09.693 --> 00:07:15.710
+There's still no horse in the list so it
+prints that, and now there are two items.
+
+100
+00:07:15.710 --> 00:07:19.864
+Let's put daisy in the list.
+
+101
+00:07:22.878 --> 00:07:25.120
+Now the lion is still there.
+
+102
+00:07:25.120 --> 00:07:29.920
+So it's still checks the other line and
+prints there is a lion.
+
+103
+00:07:30.930 --> 00:07:34.730
+If daisy is in the list, and it is,
+it'll print there are flowers.
+
+104
+00:07:34.730 --> 00:07:38.550
+It would've also printed it
+because iris is also in the list.
+
+105
+00:07:38.550 --> 00:07:41.045
+Since daisy is in the list and
+
+106
+00:07:41.045 --> 00:07:45.810
+iris is in the list, there are at
+least two flowers and it prints that.
+
+107
+00:07:48.180 --> 00:07:50.662
+There's still no horse in the list, and
+
+108
+00:07:50.662 --> 00:07:53.290
+now the length of
+the list has three items.
+
+109
+00:07:57.692 --> 00:08:03.700
+If we put horse in the list.
+
+110
+00:08:07.160 --> 00:08:12.210
+Then there is no horse
+disappears because horse
+
+111
+00:08:12.210 --> 00:08:17.930
+not in the list is no longer true,
+horse is in fact in the list.
+
+112
+00:08:17.930 --> 00:08:23.760
+So this if statement is not true, so we'll
+not write there is no horse in the list.
+
+113
+00:08:25.130 --> 00:08:30.354
+You should make up some lists and
+pass them to this function and
+
+114
+00:08:30.354 --> 00:08:34.482
+make sure you understand
+how all those ifs work.
+
+115
+00:08:34.482 --> 00:08:40.830
+Let me point out that we didn't have to
+type the list directly into the argument.
+
+116
+00:08:40.830 --> 00:08:44.120
+Let me find a few lists here,
+I'll show what I mean.
+
+117
+00:08:44.120 --> 00:08:49.277
+We've got a list called alion,
+we got another list ld,
+
+118
+00:08:49.277 --> 00:08:56.656
+has a lion and a daisy in it, and lbf,
+that list has a lion, a bear, and an iris.
+
+119
+00:08:56.656 --> 00:09:04.375
+So we could have passed these into
+the function who_is_there(lbf) and
+
+120
+00:09:04.375 --> 00:09:09.275
+it would say, there is a bear,
+there is a lion,
+
+121
+00:09:09.275 --> 00:09:14.630
+and there are flowers,
+because iris is there.
+
+122
+00:09:14.630 --> 00:09:18.290
+There's no horse in the list,
+and the list has three items.

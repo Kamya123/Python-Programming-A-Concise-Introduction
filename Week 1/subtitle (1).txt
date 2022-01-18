@@ -1,0 +1,4 @@
+Let's start learning the syntax of Python. First of all,
+you have arithmetic operations, and I'll quickly go through a sample of those. I'll show you how they work. 13 + 3 is 16, 13- 3 gives you 10. 13 x 3 is 39. 2 raised to the 3rd power is 8. 13 divided by 3 is 4. 13 divided by 3 in this way, this is
+an integer line, and divide it to and find the integer and
+throw away the fraction, it's just 4. And 13% 3 Is the remainder upon dividing 13 by 3.

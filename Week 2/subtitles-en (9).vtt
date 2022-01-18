@@ -1,0 +1,549 @@
+WEBVTT
+
+1
+00:00:10.630 --> 00:00:16.070
+Now, let's look at a design pattern for loops.
+
+2
+00:00:16.070 --> 00:00:26.116
+Here's a function add up.
+
+3
+00:00:26.116 --> 00:00:33.150
+Three, five, seven, and to end,
+
+4
+00:00:33.150 --> 00:00:35.780
+it says, type zero.
+
+5
+00:00:35.780 --> 00:00:37.230
+What that did was,
+
+6
+00:00:37.230 --> 00:00:43.800
+it added up the number three and five and seven and got 15.
+
+7
+00:00:43.800 --> 00:00:45.991
+This is not sophisticated program,
+
+8
+00:00:45.991 --> 00:00:49.745
+it just look at loops and how they're designed.
+
+9
+00:00:49.745 --> 00:00:55.220
+Okay. We started out by setting sum equals zero.
+
+10
+00:00:55.220 --> 00:00:56.995
+Then we went through the loop.
+
+11
+00:00:56.995 --> 00:00:59.730
+In this case, we went through the loop while
+
+12
+00:00:59.730 --> 00:01:03.285
+true is true and it's always true so we just go forever.
+
+13
+00:01:03.285 --> 00:01:08.930
+And then, we input a number.
+
+14
+00:01:09.560 --> 00:01:13.850
+Add zero to quit.
+
+15
+00:01:13.850 --> 00:01:21.710
+Okay. That number got converted when it got input to an integer.
+
+16
+00:01:21.710 --> 00:01:25.960
+This converts that string to an integer.
+
+17
+00:01:25.960 --> 00:01:27.940
+Now, you test that number.
+
+18
+00:01:27.940 --> 00:01:29.350
+If it's equal to zero,
+
+19
+00:01:29.350 --> 00:01:31.840
+we use a double equal to make comparison.
+
+20
+00:01:31.840 --> 00:01:37.020
+We'll break. That means we'll break out of the loop.
+
+21
+00:01:37.020 --> 00:01:41.450
+If we don't break out of the loop,
+
+22
+00:01:41.450 --> 00:01:48.144
+then we add number to sum and replace sum of that value.
+
+23
+00:01:48.144 --> 00:01:50.450
+When we get through with the loop,
+
+24
+00:01:50.450 --> 00:01:53.675
+we just print sum.
+
+25
+00:01:53.675 --> 00:01:58.815
+So, the three parts where we initialized this variable,
+
+26
+00:01:58.815 --> 00:02:02.875
+we updated this variable and then we made use this variable.
+
+27
+00:02:02.875 --> 00:02:08.055
+In this case, we started with zero.
+
+28
+00:02:08.055 --> 00:02:11.855
+Now, let's take a look at the similar thing for lists.
+
+29
+00:02:11.855 --> 00:02:16.168
+Here is a list called baseball.
+
+30
+00:02:16.168 --> 00:02:18.165
+Now, what I've done here is,
+
+31
+00:02:18.165 --> 00:02:20.603
+I started out with an empty list,
+
+32
+00:02:20.603 --> 00:02:23.432
+then I appended ball to it,
+
+33
+00:02:23.432 --> 00:02:25.550
+then I appended bat to it,
+
+34
+00:02:25.550 --> 00:02:27.575
+then I appended mitt to it,
+
+35
+00:02:27.575 --> 00:02:29.115
+then I appended baseball.
+
+36
+00:02:29.115 --> 00:02:34.324
+You see ball, bat and mitt are all appended.
+
+37
+00:02:34.324 --> 00:02:42.585
+This is the list equivalent of adding numbers to a song.
+
+38
+00:02:42.585 --> 00:02:46.680
+Now, let's write a program to build a list of numbers.
+
+39
+00:02:46.680 --> 00:02:51.710
+We'll call this store_up.
+
+40
+00:02:56.760 --> 00:03:00.650
+Well, and remember three,
+
+41
+00:03:00.650 --> 00:03:05.810
+five, seven, we'll enter zero quit.
+
+42
+00:03:05.810 --> 00:03:13.407
+So, now we've added three to the list and five to the list and seven to the list.
+
+43
+00:03:13.407 --> 00:03:16.725
+We appended them. Now, let's compare these two.
+
+44
+00:03:16.725 --> 00:03:20.400
+Whereas we have sum equals zero up here,
+
+45
+00:03:20.400 --> 00:03:26.015
+we've got num_list as empty list down here.
+
+46
+00:03:26.015 --> 00:03:31.170
+While true, we're going to loop forever.
+
+47
+00:03:31.170 --> 00:03:33.655
+Okay. We're going to input a number,
+
+48
+00:03:33.655 --> 00:03:36.975
+and this is exactly the same.
+
+49
+00:03:36.975 --> 00:03:42.530
+If this next number is zero, we're going to break.
+
+50
+00:03:42.530 --> 00:03:46.145
+That's exactly what we did before.
+
+51
+00:03:46.145 --> 00:03:50.570
+Before we added the number to the sum,
+
+52
+00:03:50.570 --> 00:03:55.250
+now, we're going to append the number to the list.
+
+53
+00:03:55.250 --> 00:03:58.745
+And then when we get out of the list,
+
+54
+00:03:58.745 --> 00:04:02.420
+we're going to print the number list.
+
+55
+00:04:02.420 --> 00:04:06.106
+So that we have an initialization as before,
+
+56
+00:04:06.106 --> 00:04:08.200
+we loop through the loop,
+
+57
+00:04:08.200 --> 00:04:12.176
+we do something with the initial last list,
+
+58
+00:04:12.176 --> 00:04:15.515
+and then, that will change it.
+
+59
+00:04:15.515 --> 00:04:21.665
+And then we will make use of it when we get out of the loop.
+
+60
+00:04:21.665 --> 00:04:28.700
+Now, I want you to write a function that will build the list.
+
+61
+00:04:33.990 --> 00:04:37.070
+Here's the problem.
+
+62
+00:04:37.070 --> 00:04:43.820
+You want to pretend that you're a waitress at a diner.
+
+63
+00:04:43.820 --> 00:04:46.520
+That's what the function is going to be.
+
+64
+00:04:46.520 --> 00:04:50.045
+You're going to be a waitress in a diner taking an order.
+
+65
+00:04:50.045 --> 00:04:53.075
+So you'll come up to the table and say,
+
+66
+00:04:53.075 --> 00:04:56.795
+"Hello, I'll be your waitress. What will you have?"
+
+67
+00:04:56.795 --> 00:04:59.116
+Then as a customer,
+
+68
+00:04:59.116 --> 00:05:02.500
+you'll say something like eggs,
+
+69
+00:05:02.500 --> 00:05:05.810
+and she'll put that into the list.
+
+70
+00:05:05.810 --> 00:05:08.980
+Bacon, she'll write that on her list.
+
+71
+00:05:08.980 --> 00:05:10.100
+Toast, she'll write that on her list.
+
+72
+00:05:10.100 --> 00:05:12.950
+And jelly, she'll write that on her list.
+
+73
+00:05:12.950 --> 00:05:19.010
+You can order anything you want to she would just put it on the list.
+
+74
+00:05:19.010 --> 00:05:22.840
+Then when you say, "that's all",
+
+75
+00:05:22.840 --> 00:05:31.835
+she'll stop taking the order and print out the list of items that you ordered.
+
+76
+00:05:31.835 --> 00:05:40.020
+That's the function that I want you to write and it involves creating a list,
+
+77
+00:05:40.020 --> 00:05:43.100
+looping through and adding
+
+78
+00:05:43.100 --> 00:05:46.575
+things to the list that will be numbered this time it will be foods.
+
+79
+00:05:46.575 --> 00:05:55.543
+And then, indicating when you want the loop to end by entering that's all,
+
+80
+00:05:55.543 --> 00:05:59.646
+and then printing out the list.
+
+81
+00:05:59.646 --> 00:06:06.500
+Here's my run on that program just so you can see how it works.
+
+82
+00:06:06.500 --> 00:06:08.280
+Diner waitress.
+
+83
+00:06:08.280 --> 00:06:11.645
+That's what will happen when you run the program.
+
+84
+00:06:11.645 --> 00:06:13.430
+Hello, I'll be your waitress.
+
+85
+00:06:13.430 --> 00:06:16.390
+What will you have? It'll ask that question.
+
+86
+00:06:16.390 --> 00:06:22.150
+Then it will loop through an answer menu item and you'll type in eggs,
+
+87
+00:06:22.150 --> 00:06:24.806
+then it'll loop through,
+
+88
+00:06:24.806 --> 00:06:26.465
+ask for another menu item,
+
+89
+00:06:26.465 --> 00:06:29.255
+and you say bacon.
+
+90
+00:06:29.255 --> 00:06:32.905
+Then it'll ask for another menu item and you give another one.
+
+91
+00:06:32.905 --> 00:06:36.380
+And then it'll ask for another one and then you give them another one.
+
+92
+00:06:36.380 --> 00:06:40.686
+And then, if you ever enter, that's all,
+
+93
+00:06:40.686 --> 00:06:43.710
+that particular string, then it will quit taking
+
+94
+00:06:43.710 --> 00:06:50.210
+the order and print out the list of things that you've ordered.
+
+95
+00:06:50.210 --> 00:06:52.737
+Now, you try to write this function,
+
+96
+00:06:52.737 --> 00:06:55.460
+write diner waitress, and when you get done,
+
+97
+00:06:55.460 --> 00:07:07.928
+press continue and I'll show you my solution.
+
+98
+00:07:07.928 --> 00:07:16.760
+Here's my solution.
+
+99
+00:07:16.760 --> 00:07:22.910
+Let me run it once for you.
+
+100
+00:07:22.960 --> 00:07:27.140
+I'll show you how it does work. Okay, I'll type bacon,
+
+101
+00:07:27.140 --> 00:07:32.095
+eggs, toast, that's all.
+
+102
+00:07:32.095 --> 00:07:38.060
+And it'll print out what I ordered.
+
+103
+00:07:39.970 --> 00:07:49.340
+Here's the code definition, diner waitress, parenthesis colon. Print.
+
+104
+00:07:49.340 --> 00:07:52.110
+Hello, I'll be your waitress. What will you have?
+
+105
+00:07:52.110 --> 00:07:59.610
+Now, we'll start off a list with an empty list that'll be our order.
+
+106
+00:07:59.610 --> 00:08:03.010
+We'll loop through forever,
+
+107
+00:08:03.010 --> 00:08:05.760
+while true is true, we'll loop through.
+
+108
+00:08:05.760 --> 00:08:08.473
+Here is the details of the loop.
+
+109
+00:08:08.473 --> 00:08:10.650
+When we get through the loop,
+
+110
+00:08:10.650 --> 00:08:12.090
+we'll print the phrase,
+
+111
+00:08:12.090 --> 00:08:15.735
+you've ordered, and then we'll print order.
+
+112
+00:08:15.735 --> 00:08:20.753
+An order of course is this list that started out as an empty list,
+
+113
+00:08:20.753 --> 00:08:22.830
+but which we've been adding to.
+
+114
+00:08:22.830 --> 00:08:25.890
+Let's see what we do every time through the loop.
+
+115
+00:08:25.890 --> 00:08:30.307
+First of all, we'll issue an input statement,
+
+116
+00:08:30.307 --> 00:08:32.565
+which will ask for a menu item.
+
+117
+00:08:32.565 --> 00:08:35.511
+Over here, menu item.
+
+118
+00:08:35.511 --> 00:08:38.835
+We'll store that in food.
+
+119
+00:08:38.835 --> 00:08:43.545
+Now, I'm going to convert food to lowercase,
+
+120
+00:08:43.545 --> 00:08:46.935
+so I can compare it to that's all,
+
+121
+00:08:46.935 --> 00:08:51.345
+so that I can type it upper or lower case or however I feel like.
+
+122
+00:08:51.345 --> 00:08:58.135
+It'll always be converted to lower case and I can compare to this.
+
+123
+00:08:58.135 --> 00:09:02.730
+Notice that, we used a method of strings called lower.
+
+124
+00:09:02.730 --> 00:09:05.220
+We convert it to lowercase.
+
+125
+00:09:05.220 --> 00:09:10.855
+We use the double equals for comparison and we have the phrase that's all.
+
+126
+00:09:10.855 --> 00:09:14.910
+If those are equal then we'll break out of the loop,
+
+127
+00:09:14.910 --> 00:09:18.445
+and they will go print you've ordered and print your order.
+
+128
+00:09:18.445 --> 00:09:21.705
+If the food ordered is not,
+
+129
+00:09:21.705 --> 00:09:28.230
+the phrase, "that's all", then, we'll go to the else and we'll append,
+
+130
+00:09:28.230 --> 00:09:33.510
+use the append method of list to append the food onto that list.
+
+131
+00:09:33.510 --> 00:09:39.645
+Now, I want to point out that I knew the lower case existed.
+
+132
+00:09:39.645 --> 00:09:45.585
+In your case, you wouldn't know that and so you probably would just say food,
+
+133
+00:09:45.585 --> 00:09:49.065
+if food is equal to that's all.
+
+134
+00:09:49.065 --> 00:09:55.170
+That mean you would have to type in that's all in lower case always.
+
+135
+00:09:55.170 --> 00:09:57.090
+This is a little bit more flexible.
+
+136
+00:09:57.090 --> 00:09:58.605
+I just thought I'd throw that in,
+
+137
+00:09:58.605 --> 00:10:00.940
+so that you'd be aware of.

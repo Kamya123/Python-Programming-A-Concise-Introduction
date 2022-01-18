@@ -1,0 +1,13 @@
+Now let's look at a function where we need
+to convert from one data type to another. This function will multiply two numbers. Let's watch it work. going to enter a number,
+7, and another number, 3. And we get the product of 21. Let's see how that's done. First we have an input
+statement to get one number in, but it comes in as a string. We then have another input statement
+to enter the other number, and it also will come in as a string. Then we take the string, numstr1 and
+convert it to a float, num1. Then we do the same thing with num2,
+convert it to a float. And then we can take the product
+num1 * num2, and print that out. Now let me emphasize that if we had tried
+to multiply these two, it wouldn't work. Here is an example of that. Let me comment this line out. I'm going to go up here to edit and
+put comment. And then I'm going to
+un-comment this line, go back to edit, un-comment that. Now let's run this again and
+see what goes wrong. That's up arrow, go back to the multiply. Now we're going to enter seven again, times three, boom. We get a type error. Can't multiply sequence by
+non integers of type strain. Now let me restore these.

@@ -1,0 +1,64 @@
+Let's talk a moment about the range
+function and converting it to a list. Here are an example. First of all, I've got a range function. It starts at 2, it stops at 20,
+and it goes up at steps of 3. In this version I've converted
+it to a list and printed it. Let's take a look at that. 2, that's the starting one,
+goes up by 3 to 5, 3 more to 8, 3 to 11, 3 to 14, 3 to 17, and
+3 to 20, but it doesn't do 20. That works as we would expect. It takes the range and
+converts it to a list and prints it. If you don't convert it to a list,
+however, you just get the phrase, range 2 through 20 in
+steps of 3 back again. In Python 2, the range function
+actually produced a list, and they had to introduce a different function
+called x range that would work like ours. The reason had to do with using
+the range function with a large range. It would produce a list which were
+just huge and use up lots of memory Now let's take a look at integers. We have a big integer right here. We could mark off every
+three digits with commas, like this, but you gotta be careful
+about that because Python interprets those as three different numbers as
+you can see when you print them out. So, that's not a good idea. Here's another caution that
+Python has keywords, and this is the list of them right here. You don't want to use those as a variable. Let's see what happens if you use except which is one of
+the keywords as a variable. It gives you a syntax error. Now what I have done when I
+felt like I needed to use one of the keywords as
+a variable is I just put an underscore after it and
+that makes it different. Let's recall a function
+that we wrote previously. Here's another copy, which I'll execute. We defined a list New England, consisting
+of the states of New England, Maine, New Hampshire, Vermont, and then we wrote a function that stepped
+through the list printing each state. Now what I want to do is do a little
+bit more sophisticated version of that. Here is New England redefined and
+this time, redefined each state to have a population. That meant that each state really
+is represented by a sublist. Massachusetts and
+its population is that sublist. Connecticut and
+its population is this sublist. And so on. So each item of the list New England. Is a sublist consisting of the name
+of the state and its population. Now before we write our functions, let's make sure that we understand how to
+access the various parts of this list. This is an exercise that
+you can do along with me. What is the first item of New England? Well the first item of New England
+is the one with index zero, and that is Massachusetts and its population. It's a sublist,
+it's not just Massachusetts. What is the second item? Well, that's the item with index one and
+that's Connecticut. Now what is the name of the state in the second element that
+is the element of index one? Well, we know that this
+will give us the name and then give us the sublist that consists
+of Connecticut to us and its population. If we want the name of the state, we need the 0th element of that list,
+and that's Connecticut. If we want the population of Connecticut,
+we go to the item of index one. Let me give you a more complete solution here that you can study. This is for port one. It will take the New England list and print both its population and
+state name for each item. There's our little report. We put population at the top of that
+column, state at the top of that column. We give the population of Massachusetts
+and the state name of Massachusetts. Now let's take a look at the function and
+see how that works. The function is for port one and
+we passed state data in. In this case we passed
+the New England state data. It will print, first of all,
+the population and the state, and we see that here. Now, for each state item in state data,
+state data is the big list that we passed into the function,
+we will print state item of one. State item of one is going to be item one of each one of these sublists. And that's the population. Then we'll print a blank. And then we'll print state item of zero. The state item of zero is the 0th item of
+each of these lists which is the name of the state. That's how it works. It's very simple and straightforward. Now notice that since we used state
+data here, we didn't use New England, this can work on any big list
+that has this general shape. So for example, I can define mid-Atlantic
+states to be this, New York and its population, New Jersey, its
+population, Pennsylvania, its population. Let me write that out so
+that it is more obvious. We can use this function on the mid
+Atlantic states, report one mid Atlantic. And it prints the proper report for the mid Atlantic state because it was not
+written specifically for New England. It will work on other regional
+lists in the proper manner. It is instructive to write this function
+in a slightly different way, so here it is again. Report two. Now what's different about this? Well, we still print
+the headings in the same way, but this time we just use i and we ranged from zero to
+the length of the left. Instead of stepping through each
+item in the list, we do it this way. And i of course is just an integer, 0,
+1, 2, 3, 4 up to the length of the list. And so we'll print the state data of i, Bracket one for the population and
+bracket zero for the state name.

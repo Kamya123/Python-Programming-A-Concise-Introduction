@@ -1,0 +1,101 @@
+WEBVTT
+
+1
+00:00:15.606 --> 00:00:17.830
+Let's do one more thing.
+
+2
+00:00:17.830 --> 00:00:21.404
+Let's run this as a standalone
+program from a command line.
+
+3
+00:00:21.404 --> 00:00:24.559
+First of all, let me create this file.
+
+4
+00:00:24.559 --> 00:00:30.422
+You want to go back up to the beginning,
+The final version.
+
+5
+00:00:35.065 --> 00:00:36.503
+I'm going to copy it.
+
+6
+00:00:39.250 --> 00:00:40.320
+Create a new file.
+
+7
+00:00:42.634 --> 00:00:43.851
+I'm going to paste it.
+
+8
+00:00:47.781 --> 00:00:48.877
+I'm going to save it.
+
+9
+00:00:58.211 --> 00:01:03.845
+Now we see the new file, phones.py.
+
+10
+00:01:03.845 --> 00:01:09.155
+Now let's create command prompt,
+
+11
+00:01:09.155 --> 00:01:16.250
+and we'll run python phones.py, then show.
+
+12
+00:01:16.250 --> 00:01:18.895
+There's our data.
+
+13
+00:01:18.895 --> 00:01:20.074
+I add a new one.
+
+14
+00:01:23.402 --> 00:01:28.130
+Elaine Denis phone number,
+
+15
+00:01:28.130 --> 00:01:33.648
+(212) 123-4321.
+
+16
+00:01:33.648 --> 00:01:35.336
+Show that.
+
+17
+00:01:35.336 --> 00:01:36.909
+She's there.
+
+18
+00:01:36.909 --> 00:01:39.534
+We will quit.
+
+19
+00:01:39.534 --> 00:01:40.833
+Now let's run it again.
+
+20
+00:01:44.010 --> 00:01:48.462
+So there's Elaine Denis,
+we're going to delete her.
+
+21
+00:01:51.886 --> 00:01:54.436
+She's gone, quit.
+
+22
+00:01:57.492 --> 00:01:59.580
+And that's our program.
+
+23
+00:01:59.580 --> 00:02:01.570
+It will run from the command line.
+
+24
+00:02:01.570 --> 00:02:07.442
+And we'll update this csv
+file that contains our data.

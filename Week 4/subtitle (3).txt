@@ -1,0 +1,144 @@
+Now let's write a small menu-driven
+database application to make use of what we've learned. First, I want to run it to give
+you the idea of where we're going. I'll open the command prompt,
+python phones.py. This is the menu. I type show, it will show all
+the records we have there. So we have three names and
+three phone numbers. We can create a new name
+With a new phone number. I'm going to show you that it's there. We can delete a name. We're going to delete number three,
+show you that it's gone. We can edit a name. I'm going to edit number three. That's the lame [INAUDIBLE] and I'll press
+return and leave that name unchanged. But I'm going to enter a new phone number. I'm going to show you that it's there. And then I can quit,
+what happens when we quit is that it saves the changes that you've made. That's the way we left it. All of this is stored in a CSV file. My files. All of this is stored in a CSV file. Name and phone number. Now let's go over and
+look and see how we do this. First of all, we're going to write
+a simplified version of this program. We go to app python consult and
+run that simplified version. It doesn't really load the file it just
+announces that it's loading the file. If you quit,
+it announces that it's saving the file and doesn't actually change the file. Run it again. If I show, it just announces it's showing. If I type new,
+it just announces it's adding. If I type delete,
+it announces it's deleting. And if I type edit,
+it announces that it's editing. And that's all that it does. The reason is we can't
+write all of these at once. What we're going to do is we're
+going to write this main portion that displays the menu, and
+here is the first version of our program. Deleting the phone is just a function
+that announces that it's deleting. Edit, the same way. Each one of these actions is just
+a stub that announces what it does. I've got a function for
+displaying the menu. We've got a function for going through
+what we'll call the main loop and the way you start the program is
+we have a statement like this. There are two underscores before and
+after name, two underscores before and after main. If the name is main, then we're
+going to start at the main_loop, and the main loop is a function. First of all it loads the phone list, the last thing it does is saves
+the phone list and next it runs a loop. While true, do everything in this loop. Well, true, is always true, so
+this loop will run forever. I'll show you how we
+get out of that later. First thing we do is we
+get their menu choice. Menu choice will print the menu and
+retrieve what your choice is. If your choice is none,
+that is you didn't make a choice, you'll just double back and
+do the loop again. Continue means continue at
+the beginning of the loop. If your choice is q, then we'll print
+exiting and break out of the loop. Which means we'll do this next statement
+which will save the phone last and then we quit. If your choice is new,
+we'll create a file. If the choice is delete,
+we'll delete a file. If the choice is show phones,
+we'll show '. The choice is edit, we'll edit the file. If there's anything else, we'll just
+announce that as an invalid choice. Now let's see how we get,
+if we print the menu and make the choice. We call this function, And,
+first of all, it says print. Choose one of the following options. Then it prints all of the options. So we see that here. And then we use an input
+statement to get that choice. Again, we see there's
+right along in there. Now we changed the choice that
+the person makes to lowercase so we can compare it to these
+letters in this table. If it is in this table, then we'll
+return that choice changed to lowercase. So, that down here in our
+main loop all of the choices will be lower case when they get there. So, I don't have to compare the q and
+capital q. If the choice is not in that, they will
+print the choices of question mark. That is an invalid option return none. Let's try that and see what happens. Choose one of the following options. I'll choose t, that's an invalid option. I'll choose 3, that's an invalid option. But if I choose capital Q,
+that works just fine. Even though capital Q is not on this list, capital Q gets change to
+lowercase before we look. That is the first
+iteration of this program. We're going to grow this program bigger. Let's take a look at it. We just have a bunch of stubs, And we only have one main loop,
+that function is written, and a second function that
+gathers the menu choices. And we start this by having this
+special statement at the end. It tells Python where to
+start executing the program, it says starts executing at the main loop,
+if this is the main program. The first stub that we are going to
+flash in, right before function form, is show phones, the reason for
+that is and if we did delete, we would know whether
+something was deleted. If we did new we would know whether
+something new was done, with show phones we can see whether these other things
+are working when we write them. Let me run this one, just a moment and
+show you what it does. Nothing else really works. Show. Now the way we're doing this is,
+I've going to ask something to show. So I create a list of phones here. There are two phones Jerry Seinfeld’s
+number and Cosmo Kramer his number. Each phone is a two element list
+consisting of name and number. The name position is zero
+the phone position is one and I’m going to use name position and
+phone position as zero and one to refer to this side so I don’t
+get confused as to what I'm looking at. Then has to be a header for
+this name and phone number. And so, I create a header as
+though it were another phone. Now, here's the show phones function. First of all,
+I'm going to show phone the header, the first ones black, I’ll show you
+what this black is about later. Then I am going to step
+through the phones. For ever phone in phones,
+I’m going to show phone and I’m going to send this index,
+so there numbered 1,2,3,4,5. Start the index off at one, after I show a phone I'm going to
+bump the index up by one and I'm going to pass to show phone not
+only the phone itself but the index. And I'm not going to show
+the individual phone in this function, I'm going to have another
+function that will do that. And then at the end I'm
+going to skip a line so that there's a little space
+after the list of phones. Here's how we show an individual phone. We pass the phone which is remember
+a list with two things in it, the name and the phone number. And we send the index. We have a string. The index is going to
+occupy three spaces and it's going to be right to just to fact. The names is going to occupy 20 spaces and
+it's going to be a left justify. The phone number is going to occupy 16
+spaces and it'll be right justified. We're going to use that output string and
+we're going to format it so that index goes into
+the zero element position. Phone name goes into the one position and phone number goes into the third position. And there it is, index,
+name, phone number. That's all there is to it. You've got show phones,
+which is going to send the header, it's going to step through the list of
+phones, and send show phone, each phone. And the show phones are going to
+be formatted and printed. Up here we did create these things and
+that's to get us by right now. Ultimately, we'll set the phones
+list to the empty list. Now let's replace some more of
+these stubs with real functions. Let's start by creating a new phone. First, let me show you what
+this version will run like. They are the ones that we've built in, and here's a new one,
+enter the data for the new phone. George Costanza. 2128351419. Now we show, and there's George. Now we can delete something too. Well, which one do you want to delete? We'll delete George. Now he's gone. That's what's new in this version. First, let's start with
+how you create a phone. When you create a phone, it's going to
+print into the data for a new phone. There it is. Then you gotta use an input
+to get the new name. You're going to input to
+get a new phone number. Then you're going to build the sub-list,
+name and phone number, and then you're going to pend it onto the
+phones list and then you'll skip a line. That's all there is to it. Enter the name, enter the number, build a phone sub-list,
+pend it to the phones list. Remember the phones list. Here starts with Jerry Seinfeld and
+Cosmo Kramer. Now, let's look at delete. That's a little bit more complex. Now down in the main loop,
+when you choose delete, it's going to ask which item do you want
+to delete and reprint which one it is for the time being and
+then we'll try to delete that one. Here's the delete function. First of all, we check to see
+if there's a proper menu choice. At the time we did this deletion,
+there were only three people in there. If I asked it to 17, it couldn't do it. So we are going to check to see if
+that's a legitimate menu choice. Also if you typed in a letter or something
+like that, we want to fill to that out. So, we're going to write a routine that'll check to
+see if that is a proper menu choice. And if it's not, we're just going to
+return without deleting the phone. If it is a proper menu choice,
+I want to change to it an integer. And then I'm going to delete one of them. Now remember, we count these one,
+two, three, four, five. Those are the phone lines. But, Python counts zero, one, two, three. So, what we have to do is
+reduce that by one and then we delete that item
+from the phone's list. And then we'll print
+that we've deleted it. Now let’s take a look at this
+proper_menu_choice business. We pass this which onto that
+proper_menu_choice option. Now remember which came from
+an input statement so it’s a string. Now we going to have to
+convert it to a number. So first of all, we're going to need to
+check to see if there’s digits in it. If it has something in
+it which is not a digit then which.isdigit will return false. So not is digit would be true,
+and we have a print, this which needs to be a number
+of a phone, and return false. If it returns false to delete phone, then not false would be true and it
+would return without deleting the phone. So the first thing that happens is
+we check to see if it's a number. And if it is a number,
+we'll convert it to an integer. Now, there's another problem. It could be a negative number. We could have three phones and
+it be the number 217. We check to see whether this negative, whether it's a bigger number
+than there are phones. If so, we'll print that it needs
+to be the number of a home. And then we'll return false so that delete_phone will
+not attempt to delete it. Now if it passes this test, that it's
+a number, it converts to a number and it’s a number that’s within the proper
+range, then we are going to consider it an acceptable number to delete and
+will return true. So to summarize, delete_phones will
+be passed which phone to delete. It will check to see
+if that’s a number and if it’s a number within the proper range. If it is it will convert
+it to an integer and it will delete that particular
+phone from the phone list.

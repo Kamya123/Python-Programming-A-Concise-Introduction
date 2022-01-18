@@ -1,0 +1,81 @@
+Let's look at a couple of ways of making
+long strings that won't fit on one line in the editor. In both of these cases you
+have a string on each line, that can be two or more lines. In this first method you tie
+them together by putting a plus sign at the end of a line and a back
+slash to connect it to the next line. In the second method you put
+a parentheses at the beginning and an end parentheses at
+the end to tie them together. In both cases you wind
+up with one long string. Sometimes you need a list of numbers. We're going to import
+the Python library random and use it to generate a list
+of random numbers. Call the function makeRandom and
+it generates ten random numbers. Just take a look at that function. First of all, we're following
+our usual basic loop pattern. We're going to create
+a list here that's empty. We're going to step
+through a loop ten times. We're going to generate a random
+number between 1 and 100, a random integer, and
+we're going to append it to that list. And then afterwards,
+we're going to return this list. Now, normally we've been printing these
+out but returning this has the effect of assigning a value to makeRandom that can
+be used by other functions and programs. As you can see, it works virtually the same as printing
+it out from the iPython window. Now what I want to do is show
+how we make use of this. So we're going to have a function
+called call_make_random. It will call this function and
+it will, this is the call right here, it will make the random number which is
+returned and assigned to this variable. And then we're going to
+print that variable. Call_make_random, and it prints out the list of
+random numbers is this. So you see, our function returned
+a value and that value was a set, set equal to this variable and
+then we printed this variable out. Sometimes we don't want a different
+set of random numbers each time. We want to generate the same
+numbers over and over again. This is particularly useful when
+you're debugging a program. You don't want to be surprised by
+a different set of numbers and have your program work differently. We can do this by setting a random
+seed to some particular number, and then it will generate the same
+random numbers every time. Here's a function called make_same_random
+that will set the seed to 17. We run it again. We get the same numbers. Now, we have a function named
+call_make_random that will call the random function and
+get a set of integers, print them, and then it'll call the function again and get
+another set of integers and print that. And you'll see that they're
+the same ones every time. I want you to write a function that
+will generate random real numbers. You'll use random.random which returns
+a random number between zero and one instead of rand_int
+which returns an integer. Here is what mine looks like. make_random_real runs and it generates a list of
+ten random real numbers. Now let me show you my solution. We'll create an empty list,
+then we go through a loop ten times, we generate a random number between zero
+and one and we append it to the list, and then we return that value. Now I want you to modify your
+solution to use a random seed. Use 17 as your random seed. In my solution I did this and I ran
+it twice, and I get the same numbers. Here is that solution. The only real difference is
+having this random seed there. Now, let's look at sorting lists. Here's a number list
+that we can work with. And what we've done is we've printed
+the number list, there it is, and we sorted the number list and
+then we printed it again. As you can see, the number list is
+permantly changed and is now in order. Let me restore this number list. In the past, we had this function sorted. It was a sorted list but
+it's not permanent. It printed it out in order all right,
+but nonetheless, it's still in the original order. Now let's create a list of letters. Make out the list produces
+a list of letters. Let's look at how that works. We import the random function. Here are the complete list
+of English alphabet letters. We set a random seed so
+that it always comes out to be the same. Then we have a basic loop. We set alpha list equal to a blank list,
+and then we step through
+this loop ten times and we choose a random letter
+out of the alphabet and then append it onto that alpha list. And then we return that alpha list. Now I want to have a list that's
+equal to that alpha list, and so I'm going to execute this. This says run alpha list and return
+the value and set it equal to alpha list. You can see I just did that. This is the same thing. I just wanted to show you
+how to generate a random list of any arbitrary size of letters. Now let's sort them. This prints the alpha list. Then this sorts the alpha list. And then this prints the alpha list again. And you can see that it got sorted. Now here's an alpha list that has
+a mixture of upper and lower case letters. If we try the same thing with it,
+look what happens. Here is the list unchanged,
+then it sorted and then it printed out sorted. But all of the capital letters
+precede all the lowercase letters. Here's a capital D for
+example which precedes a lowercase b. That's not what we
+typically want to happen, but we can change the sort
+function very slightly and we can tell it to use as its key
+the string changed to lowercase. Let's start the list all over again,
+and now, let's sort that. Here's the list as we originally had it. And here's the sorted list right here. And notice that the sorted list has a,
+b, d, d, e. It's in alphabetical order
+regardless of capitalization. Let's create a list of strings. Sort that.
+Worked out just fine but everything's lowercase. Let's have the same string as
+a mixture of upper and lower case. Now when we sort it,
+all the words with capital letters precede the ones with lowercase letters. Let's restore the list. Now we can use key equals
+string lower which changes all the characters to
+lowercase before it sorts. And this is what we get. This is more like what we expect. Here's the original and
+here's the sorted one. The sorted one is in alphabetical order
+regardless of the case of the letter.

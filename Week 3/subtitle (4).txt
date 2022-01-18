@@ -1,0 +1,27 @@
+The purpose of this video is to show
+you how to run Python programs. Here's a very simple Python program. In fact, it is so simple we can run it
+in our IPython console like we used to. As you can see it prints hello,
+World and that's all. Most Python programs you
+cannot run this way. You cannot run them in IPython console. So let me show you how to do that. First of all,
+I'm going to shrink Spyder to half window. I'm going to go to Spotlight, and
+I'm going to type in terminal. And that brings up a terminal window. The next thing that I have to do is to
+go to the current working directory. I highlight it, type Cmd+C. Then I go back over here to the terminal. And I type cd space Cmd+V,
+to paste it into the command. And then I press Return and I'm there. You can check that you're there by
+typing pwd, print working directory, and you can see it. You can make sure that hello, the program
+that we're going to run, is in there. By typing, ls hello*.py, that'll print all Python
+programs that begin in hello. For those of you that had to create
+an environment you need to change that environment right now. So you type source activate and the name of your Python three environment. Mine is named python36, yours is
+probably named something different. For those of you that didn't have
+to create an environment for Python three you don't do this step. Now we type python hello.py and
+run the program. And there you see it ran hello, World. Previously we had typed our
+work into the Editor and we would type changes to our program. And then we'd run them down
+here in the IPython console. We're going to change that slightly. We'll still type our work into the Editor,
+but when we run it we're going to
+run it over in the terminal. Let me show you how to do that. I'm going to make
+a change to this program. Print Goodbye. I save the change, that's critical. Then I go over here and I can press up arrow to call back
+that last command and run it. And you can see that goodbye
+is now being printed. Now for the rest of this course we're
+going to write an occasional Python program. And we'll have to run it this way. I have an older version of
+Spyder that provides me with a terminal right down in this area. I'm going to use that for
+the rest of the course. You may or may not be able to do that. I'm using an older version to
+record the rest of the video so that I have that convenience.

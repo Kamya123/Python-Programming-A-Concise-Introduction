@@ -1,0 +1,14 @@
+Now let's do another example of a function
+using a loop to step through a list. Notice that we have a list called
+newEngland that has the states of newEngland, Maine,
+New Hampshire, Vermont and so on. And we have a function for_state, and
+it will step through this last slis, and for each state in slis,
+it'll print the state. Now let's see this run. Note that instead of using slis,
+we're giving it the actual list, newEngland,
+and there they are. In this case, we stepped through the items on the list
+one at a time, and printed them. Now, what you need to write is a simple
+function that will print a list. Here's some lists to test it out on. Here's my run of my solution, press return when you have finished
+your solution and I will show you mine. Here is the function print list,
+for each item in the list, just simply print the item. This will step through
+the list one item at a time, and then that will print the item. That's all there is to it,
+notice that it works on any kind of list.

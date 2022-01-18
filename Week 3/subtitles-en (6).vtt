@@ -1,0 +1,997 @@
+WEBVTT
+
+1
+00:00:11.147 --> 00:00:15.350
+Now let's look at a particular
+kind of a file called a CSV file.
+
+2
+00:00:15.350 --> 00:00:18.640
+CSV stands for comma separated value file.
+
+3
+00:00:18.640 --> 00:00:20.762
+Let me give you a couple of examples.
+
+4
+00:00:27.152 --> 00:00:30.863
+And this is a column basically for
+name and
+
+5
+00:00:30.863 --> 00:00:35.251
+a column for phone number,
+separated by comma.
+
+6
+00:00:35.251 --> 00:00:39.344
+In this case,
+
+7
+00:00:39.344 --> 00:00:43.990
+there's a column for
+the day of the week and
+
+8
+00:00:43.990 --> 00:00:48.720
+then a column for the meat on the menu and
+a column for each separate food.
+
+9
+00:00:52.860 --> 00:00:56.710
+Let's go out to the file explorer and
+look at these.
+
+10
+00:00:56.710 --> 00:01:03.460
+There's menu And there's a column for
+each of the foods.
+
+11
+00:01:14.999 --> 00:01:18.263
+CSV files can be read by lots
+of different applications and
+
+12
+00:01:18.263 --> 00:01:22.270
+they're often used To transfer data
+from one application to another.
+
+13
+00:01:27.348 --> 00:01:29.628
+Now let's see how to read these files.
+
+14
+00:01:32.671 --> 00:01:35.902
+I'll show you a program run first.
+
+15
+00:01:44.159 --> 00:01:50.020
+Notice that this first row, George and
+his phone number, were read in to a list.
+
+16
+00:01:52.400 --> 00:01:55.020
+Jackson and his phone number
+were read in to another list,
+
+17
+00:01:56.310 --> 00:01:59.410
+each row of a CSV file
+is read into a list.
+
+18
+00:01:59.410 --> 00:02:01.520
+Let's see how it looks.
+
+19
+00:02:02.970 --> 00:02:03.710
+Here's our program.
+
+20
+00:02:05.750 --> 00:02:09.940
+We import this library CSV so
+we can read and write with it.
+
+21
+00:02:09.940 --> 00:02:13.890
+We open the file in the usual way,
+
+22
+00:02:13.890 --> 00:02:20.270
+we close it in the usual way and
+what's different is this loop.
+
+23
+00:02:20.270 --> 00:02:27.310
+Instead of saying for every row in f,
+we say for every row in csv.reader(f).
+
+24
+00:02:27.310 --> 00:02:31.260
+So that we have the CSV
+library read everything in and
+
+25
+00:02:31.260 --> 00:02:36.090
+separates it into the columns,
+in effect and then we print the row.
+
+26
+00:02:36.090 --> 00:02:39.980
+No, CSV reader will return
+a role as a list, so
+
+27
+00:02:39.980 --> 00:02:43.450
+when we print that row,
+it will print as a list.
+
+28
+00:02:47.090 --> 00:02:53.754
+Next, let's look and another
+
+29
+00:02:53.754 --> 00:03:00.155
+application.
+
+30
+00:03:00.155 --> 00:03:08.854
+In this case, what we're doing
+is we're reading each row,
+
+31
+00:03:08.854 --> 00:03:14.110
+and adding it into a bigger list.
+
+32
+00:03:14.110 --> 00:03:15.810
+Now, remember, each row is a list.
+
+33
+00:03:15.810 --> 00:03:18.970
+So, here's what one row.
+
+34
+00:03:18.970 --> 00:03:23.090
+Here's another row and here's another
+row but they're all in this bigger list.
+
+35
+00:03:24.860 --> 00:03:25.860
+Let's see how we do that.
+
+36
+00:03:27.570 --> 00:03:30.180
+First of all,
+we're going to import to CSD library.
+
+37
+00:03:31.480 --> 00:03:33.670
+We're going to open
+the file in the usual way.
+
+38
+00:03:33.670 --> 00:03:36.270
+We're going to close it in the usual way.
+
+39
+00:03:36.270 --> 00:03:39.400
+Now we've got one of our standard loops.
+
+40
+00:03:42.260 --> 00:03:47.610
+We'll start off by initializing
+an empty list, which we'll call data.
+
+41
+00:03:48.825 --> 00:03:55.495
+Then for every row that the csv
+reader returns from the file,
+
+42
+00:03:56.575 --> 00:04:00.455
+we're going to append that row onto data.
+
+43
+00:04:01.855 --> 00:04:06.135
+So we'll just loop through until
+we read all of the file in and
+
+44
+00:04:06.135 --> 00:04:12.770
+stick each row into data as a sublist
+of the bigger list of data.
+
+45
+00:04:14.240 --> 00:04:17.832
+Then when we get through,
+we'll just print the data list.
+
+46
+00:04:23.155 --> 00:04:24.324
+Now I want you to try an exercise.
+
+47
+00:04:30.192 --> 00:04:32.870
+I want you to convert
+read_csv_file to read_csv_file2.
+
+48
+00:04:32.870 --> 00:04:39.640
+Actually, I've got that copied down as
+
+49
+00:04:39.640 --> 00:04:46.415
+a starter file here, so that you
+print each row without the bracket.
+
+50
+00:04:46.415 --> 00:04:53.650
+CSV file puts a bracket around everything
+because it reads in the rows as
+
+51
+00:04:53.650 --> 00:04:59.110
+lists and we don't always want
+them to be displayed as lists.
+
+52
+00:04:59.110 --> 00:05:05.720
+So I want you to modify this so that it
+prints without the brackets basically.
+
+53
+00:05:06.960 --> 00:05:09.900
+You're going to open
+the file in the usual way.
+
+54
+00:05:09.900 --> 00:05:11.930
+You're going to close
+the file in the usual way.
+
+55
+00:05:11.930 --> 00:05:19.180
+You're going to read it in, in the usual
+way but now you gotta write code.
+
+56
+00:05:19.180 --> 00:05:22.400
+So instead of it printing
+the whole row as a list,
+
+57
+00:05:22.400 --> 00:05:25.900
+I want you to print each item in the list.
+
+58
+00:05:25.900 --> 00:05:30.550
+Now of course, that means that you have to
+know how many items are in the row so that
+
+59
+00:05:30.550 --> 00:05:35.020
+you can refer to them as row of whatever,
+row of whatever, row of whatever.
+
+60
+00:05:35.020 --> 00:05:40.417
+Let me give you my solution, And
+
+61
+00:05:40.417 --> 00:05:45.480
+then you write yours,
+so here's my solution.
+
+62
+00:05:45.480 --> 00:05:46.916
+Let me talk about it for just a second.
+
+63
+00:06:00.637 --> 00:06:03.772
+There's a column for the author's name,
+and then a comma, and
+
+64
+00:06:03.772 --> 00:06:05.060
+then there's a comment.
+
+65
+00:06:06.060 --> 00:06:10.430
+A column for
+the book name then a comma and
+
+66
+00:06:10.430 --> 00:06:14.260
+then a column that tells you
+what kind of book it is.
+
+67
+00:06:14.260 --> 00:06:18.320
+And notice that the authors
+name has a comma in it but
+
+68
+00:06:18.320 --> 00:06:20.780
+the comma's used to separate the columns.
+
+69
+00:06:20.780 --> 00:06:25.440
+So this author has to have his
+whole name enclosed in quotes.
+
+70
+00:06:25.440 --> 00:06:28.730
+The CSV reader takes care of that for you.
+
+71
+00:06:30.070 --> 00:06:36.000
+So you notice all the authors have a comma
+and so all the authors in enclosing quote.
+
+72
+00:06:36.000 --> 00:06:39.640
+CSV reader automatically does that so
+that there's no confusion.
+
+73
+00:06:41.570 --> 00:06:47.180
+When CSV reader reads something in it's
+going to read it into a list and so
+
+74
+00:06:47.180 --> 00:06:54.800
+you have to know how to access each part
+of the list in order to print it out.
+
+75
+00:06:54.800 --> 00:06:57.082
+How do you do that?
+
+76
+00:07:00.932 --> 00:07:02.099
+Here is my solution.
+
+77
+00:07:05.598 --> 00:07:12.270
+Read CSV file to a file name,
+of course I have to import CSV library.
+
+78
+00:07:12.270 --> 00:07:15.960
+I open the file and
+I close the file and for
+
+79
+00:07:15.960 --> 00:07:21.300
+every row in the CSV reader,
+I've got to print the data in that row.
+
+80
+00:07:21.300 --> 00:07:24.970
+Well, I print the author is row of Item 0.
+
+81
+00:07:24.970 --> 00:07:30.600
+The name of the book is row of Item 1 and
+
+82
+00:07:30.600 --> 00:07:37.960
+the type of book it is is row of Item 2.
+
+83
+00:07:37.960 --> 00:07:41.960
+Here's another example of
+writing to the CSV file.
+
+84
+00:07:41.960 --> 00:07:44.649
+In this case we have
+a list of rows in the and
+
+85
+00:07:44.649 --> 00:07:46.771
+we want to write them out to the CSV file.
+
+86
+00:07:46.771 --> 00:07:49.201
+Let's run it first and
+then let's look at how the code works.
+
+87
+00:08:11.966 --> 00:08:16.466
+Okay, so
+we wrote this list out to holidays.csv and
+
+88
+00:08:16.466 --> 00:08:21.184
+then I've retyped it and
+we see that it is right there.
+
+89
+00:08:21.184 --> 00:08:26.713
+Let's run it in Excel and
+
+90
+00:08:26.713 --> 00:08:31.722
+see what Excel shows.
+
+91
+00:08:40.947 --> 00:08:43.070
+So these are some US holidays.
+
+92
+00:08:44.480 --> 00:08:48.250
+This day, Martin Luther King Day,
+that's a Federal holiday.
+
+93
+00:08:48.250 --> 00:08:51.730
+This day is Groundhog Day,
+that's an observance.
+
+94
+00:08:56.549 --> 00:08:59.029
+And here is the program [INAUDIBLE] and
+
+95
+00:08:59.029 --> 00:09:02.230
+of course we're going to
+import the library CSV.
+
+96
+00:09:02.230 --> 00:09:06.975
+We're ultimately going to open a file,
+and we're going to open it for
+
+97
+00:09:06.975 --> 00:09:10.975
+write and we're going to set
+the new line equal to blank.
+
+98
+00:09:10.975 --> 00:09:14.725
+That's because we don't
+want to double space.
+
+99
+00:09:14.725 --> 00:09:17.005
+Every time we write out there,
+it'll do a complete line.
+
+100
+00:09:17.005 --> 00:09:20.735
+If we don't have new line equal to blank,
+
+101
+00:09:20.735 --> 00:09:25.460
+there will be a new line there and
+it'll skip two lines.
+
+102
+00:09:25.460 --> 00:09:31.880
+One for the right and one for
+the new line at the end of the right.
+
+103
+00:09:31.880 --> 00:09:37.050
+Item in the list l,
+we're going to use CSV writer
+
+104
+00:09:37.050 --> 00:09:41.910
+on the file handle f to write
+the row consisting of item.
+
+105
+00:09:43.450 --> 00:09:47.250
+Okay, so
+here is the list where we're writing.
+
+106
+00:09:47.250 --> 00:09:53.030
+The first row will be date,
+name, and notes.
+
+107
+00:09:53.030 --> 00:09:57.350
+The next row will have the date,
+Martin Luther King Day,
+
+108
+00:09:57.350 --> 00:10:00.595
+federal holiday, and so on down the road.
+
+109
+00:10:06.349 --> 00:10:09.424
+Now, let's write a modification of this.
+
+110
+00:10:14.573 --> 00:10:22.110
+This modification will be to take the data
+from the keyboard and write it into file.
+
+111
+00:10:23.500 --> 00:10:29.390
+Let me run mine first, and
+then we'll talk about it.
+
+112
+00:10:29.390 --> 00:10:31.476
+Okay, here is a run of my program.
+
+113
+00:10:31.476 --> 00:10:36.333
+Friend's name,
+
+114
+00:10:36.333 --> 00:10:40.546
+Elaine Bends.
+
+115
+00:10:40.546 --> 00:10:45.712
+Number (212)
+
+116
+00:10:45.712 --> 00:10:51.523
+431-1414,
+
+117
+00:10:51.523 --> 00:10:57.657
+Jerry Seinfeld 212
+
+118
+00:10:57.657 --> 00:11:03.474
+555-1345.
+
+119
+00:11:09.563 --> 00:11:11.862
+Cosmo Kramer.
+
+120
+00:11:11.862 --> 00:11:16.590
+212-18 4 1,
+
+121
+00:11:16.590 --> 00:11:19.745
+2, 3, 4.
+
+122
+00:11:19.745 --> 00:11:26.160
+Now the way this works is if you press
+Return and not enter a name, it stops.
+
+123
+00:11:27.320 --> 00:11:30.740
+Now we can see what the value looks like
+
+124
+00:11:35.570 --> 00:11:38.070
+see if it has those three names and
+numbers in it.
+
+125
+00:11:39.490 --> 00:11:42.765
+I'm here to do somewhat the same thing.
+
+126
+00:11:42.765 --> 00:11:48.053
+I've got an example run here, That
+
+127
+00:11:48.053 --> 00:11:54.410
+you can model everything after and
+here's a starter function.
+
+128
+00:11:54.410 --> 00:11:59.970
+What you've got to do is
+open the CSV file and
+
+129
+00:11:59.970 --> 00:12:06.670
+ultimately close it and there's a loop,
+says while true, that's always true.
+
+130
+00:12:06.670 --> 00:12:09.170
+So this loop will loop forever.
+
+131
+00:12:09.170 --> 00:12:10.710
+I'll show you how we end it, later.
+
+132
+00:12:12.350 --> 00:12:14.330
+What we do is, we'll ask for the name.
+
+133
+00:12:14.330 --> 00:12:16.560
+Enter friend's name, press return to end.
+
+134
+00:12:16.560 --> 00:12:19.560
+Okay, so we enter friend's name.
+
+135
+00:12:19.560 --> 00:12:22.120
+If the name is blank,
+
+136
+00:12:22.120 --> 00:12:25.800
+we'll break out of the loop and
+that's what happened at the end.
+
+137
+00:12:25.800 --> 00:12:26.810
+I pressed return here.
+
+138
+00:12:26.810 --> 00:12:28.930
+There wasn't any name, and so
+it just ended the program.
+
+139
+00:12:32.700 --> 00:12:38.170
+And then if the name wasn't blank
+it'll go into this next statement and
+
+140
+00:12:38.170 --> 00:12:39.420
+it will print the name.
+
+141
+00:12:39.420 --> 00:12:46.377
+So up here I entered Elaine Benes
+
+142
+00:12:46.377 --> 00:12:51.625
+and her phone number, and it printed
+out Elaine Benes's phone number.
+
+143
+00:12:51.625 --> 00:12:58.920
+Now, this particular version doesn't
+Input the phone number printed out.
+
+144
+00:12:58.920 --> 00:13:03.260
+That's what you're going to add so
+the first thing you should do is
+
+145
+00:13:03.260 --> 00:13:08.236
+to make sure this runs for you and
+then you add lines to build that row.
+
+146
+00:13:08.236 --> 00:13:13.345
+You got the name you got
+the phone number to build
+
+147
+00:13:13.345 --> 00:13:19.474
+a row you got to put the name and
+phone number into a list and
+
+148
+00:13:19.474 --> 00:13:24.871
+then you need to write that
+list using CSD Writer.
+
+149
+00:13:29.013 --> 00:13:32.390
+That's all you have to do,
+it's fairly short.
+
+150
+00:13:32.390 --> 00:13:40.680
+Now, let me show you what My solution
+was I imported the CSV file,
+
+151
+00:13:41.780 --> 00:13:47.070
+I used CSV file as a handle and opened
+the CSV file name that was given to me.
+
+152
+00:13:47.070 --> 00:13:50.800
+I [INAUDIBLE] it from right I opened
+with a new line equal to blank so
+
+153
+00:13:50.800 --> 00:13:51.630
+it wouldn't double space.
+
+154
+00:13:52.780 --> 00:13:58.000
+Now while true, that was already there,
+next thing already is there,
+
+155
+00:13:58.000 --> 00:14:00.460
+if the next name is blank, you break.
+
+156
+00:14:00.460 --> 00:14:05.456
+Now, what we have to do, is get the next
+phone, and then we print the next name and
+
+157
+00:14:05.456 --> 00:14:06.203
+the phone.
+
+158
+00:14:08.218 --> 00:14:13.265
+Then, we've got to build the row,
+so, we'll have line = [],
+
+159
+00:14:13.265 --> 00:14:20.350
+we'll append to that line the next name,
+we'll append to that line the next phone.
+
+160
+00:14:20.350 --> 00:14:25.450
+And then we'll use csv.writer on
+this file handle to write the row.
+
+161
+00:14:27.030 --> 00:14:32.774
+So what you would do is
+have to add this row,
+
+162
+00:14:32.774 --> 00:14:39.330
+and this row, and
+all of this writing material.
+
+163
+00:14:44.337 --> 00:14:47.430
+Now let's do another example.
+
+164
+00:14:47.430 --> 00:14:51.830
+And what we're going to do is we're
+
+165
+00:14:51.830 --> 00:14:56.552
+going to read in CSV file and updated.
+
+166
+00:14:58.303 --> 00:15:01.219
+The particular one is
+fairly straightforward.
+
+167
+00:15:01.219 --> 00:15:03.792
+What we're going to do,
+let me run it first.
+
+168
+00:15:33.732 --> 00:15:37.845
+Now wait, let's see what that looks like.
+
+169
+00:15:37.845 --> 00:15:44.306
+It has a date and
+
+170
+00:15:44.306 --> 00:15:48.780
+a weight.
+
+171
+00:15:50.240 --> 00:15:54.550
+I want to do with this is to compute
+the average weight over that time period
+
+172
+00:15:57.370 --> 00:16:00.360
+and write that as the last
+
+173
+00:16:02.500 --> 00:16:06.340
+line of the new file.
+
+174
+00:16:07.400 --> 00:16:12.240
+So we're updating CSV We've got
+an old file name and a new file name.
+
+175
+00:16:12.240 --> 00:16:15.640
+We're going to import the CSV library.
+
+176
+00:16:17.830 --> 00:16:21.060
+We're going to open the old
+file name as the input file.
+
+177
+00:16:21.060 --> 00:16:26.260
+We're going to open the new
+name as the output file and
+
+178
+00:16:26.260 --> 00:16:27.760
+we're going to open it for right.
+
+179
+00:16:27.760 --> 00:16:29.280
+We're going to set new
+line equal to blank.
+
+180
+00:16:29.280 --> 00:16:30.770
+Here's what we have to do.
+
+181
+00:16:30.770 --> 00:16:34.390
+We have to add up all the weights and
+we have divide by the number of weights.
+
+182
+00:16:34.390 --> 00:16:38.090
+So, we've got to have two counters
+before we go into our loop.
+
+183
+00:16:38.090 --> 00:16:43.710
+W have to have a counter set to zero
+to count the number of items and
+
+184
+00:16:43.710 --> 00:16:46.160
+we have to set the total
+weight equal to zero.
+
+185
+00:16:46.160 --> 00:16:51.220
+We'll add into those weights, all
+
+186
+00:16:51.220 --> 00:16:55.170
+of that gets done In this loop.
+
+187
+00:16:55.170 --> 00:17:00.780
+And then when we get out of the loop,
+we've got the total weight added up,
+
+188
+00:17:00.780 --> 00:17:04.750
+and we divide it by the count,
+and that gives us the average.
+
+189
+00:17:04.750 --> 00:17:09.610
+And so we have a new row that
+says Average in the first column,
+
+190
+00:17:09.610 --> 00:17:15.220
+and this number that is
+the average in the second column.
+
+191
+00:17:15.220 --> 00:17:20.200
+Then, when you CSV write it to write it to
+the output file, we'll write just one row.
+
+192
+00:17:20.200 --> 00:17:23.160
+Namely, the row we just constructed.
+
+193
+00:17:23.160 --> 00:17:25.510
+Then we'll close both the files.
+
+194
+00:17:25.510 --> 00:17:30.770
+Now, let's look at the loop here,
+remember, count is 0.
+
+195
+00:17:30.770 --> 00:17:32.070
+Total weight is 0.
+
+196
+00:17:32.070 --> 00:17:36.491
+So for every row in CSV reader of.
+
+197
+00:17:36.491 --> 00:17:41.710
+So if we look at every row and
+we let the CSV reader bring the row in so
+
+198
+00:17:41.710 --> 00:17:45.930
+that it is broken up into
+the various columns, okay.
+
+199
+00:17:45.930 --> 00:17:52.140
+The zero position is going to be the date.
+
+200
+00:17:55.500 --> 00:17:57.340
+Notice the first row says date and weight,
+
+201
+00:17:57.340 --> 00:18:01.450
+we can't average those in,
+so, we have to check the row.
+
+202
+00:18:01.450 --> 00:18:05.900
+If it starts with the date
+If the item zero is date,
+
+203
+00:18:05.900 --> 00:18:11.800
+we're just going to skip it, okay?
+
+204
+00:18:11.800 --> 00:18:17.153
+So if the row is not date,
+then we're going to add one to the count,
+
+205
+00:18:17.153 --> 00:18:23.350
+we've got a new good row,
+we're going to add to the total weight.
+
+206
+00:18:23.350 --> 00:18:28.280
+The weight in the second column,
+which is item one.
+
+207
+00:18:28.280 --> 00:18:32.290
+But we've got to convert
+it to a real number so
+
+208
+00:18:32.290 --> 00:18:37.670
+that we can add it in
+because these are strings and
+
+209
+00:18:37.670 --> 00:18:46.260
+then we will write the row out
+to the new file unchanged.
+
+210
+00:18:47.320 --> 00:18:50.560
+So whether it says data or not,
+
+211
+00:18:50.560 --> 00:18:53.030
+we're going to write the row
+out to the new file.
+
+212
+00:18:54.780 --> 00:18:57.540
+If it doesn't say date,
+we're going to add one to the count and
+
+213
+00:18:57.540 --> 00:19:01.110
+we're going to add the weight
+to our total weight.
+
+214
+00:19:02.690 --> 00:19:06.758
+So when we get to the end, we've got
+the weight totaled up, we've got the count
+
+215
+00:19:06.758 --> 00:19:10.553
+counted, we can divide the cannon to
+the total weight to get the average.
+
+216
+00:19:10.553 --> 00:19:13.675
+And then we write the row out,
+that's all there is to it.

@@ -1,0 +1,29 @@
+Now let's look at
+Formatting Print Statements. Here's some variables
+that we'll work with, and here is a string we want to print. It'll have name, colon, and then we intend to put the name
+Teddy Roosevelt into that slot. And his age and his weight here. Here is an example. In the first one, we put his shortened version of
+his name Teddy in age and weight. So there's Teddy Roosevelt, age, weight. In the second one,
+we used a longer version of his name, and you see that it caused age and
+weight to move over. One of the things that we might
+typically want is to have these aligned a little bit better. Here's another formatting string. And in the 0 slot,
+we're allowing 26 spaces, in the 1 slot 4 spaces, and
+in the 2 slot 10 spaces. This is minimum number of spaces allowed. Also, this right arrow indicates
+right alignment within that space. Let's see what that looks like. So Teddy Roosevelt is right aligned
+within a space of 26 characters and the long version and the short version are both lined up
+one above another in a nice fashion. The ages are aligned up and
+the weights are aligned up. Now the weight is too many decimal places. So I'm going to change that a little bit. In this case we're going to say that
+the weight is going to have at least five spaces, two of which are to
+the right of the decimal. This is a floating point number. So here it is. At least five spaces two to
+the right of the decimal. It looks nicer. Now one of the things that we can
+do is use this string down here, this variable name instead
+of the actual string. It gives you the same result. And this is more compact. I want you to try some of this and
+get familiar with what is actually done. Here's a short string. What I've got here is a string that begins start bar bar and ends with bar bar end. So that you can see that this string got
+fitted into here and it is left justified. If we printed the number into that
+space the string is exactly the same. But we're sticking in the number. The number is right-aligned instead
+of left-aligned like the string. Here's an exercise I'd like you
+to do to become familiar with it. I want you to take a string S and a format statement like I just used. And try various things with it. Use 0 to just print the string
+with no formatting. If I press up arrow,
+I'll bring this back up. And I can put the 0 there, press Enter. That's what it does. Now you can up arrow it, and use :25. See what it does, so why don't you go down through this list and
+try all of these options. Here's what I get when I do it. Here are my solutions. Start zero end. Format s allow 25 spaces,
+here's 25 spaces right aligned, here's 25 spaces left aligned and
+here's 25 spaces centered

@@ -1,0 +1,80 @@
+Now we began learning Python. First, we'll start learning
+a little bit about Spyder, the integrated development
+environment that we're using. To start it, click on Start and go to this search window and
+type S-P-Y-D-E-R and you'll see Spyder, you can execute it. You can go to the spotlight on
+Macintosh and do the same thing. It'll take just a moment to load. And when it does load,
+you'll notice that it has several panes. Here's an editor pane. Here is the iPython console pane. This is were programs will be executed. And then there's a pane up here
+that has three different tabs. This is object inspector,
+this is a variable explorer, and this is a file explorer. For the time being,
+we'll only talk about file explorer. Up at the top you'll see the current
+working directory Now on my machine, using users, Bill as my name,
+document, PythonCoursera. If I go down here and type ls, this is a Unix command that works
+in IPython or PC and a Macintosh. It'll show that the current working
+director is the one shown up here. But I want to go to lesson one. So I'm going to click on that and now if I go down here and type LS,
+we're still in this directory. So I want to set this one as
+the current work directory. So I'm going to click right there. Now when I type LS, I've got the lesson one directory and
+there's a list of programs in it. They're the same as up here
+exercise one with lecture P1. Okay, now over here Spyder will always
+start out with a temporary file. I'm not interested in that file. If I get rid of it,
+it just keeps coming back, so I want to go over here and
+use my first program, start Python, then I'm going to click that away and
+I'm not going to [INAUDIBLE] Save it. Now the name of this
+file is startpython.py. Most Python programs will end in dot py. And I'll put the name of it right
+here after this pound sign so that I can keep track of the name of
+the file as it's stored on the disk. And notice several things about this. There's a line going across every now and
+then. Anything between the two
+lines is called a cell. This is an IPython feature. We can execute anything in one of these
+cells without executing the whole file. Now to make cell, we type pound,
+percent, sand and pound, percent, sand. Everything between these two is a cell. Now let's go over here and
+execute this first function. Write down function. I'm going to execute it by clicking
+anywhere inside this cell and I'm going to type control enter. PC our type Ctrl+Enter, but
+on a Macintosh I would type Cmd+Return, they're equivalent. Now that loaded everything in this cell into our iPython console,
+from where I can run it. And I run it by typing
+the name of the function. This function is a simple one. It just prints hello world. This is traditional in programming to have
+a simple program like this to begin with. Let's analyze the way this looks. We've got define function, got the name
+of the function we're defining, hello. And the line always ends in colon. Now, and a function always
+has a pair of parentheses. Later on we'll be putting arguments
+inside of these parentheses. Then we have four spaces, and then the Python command print. And the phrase to print in quotes,
+hello world. Everything that's indented
+under this function name will be part of the function. So once we get it over
+here in the Console, we can run it as often as we want. Here's another function. It's practically the same thing. Define, and we'll give it a new name. And we're going to print
+a different phrase. Again, we're going to have to go
+over here and type it, now watch. If I'm not careful and I start typing,
+I'm typing in the editor. And the editor window indicates
+that we typed into it by typing a asterisk that means
+the file needs to be saved. But I don't want to save it so I'm
+going to type Control+Z and that'll remove this typing that I've done and
+on Macintosh it would be Cmd Z. I've gotta be careful
+that I go over here and execute this thing from
+the iPython console. Notice the tab up here
+says iPython console Now, if we type one of these
+functions without loading it into iPython, it's just not known. So I've gotta go over here and
+type Ctrl+Enter or Cmd Return click down here and type outschool you got to
+type it right of course. Type up arrow and will repeat the last
+command and I can change it our school, this course here is actually good. Now, I want to warn you about various
+things that can go wrong fairly early so that you can fix them
+in case you get there. One thing is that you can write
+programs that won't ever stop. This one, called it forever
+because it will run forever. This is a while loop. While is true is true and it's always true, we're going to
+do nothing, we're going to pass. That's a simple loop. We'll talk about more about that later. And I'm going to load that loop in and
+I'm going to run it. Now, This function is running and
+running and running and I don't have any control on what's going
+on anymore and I need to when to stop it. The way to stop this is typing Ctrl C,
+holding the control key then pressing c. And you'll get a keyboard interrupt. Now the Macintosh, you type
+exactly the same thing, control c. Now, there's a possibility that you write
+a program that even that won't work. Let's bring this one up again. It will work on this one right. We're going to have
+another way to stop this. And another way to stop this is to
+make this console window go away we're going to click this close tab and
+it's gone. Now we'll need a new console
+window in order to keep going. And we go Console menu, and
+we Open an IPython console. Now we don't open a Python console, in this course we're only using IPython
+consoles because they're nicer. They have features that we need for this course that you would
+be using in data analysis. You may as well use the IPython console
+rather than writing extra code okay. Click on that it's connected to
+a kernel a kernel is a running copy of Python and now we have an IPython console. We don't have, however,
+are functions that we'd enter. We've got to execute them again,
+control enter, and load them in. And I'm messing up. All right, I'll type over here, Hello. And now we're back with
+a good copy of Python, with a good copy of iPython
+console without any problems. So what we did was we clicked
+here to close the tab, clicked over here on console, open an app right on console and
+then we've got a new one.

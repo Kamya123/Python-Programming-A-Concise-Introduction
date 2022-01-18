@@ -1,0 +1,656 @@
+WEBVTT
+
+1
+00:00:11.744 --> 00:00:13.860
+Now let's take up the if statement.
+
+2
+00:00:15.140 --> 00:00:19.249
+Here's an example function
+that uses the if statement.
+
+3
+00:00:25.349 --> 00:00:26.669
+And here's how it works.
+
+4
+00:00:28.406 --> 00:00:33.961
+I'm going to set x = 5, y = 0 and z = 0.
+
+5
+00:00:33.961 --> 00:00:35.850
+And then I'm going to test it.
+
+6
+00:00:35.850 --> 00:00:40.889
+I'm going to test if x is greater than 0,
+current x is positive.
+
+7
+00:00:40.889 --> 00:00:45.191
+If y is greater than 0,
+I'll print y is positive else,
+
+8
+00:00:45.191 --> 00:00:47.578
+I'll print y is not positive.
+
+9
+00:00:49.514 --> 00:00:52.602
+Let's see how that works.
+
+10
+00:00:59.237 --> 00:01:02.328
+So x is 5.
+
+11
+00:01:02.328 --> 00:01:04.733
+So when we get down to this statement,
+
+12
+00:01:04.733 --> 00:01:09.380
+we're really comparing 5 to
+greater than 0, which is true.
+
+13
+00:01:09.380 --> 00:01:11.630
+So, we'll print that x is positive.
+
+14
+00:01:11.630 --> 00:01:13.794
+And there you see it's done, okay?
+
+15
+00:01:13.794 --> 00:01:16.973
+If y is greater than 0,
+print y as positive else,
+
+16
+00:01:16.973 --> 00:01:19.037
+it'll print y as not positive.
+
+17
+00:01:19.037 --> 00:01:20.256
+But y is 0.
+
+18
+00:01:22.340 --> 00:01:27.290
+So, y greater than 0 is not true so,
+it will not print this.
+
+19
+00:01:27.290 --> 00:01:31.083
+It will print y is not positive
+instead and you see that is the case.
+
+20
+00:01:34.603 --> 00:01:38.490
+And then, you've got an else if statement.
+
+21
+00:01:38.490 --> 00:01:39.250
+Let's take z.
+
+22
+00:01:40.350 --> 00:01:42.730
+We'll test to see if z is greater than 0.
+
+23
+00:01:42.730 --> 00:01:45.960
+Well, that's not true, it is 0.
+
+24
+00:01:45.960 --> 00:01:48.753
+So we won't print z is positive.
+
+25
+00:01:51.201 --> 00:01:58.635
+Then we'll check if z is greater than 0,
+which it's not, else if.
+
+26
+00:01:58.635 --> 00:02:04.430
+That's what elif means, else if z is
+less than 0, we'll print z is negative.
+
+27
+00:02:04.430 --> 00:02:06.860
+Well, it's not negative either so
+that won't happen.
+
+28
+00:02:08.010 --> 00:02:11.590
+And else will take care of anything else.
+
+29
+00:02:13.740 --> 00:02:17.930
+It'll print z must be 0,
+and that's what it prints.
+
+30
+00:02:18.990 --> 00:02:23.894
+Okay, if we change the values of these,
+things would work differently.
+
+31
+00:02:25.943 --> 00:02:26.443
+Okay?
+
+32
+00:02:28.570 --> 00:02:32.280
+So you got if, notice the if statement.
+
+33
+00:02:32.280 --> 00:02:35.730
+There's a condition that you test
+to see whether it's true and
+
+34
+00:02:35.730 --> 00:02:37.300
+then it ends on a colon.
+
+35
+00:02:37.300 --> 00:02:40.585
+And then anything that's indented,
+
+36
+00:02:40.585 --> 00:02:44.789
+four spaces underneath that,
+get's executed if this is true.
+
+37
+00:02:46.600 --> 00:02:50.920
+In the case of this, here's another
+if statement, notice it end to colon.
+
+38
+00:02:50.920 --> 00:02:56.320
+This stuff that's indented,
+if this is true, will get executed.
+
+39
+00:02:56.320 --> 00:02:59.180
+Else, this gets executed.
+
+40
+00:02:59.180 --> 00:03:02.540
+And this got executed,
+notice else has a colon.
+
+41
+00:03:04.000 --> 00:03:08.871
+If z is greater than 0:
+print z is positive,
+
+42
+00:03:08.871 --> 00:03:13.613
+else if z less than 0,
+print z is negative,
+
+43
+00:03:13.613 --> 00:03:18.755
+notice the colon,
+else: print z is must be 0.
+
+44
+00:03:20.895 --> 00:03:24.440
+Now I want to talk about equal signs for
+just a minute.
+
+45
+00:03:24.440 --> 00:03:28.668
+Equal is an assignment, okay?
+
+46
+00:03:28.668 --> 00:03:32.227
+If I want to set x equal to 5,
+I set it this way.
+
+47
+00:03:32.227 --> 00:03:36.610
+If I want to test to see if x is
+equal to 5, I use double equals.
+
+48
+00:03:38.510 --> 00:03:41.360
+If I want to check to see
+if x is not equal to 5,
+
+49
+00:03:41.360 --> 00:03:43.962
+I put exclamation point equals.
+
+50
+00:03:45.050 --> 00:03:47.780
+So this is assignment.
+
+51
+00:03:47.780 --> 00:03:52.370
+This test for equality,
+this test test for not equals.
+
+52
+00:03:52.370 --> 00:03:53.963
+Here are some examples.
+
+53
+00:03:55.739 --> 00:03:59.716
+We give those x, y, and z values.
+
+54
+00:04:02.519 --> 00:04:09.370
+And then,
+we'll try them out on these statements.
+
+55
+00:04:09.370 --> 00:04:10.244
+Okay?
+
+56
+00:04:14.113 --> 00:04:19.886
+This statement says print x = y, okay?
+
+57
+00:04:19.886 --> 00:04:22.124
+So we test to see if x = y.
+
+58
+00:04:22.124 --> 00:04:24.495
+And that will either be true or false.
+
+59
+00:04:26.887 --> 00:04:31.320
+X is equal to y,
+is true so it prints true.
+
+60
+00:04:33.090 --> 00:04:35.170
+This has a value of true and
+it prints that.
+
+61
+00:04:36.840 --> 00:04:37.840
+Okay?
+
+62
+00:04:37.840 --> 00:04:42.285
+Print x is not equal to y,
+so we'll test for not equal.
+
+63
+00:04:42.285 --> 00:04:45.188
+Well, they are equal so this is false.
+
+64
+00:04:50.652 --> 00:04:54.900
+X is not equals to y is false and
+that's what it prints.
+
+65
+00:04:56.500 --> 00:05:00.825
+If x is equal to z,
+we'll text to see if x is equals to z.
+
+66
+00:05:00.825 --> 00:05:06.598
+Well, x is 5 and z is 6 so
+that's just not true that x is equal to z.
+
+67
+00:05:06.598 --> 00:05:11.995
+And x is equal to z since it's not true,
+it's false, okay?
+
+68
+00:05:11.995 --> 00:05:16.758
+The last one is we'll check to
+see if x is not equal to z.
+
+69
+00:05:19.088 --> 00:05:23.140
+And x is not equal to z,
+x is 5 and z is 6.
+
+70
+00:05:23.140 --> 00:05:28.389
+So x not equal to z is true,
+and that's what it prints.
+
+71
+00:05:30.070 --> 00:05:35.383
+Here's an example of a function that
+makes use of the double equals for
+
+72
+00:05:35.383 --> 00:05:41.250
+comparison, as well as the equals for
+assignment, and does a computation.
+
+73
+00:05:42.630 --> 00:05:46.830
+Here, let me run it first and
+then we'll talk about it.
+
+74
+00:05:48.010 --> 00:05:55.240
+This function, it completes
+the area of a square or a circle.
+
+75
+00:05:55.240 --> 00:05:59.688
+First of all, I've got to tell it
+whether we're talking about a circle or
+
+76
+00:05:59.688 --> 00:06:00.703
+square, okay?
+
+77
+00:06:00.703 --> 00:06:05.254
+If I tell it that we want
+the area of a circle,
+
+78
+00:06:05.254 --> 00:06:09.805
+then I give it the radius of the circle,
+5,
+
+79
+00:06:09.805 --> 00:06:14.497
+to say and
+it computes the area of the circle.
+
+80
+00:06:14.497 --> 00:06:19.659
+If we say that we're computing
+the area of a square and
+
+81
+00:06:19.659 --> 00:06:25.460
+I give it a 5,
+then it computes a different number.
+
+82
+00:06:25.460 --> 00:06:26.570
+Let's see how it does that.
+
+83
+00:06:28.290 --> 00:06:32.333
+Well, the definition of the function here,
+and
+
+84
+00:06:32.333 --> 00:06:37.558
+I use a variable type,
+which will be either circle or square and
+
+85
+00:06:37.558 --> 00:06:44.280
+I give either the radius if it's a circle
+or the length of a side if it's a square.
+
+86
+00:06:46.130 --> 00:06:48.340
+Now we have our usual documentation here.
+
+87
+00:06:49.850 --> 00:06:54.889
+Tells you how to run it,
+Now we compare type,
+
+88
+00:07:00.084 --> 00:07:01.588
+To circle.
+
+89
+00:07:01.588 --> 00:07:03.420
+Notice we used the double equal.
+
+90
+00:07:03.420 --> 00:07:09.060
+If type == "circle",
+then we'll do the following.
+
+91
+00:07:09.060 --> 00:07:10.347
+We'll do these two lines.
+
+92
+00:07:10.347 --> 00:07:16.785
+They're both indented the same
+under that if statement.
+
+93
+00:07:16.785 --> 00:07:22.914
+Else, if type == "square",
+then we'll do these two statements and
+
+94
+00:07:22.914 --> 00:07:28.041
+they're both indented four
+spaces underneath the else if.
+
+95
+00:07:28.041 --> 00:07:31.170
+Else will print.
+
+96
+00:07:31.170 --> 00:07:32.460
+I don't know that one.
+
+97
+00:07:32.460 --> 00:07:37.860
+Let's do an example of that,
+
+98
+00:07:37.860 --> 00:07:42.617
+area of a parallelogram,
+
+99
+00:07:45.128 --> 00:07:47.520
+4, okay?
+
+100
+00:07:49.702 --> 00:07:56.710
+So, and by the way,
+this unusual naming here is because type,
+
+101
+00:07:56.710 --> 00:08:02.940
+I wanted to use type here and
+type is a keyword in Python.
+
+102
+00:08:02.940 --> 00:08:06.660
+It's a word like print,
+that has a special meaning.
+
+103
+00:08:06.660 --> 00:08:10.145
+Or elif, that has a special meaning,
+or if that has a special meaning, or
+
+104
+00:08:10.145 --> 00:08:11.844
+else, that has a special meaning.
+
+105
+00:08:11.844 --> 00:08:16.387
+Type names, the type of the variable,
+
+106
+00:08:16.387 --> 00:08:23.555
+like I said if an integer, or
+a real number or a string, okay?
+
+107
+00:08:23.555 --> 00:08:31.931
+Now, so, I put an underscore right after
+that to make it not just the word type.
+
+108
+00:08:34.419 --> 00:08:37.539
+Just a little technical thing.
+
+109
+00:08:37.539 --> 00:08:42.212
+Now, lets check this, if type == "circle",
+
+110
+00:08:44.661 --> 00:08:50.060
+Notice we have the colon at
+the end of the equal, the if.
+
+111
+00:08:50.060 --> 00:08:51.710
+We have double equals here for
+
+112
+00:08:51.710 --> 00:08:55.840
+this is to check to see if they
+are equal that doesn't do an assignment.
+
+113
+00:08:55.840 --> 00:08:57.760
+But here is an equal using assignment.
+
+114
+00:08:57.760 --> 00:09:04.950
+We're going to set area equal to pi and
+x squared.
+
+115
+00:09:04.950 --> 00:09:07.613
+That's the formula for
+the area of a circle.
+
+116
+00:09:07.613 --> 00:09:13.010
+And then we'll print the area,
+elif type happens to equal to square.
+
+117
+00:09:13.010 --> 00:09:17.060
+And again, we use the double equals for
+comparison.
+
+118
+00:09:18.210 --> 00:09:23.210
+And we'll compute the area
+of a square if that is true.
+
+119
+00:09:23.210 --> 00:09:27.023
+And that's the side spread.
+
+120
+00:09:27.023 --> 00:09:31.440
+And we'll print that area,
+else we'll just print we don't know.
+
+121
+00:09:31.440 --> 00:09:38.980
+We could expand this by repeating elifs,
+and add additional types of figures.
+
+122
+00:09:40.690 --> 00:09:43.380
+Now, I want you to write a function
+that makes use of the if statement.
+
+123
+00:09:44.530 --> 00:09:48.799
+I want you to compute
+the absolute value of a number.
+
+124
+00:09:48.799 --> 00:09:55.820
+Here is my run of the program
+on these test data.
+
+125
+00:09:56.980 --> 00:09:59.320
+Absolute value of 5 is 5.
+
+126
+00:09:59.320 --> 00:10:03.440
+The absolute value of -5 is 5.
+
+127
+00:10:03.440 --> 00:10:08.030
+The absolute value of 0 is 0.
+
+128
+00:10:08.030 --> 00:10:12.090
+So there are three runs of my program.
+
+129
+00:10:12.090 --> 00:10:14.944
+I think you should write the program and
+
+130
+00:10:14.944 --> 00:10:19.194
+make the print out look like mine,
+the absolute value of.
+
+131
+00:10:19.194 --> 00:10:21.970
+Write that string, and
+then give the number.
+
+132
+00:10:21.970 --> 00:10:27.082
+And then is, and then compute the absolute
+value of that number and print that.
+
+133
+00:10:29.277 --> 00:10:31.890
+Remember, that if
+the number is less than 0,
+
+134
+00:10:31.890 --> 00:10:35.043
+you just multiply by minus 1
+to make it greater than 0.
+
+135
+00:10:38.122 --> 00:10:45.143
+When you finish writing your program,
+press, The continue button to continue.
+
+136
+00:10:52.537 --> 00:10:53.751
+Here's my solution.
+
+137
+00:10:55.729 --> 00:11:00.440
+Definition, absolute value, number, colon.
+
+138
+00:11:00.440 --> 00:11:02.965
+If the number is greater than or
+equal to 0,
+
+139
+00:11:02.965 --> 00:11:05.983
+then the absolute value of
+the number is the number.
+
+140
+00:11:07.847 --> 00:11:11.862
+Else, the absolute value of the number
+is the negative of the number.
+
+141
+00:11:13.893 --> 00:11:15.678
+Or minus one times the number.
+
+142
+00:11:15.678 --> 00:11:20.289
+And then,
+once you've computed the absolute value,
+
+143
+00:11:20.289 --> 00:11:25.311
+then you could print the absolute
+value of num is abs_num.

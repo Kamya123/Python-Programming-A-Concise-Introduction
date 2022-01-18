@@ -1,0 +1,310 @@
+WEBVTT
+
+1
+00:00:09.800 --> 00:00:13.810
+So far we've been writing and
+running functions.
+
+2
+00:00:13.810 --> 00:00:18.600
+Now we want to start writing and
+running whole programs.
+
+3
+00:00:18.600 --> 00:00:24.320
+And on a Macintosh and on Linux machines,
+Python 2 comes installed.
+
+4
+00:00:24.320 --> 00:00:28.794
+Your machine may attempt to
+run our programs in Python 2,
+
+5
+00:00:28.794 --> 00:00:32.915
+which doesn't work, or
+it may run them in Python 3.
+
+6
+00:00:32.915 --> 00:00:36.430
+We're going to determine that right now.
+
+7
+00:00:36.430 --> 00:00:44.270
+Go up to spotlight, type in terminal,
+press enter, run it.
+
+8
+00:00:44.270 --> 00:00:47.180
+Type Python, press return.
+
+9
+00:00:49.120 --> 00:00:53.847
+On my machine it returns
+Python 3 point something, so
+
+10
+00:00:53.847 --> 00:00:59.007
+mine is going to run Python 3
+automatically, yours may too.
+
+11
+00:00:59.007 --> 00:01:03.066
+If it does, skip to the next video, you
+don't need to create an environment for
+
+12
+00:01:03.066 --> 00:01:03.680
+Python 3.
+
+13
+00:01:03.680 --> 00:01:07.700
+If yours displays Python 2 point
+something, then you need to
+
+14
+00:01:07.700 --> 00:01:11.520
+create an environment, and I'm going to
+show you how to do that very quick.
+
+15
+00:01:11.520 --> 00:01:13.540
+Okay, let me exit from Python.
+
+16
+00:01:15.040 --> 00:01:19.688
+First, let me show you how to determine
+what version of Python you're using.
+
+17
+00:01:23.218 --> 00:01:27.926
+Okay, if I bring Spyder up,
+mine says 3.6.2,
+
+18
+00:01:27.926 --> 00:01:32.280
+you should do that and
+write down the version.
+
+19
+00:01:32.280 --> 00:01:34.903
+If you installed an environment for
+that version,
+
+20
+00:01:34.903 --> 00:01:38.014
+I think it will go a little bit
+faster than if you install it for
+
+21
+00:01:38.014 --> 00:01:41.187
+a different version,
+although it'll work perfectly fine.
+
+22
+00:01:41.187 --> 00:01:46.030
+Once you've done that, Go back to this.
+
+23
+00:01:46.030 --> 00:01:50.713
+Now I will show you how to determine if
+you have an environments already on your
+
+24
+00:01:50.713 --> 00:01:51.370
+machine.
+
+25
+00:01:52.610 --> 00:01:56.913
+You use conda info --envs.
+
+26
+00:01:59.581 --> 00:02:03.000
+And you can see that I have
+four environments out there.
+
+27
+00:02:03.000 --> 00:02:06.550
+Yours will probably have just one,
+and that'll be root.
+
+28
+00:02:06.550 --> 00:02:09.950
+Now we're going to create
+other environments.
+
+29
+00:02:11.000 --> 00:02:18.680
+And this is the command that you use
+to do that, conda create -n for name.
+
+30
+00:02:18.680 --> 00:02:20.790
+And then I'm going to create
+one called python362,
+
+31
+00:02:20.790 --> 00:02:26.850
+because I'm going to create
+an environment for running Python 3.6.2,
+
+32
+00:02:26.850 --> 00:02:32.470
+which is a version that I
+had when I looked at Spyder.
+
+33
+00:02:32.470 --> 00:02:36.743
+You've written it down, you can- Do
+
+34
+00:02:36.743 --> 00:02:42.210
+whatever version your machine has.
+
+35
+00:02:42.210 --> 00:02:49.653
+Now this name is can be anything,
+you can name it whatever you want.
+
+36
+00:02:49.653 --> 00:02:54.743
+And you put for Python version,
+whatever version you got, and Spyder.
+
+37
+00:02:57.021 --> 00:03:01.095
+Once you've entered that, press return and
+
+38
+00:03:01.095 --> 00:03:06.786
+it'll start fetching what it
+needs to from the web to install.
+
+39
+00:03:08.651 --> 00:03:12.228
+When it gets through, it'll ask you
+whether you want to proceed and
+
+40
+00:03:12.228 --> 00:03:12.930
+you say yes.
+
+41
+00:03:14.210 --> 00:03:20.500
+And now it's installing that additional
+software and creating an environment.
+
+42
+00:03:21.500 --> 00:03:23.330
+This may take a few minutes.
+
+43
+00:03:23.330 --> 00:03:26.636
+Yours may display additional
+lines as it does,
+
+44
+00:03:26.636 --> 00:03:29.372
+depending on how much work it has to do.
+
+45
+00:03:33.035 --> 00:03:35.980
+Now it tells you to
+activate that environment.
+
+46
+00:03:37.280 --> 00:03:41.160
+You type source activate and
+then the name for your environment.
+
+47
+00:03:41.160 --> 00:03:48.770
+So I'm going to activate mine,
+source activate- python362.
+
+48
+00:03:48.770 --> 00:03:53.453
+The name for
+yours will likely be different from mine.
+
+49
+00:03:56.851 --> 00:03:59.942
+Now I can test that in a couple of ways.
+
+50
+00:03:59.942 --> 00:04:05.987
+One, is I can run Python, and it should
+display Python 3 something really,
+
+51
+00:04:05.987 --> 00:04:12.500
+it's not critical on what it does just as
+long as it displays the Python 3 version.
+
+52
+00:04:14.391 --> 00:04:19.621
+Also, I can say conda info --envs,
+
+53
+00:04:19.621 --> 00:04:25.770
+and I can see the environments out there.
+
+54
+00:04:25.770 --> 00:04:28.860
+This asterisk shows
+which one is activated.
+
+55
+00:04:28.860 --> 00:04:33.936
+Since we use source activate
+to activate Python362,
+
+56
+00:04:33.936 --> 00:04:37.610
+it's the one that's activated.
+
+57
+00:04:37.610 --> 00:04:42.080
+Now, let's repeat the process
+that you'll need to use
+
+58
+00:04:42.080 --> 00:04:44.050
+in order to activate this environment.
+
+59
+00:04:44.050 --> 00:04:51.036
+First of all, I'm going to close terminal,
+and we just going to quit it altogether.
+
+60
+00:04:51.036 --> 00:04:52.540
+I'm going to we go up here,
+
+61
+00:04:52.540 --> 00:04:57.420
+I'm going to type in terminal,
+Press enter, and I bring it up.
+
+62
+00:04:59.110 --> 00:05:03.878
+Now, I'm going to type source activate
+
+63
+00:05:03.878 --> 00:05:09.100
+python362, and now I'm ready to go.
+
+64
+00:05:10.350 --> 00:05:15.340
+So now go onto the next video and
+we'll show you how to run Python programs.
+
+65
+00:05:15.340 --> 00:05:19.530
+Remember, you need to bring up
+a terminal and type source activate and
+
+66
+00:05:19.530 --> 00:05:24.960
+the name of your Python 3 environment,
+and then you're ready to go.

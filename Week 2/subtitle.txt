@@ -1,0 +1,67 @@
+Python has lists. Let's see how they work. The empty list, Is just empty bracket. A list with one element, let's say
+a letter a in it, would look like this. A list with two letters
+would look like this. A list can have numbers. Like this. A list can have strings. Like that. And it can have all of these things. Hello, 3.14. A number. Let's define a list of letters. Let me just execute this line, and it gives us this list named lis. And it's equal to the letters a through f. If I type lis,
+you'll see that I get that list back. Let's talk about how the items
+of a list are accessed. This is item zero, this is item one,
+this is item two, and so on. And notice that Python starts
+with item zero, not item one. So zero, one, two, three, four, five. That's the way these are accessed. Let's take a look at how
+to pull an element out. If you want item 0, you type lis[0]. If you want item 1, you type lis[1]. If you want to know how
+many items are in the list, you can use the len function,
+the length function. And it'll tell you that there's six,
+there's three, four, five, six. Now, what if we wanted to get
+the last element of the list? Well you might be tempted to ask for
+the following. lis[6]. But let's see if that would work. This is item zero, one,
+two, three, four, five so the last item of this list is item five,
+not item six. So this won't work, but
+I can say item five and get it. That worked just fine. There is a simpler way and
+that is that I can type -1. That says count from
+the end of the list so this is first one at the end of the list. And the next to the last
+one will be lis[-2]. And so on, let me repeat the list. Now I might want to get items two through four back into it this way. Now what that will tell me is,
+items two and three but it will not print four. Zero, one, two so item two is a c,
+so it'll start there and it'll do three but
+it will not do four, which is the e. Let's see that, zero, one, two. There's the two. Three, there's the third one. Four is not there. I want to get everything from item
+three on to the end, I can do that. And not put an ending spot. I want to get everything up to, but
+not including three, I can do that. Zero, one, two, here's three. It's d, it's not there. If I want to add onto the end of the list,
+I can use a method of lis called append and I can, in this case,
+add g on in this manner. You see g is now added on
+to the end of the list. We can ask whether
+something is in the list. So I'm going to ask if d in lis. I can make that assertion. Python will tell me whether that's true or
+false. It is true. If I make the assertion that x is in
+the list, it'll tell me that it's false. So I can tell whether something is in
+the list by doing an assertion and see whether I get true or false. Now let's look at a function
+that makes use of the list. First of all I'll go over here and
+click on, in that cell, and execute it. Who_is_there is the name of the function. And I'll give it a simple
+list with just a lion in it. And it prints, there's a lion. There's no horse in the list and
+the list has one item. Let's take a look at the code If bear's
+in the list, it'll do something. But there's no bear in the list. There's only lions in the list. If lion is in the list,
+then it'll print there's a lion. And it does that. If daisy or iris is in the list,
+it'll print there are flowers, but they're not there. If they both are there,
+it'll print something. If donkey's in the list,
+it'll print there's a donkey, but that's not in the list. And now let's look at
+this horse not in list. The assertion horse not in list is true, only a lion's in the list,
+so this is true. If this is true, then it'll print there's
+no horse in the list, and it does. The last line prints, the list has a length of list items,
+and there's one item. Let's execute it, and let's say iris. Put that in the list. Now again the lion's in the list,
+so it prints there is a lion. But now, it'll see this line,
+if daisy in list or iris in list then, there are flowers. Well, iris is in the list so
+it'll print flowers. If it had seen daisy it
+would of print flowers too. Either or. There's still no horse in the list so it
+prints that, and now there are two items. Let's put daisy in the list. Now the lion is still there. So it's still checks the other line and
+prints there is a lion. If daisy is in the list, and it is,
+it'll print there are flowers. It would've also printed it
+because iris is also in the list. Since daisy is in the list and iris is in the list, there are at
+least two flowers and it prints that. There's still no horse in the list, and now the length of
+the list has three items. If we put horse in the list. Then there is no horse
+disappears because horse not in the list is no longer true,
+horse is in fact in the list. So this if statement is not true, so we'll
+not write there is no horse in the list. You should make up some lists and
+pass them to this function and make sure you understand
+how all those ifs work. Let me point out that we didn't have to
+type the list directly into the argument. Let me find a few lists here,
+I'll show what I mean. We've got a list called alion,
+we got another list ld, has a lion and a daisy in it, and lbf,
+that list has a lion, a bear, and an iris. So we could have passed these into
+the function who_is_there(lbf) and it would say, there is a bear,
+there is a lion, and there are flowers,
+because iris is there. There's no horse in the list,
+and the list has three items.

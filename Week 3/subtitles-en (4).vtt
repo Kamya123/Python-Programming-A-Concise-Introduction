@@ -1,0 +1,231 @@
+WEBVTT
+
+1
+00:00:09.440 --> 00:00:13.279
+The purpose of this video is to show
+you how to run Python programs.
+
+2
+00:00:15.313 --> 00:00:18.330
+Here's a very simple Python program.
+
+3
+00:00:18.330 --> 00:00:23.927
+In fact, it is so simple we can run it
+in our IPython console like we used to.
+
+4
+00:00:23.927 --> 00:00:27.788
+As you can see it prints hello,
+World and that's all.
+
+5
+00:00:27.788 --> 00:00:31.164
+Most Python programs you
+cannot run this way.
+
+6
+00:00:31.164 --> 00:00:34.449
+You cannot run them in IPython console.
+
+7
+00:00:34.449 --> 00:00:36.636
+So let me show you how to do that.
+
+8
+00:00:39.453 --> 00:00:43.476
+First of all,
+I'm going to shrink Spyder to half window.
+
+9
+00:00:43.476 --> 00:00:48.405
+I'm going to go to Spotlight, and
+I'm going to type in terminal.
+
+10
+00:00:51.917 --> 00:00:55.603
+And that brings up a terminal window.
+
+11
+00:00:55.603 --> 00:01:02.564
+The next thing that I have to do is to
+go to the current working directory.
+
+12
+00:01:02.564 --> 00:01:06.661
+I highlight it, type Cmd+C.
+
+13
+00:01:11.317 --> 00:01:13.412
+Then I go back over here to the terminal.
+
+14
+00:01:13.412 --> 00:01:19.423
+And I type cd space Cmd+V,
+to paste it into the command.
+
+15
+00:01:19.423 --> 00:01:22.252
+And then I press Return and I'm there.
+
+16
+00:01:22.252 --> 00:01:26.576
+You can check that you're there by
+typing pwd, print working directory, and
+
+17
+00:01:26.576 --> 00:01:27.436
+you can see it.
+
+18
+00:01:27.436 --> 00:01:32.546
+You can make sure that hello, the program
+that we're going to run, is in there.
+
+19
+00:01:32.546 --> 00:01:36.621
+By typing, ls hello*.py,
+
+20
+00:01:36.621 --> 00:01:44.446
+that'll print all Python
+programs that begin in hello.
+
+21
+00:01:44.446 --> 00:01:48.447
+For those of you that had to create
+an environment you need to change
+
+22
+00:01:48.447 --> 00:01:50.239
+that environment right now.
+
+23
+00:01:50.239 --> 00:01:53.479
+So you type source activate and
+
+24
+00:01:53.479 --> 00:01:58.093
+the name of your Python three environment.
+
+25
+00:01:58.093 --> 00:02:02.121
+Mine is named python36, yours is
+probably named something different.
+
+26
+00:02:02.121 --> 00:02:06.876
+For those of you that didn't have
+to create an environment for
+
+27
+00:02:06.876 --> 00:02:09.807
+Python three you don't do this step.
+
+28
+00:02:09.807 --> 00:02:14.529
+Now we type python hello.py and
+run the program.
+
+29
+00:02:14.529 --> 00:02:16.873
+And there you see it ran hello, World.
+
+30
+00:02:16.873 --> 00:02:20.504
+Previously we had typed our
+work into the Editor and
+
+31
+00:02:20.504 --> 00:02:23.213
+we would type changes to our program.
+
+32
+00:02:23.213 --> 00:02:27.421
+And then we'd run them down
+here in the IPython console.
+
+33
+00:02:27.421 --> 00:02:28.414
+We're going to change that slightly.
+
+34
+00:02:28.414 --> 00:02:32.706
+We'll still type our work into the Editor,
+but
+
+35
+00:02:32.706 --> 00:02:37.867
+when we run it we're going to
+run it over in the terminal.
+
+36
+00:02:37.867 --> 00:02:40.125
+Let me show you how to do that.
+
+37
+00:02:40.125 --> 00:02:42.366
+I'm going to make
+a change to this program.
+
+38
+00:02:42.366 --> 00:02:45.534
+Print Goodbye.
+
+39
+00:02:47.939 --> 00:02:50.998
+I save the change, that's critical.
+
+40
+00:02:50.998 --> 00:02:52.576
+Then I go over here and
+
+41
+00:02:52.576 --> 00:02:57.063
+I can press up arrow to call back
+that last command and run it.
+
+42
+00:02:57.063 --> 00:03:01.574
+And you can see that goodbye
+is now being printed.
+
+43
+00:03:01.574 --> 00:03:05.243
+Now for the rest of this course we're
+going to write an occasional Python
+
+44
+00:03:05.243 --> 00:03:05.792
+program.
+
+45
+00:03:05.792 --> 00:03:07.770
+And we'll have to run it this way.
+
+46
+00:03:07.770 --> 00:03:12.598
+I have an older version of
+Spyder that provides me
+
+47
+00:03:12.598 --> 00:03:16.611
+with a terminal right down in this area.
+
+48
+00:03:16.611 --> 00:03:20.254
+I'm going to use that for
+the rest of the course.
+
+49
+00:03:20.254 --> 00:03:23.191
+You may or may not be able to do that.
+
+50
+00:03:23.191 --> 00:03:26.643
+I'm using an older version to
+record the rest of the video so
+
+51
+00:03:26.643 --> 00:03:28.449
+that I have that convenience.

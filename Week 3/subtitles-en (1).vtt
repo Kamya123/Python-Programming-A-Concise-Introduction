@@ -1,0 +1,365 @@
+WEBVTT
+
+1
+00:00:12.480 --> 00:00:17.218
+Before we go on, I want to talk about
+a few operating system commands and
+
+2
+00:00:17.218 --> 00:00:21.010
+how you can execute those
+from within IPython console.
+
+3
+00:00:22.330 --> 00:00:29.596
+First of all,
+I'm going to get a fresh IPython console.
+
+4
+00:00:29.596 --> 00:00:34.623
+Now if you want to see
+what directory you're in,
+
+5
+00:00:34.623 --> 00:00:41.546
+on a Linux machine or a Mac,
+you can type PWD, and I'll show you.
+
+6
+00:00:41.546 --> 00:00:44.282
+That won't work on a PC, but
+
+7
+00:00:44.282 --> 00:00:49.870
+it will work in an IPython console
+window on a PC, or on a Mac.
+
+8
+00:00:49.870 --> 00:00:53.337
+If you want to see what files are there,
+you can type LS on a Mac, or
+
+9
+00:00:53.337 --> 00:00:54.950
+a Linux machine to see them.
+
+10
+00:00:56.440 --> 00:01:01.700
+That won't work on a PC, but
+it will work in an IPython console window.
+
+11
+00:01:04.460 --> 00:01:09.612
+On a PC if you want to
+see what your working
+
+12
+00:01:09.612 --> 00:01:13.734
+directory is you have to type "cd
+
+13
+00:01:14.775 --> 00:01:19.025
+Now if you type an exclamation
+point in front of a command,
+
+14
+00:01:19.025 --> 00:01:25.360
+IPython will pass that on down to the
+underlying operating system so this works.
+
+15
+00:01:25.360 --> 00:01:27.370
+It won't work within the IPython window.
+
+16
+00:01:28.790 --> 00:01:33.020
+But it will work if I pass it
+down to the PC operating system.
+
+17
+00:01:34.430 --> 00:01:40.850
+And in a PC if you want to see what
+files are there you type DIR in iPython
+
+18
+00:01:40.850 --> 00:01:46.120
+console when I have to type an exclamation
+point in front of pass it all down.
+
+19
+00:01:46.120 --> 00:01:49.610
+Anyway, there are a couple
+of really basic things
+
+20
+00:01:50.640 --> 00:01:55.040
+that you should know about iPython and
+about the operating systems.
+
+21
+00:01:56.220 --> 00:01:59.720
+Now, we want to move on to reading and
+writing files.
+
+22
+00:02:02.860 --> 00:02:06.740
+Now, before starting that,
+I want to get a fresh console window.
+
+23
+00:02:06.740 --> 00:02:10.560
+I click that on a way,
+open an act IPython console here.
+
+24
+00:02:12.240 --> 00:02:16.470
+Now, let's talk about reading and
+writing text files.
+
+25
+00:02:18.180 --> 00:02:19.070
+Here's an example.
+
+26
+00:02:22.370 --> 00:02:25.503
+I have a function, I have a textile
+up here, humptydumpty.text and
+
+27
+00:02:25.503 --> 00:02:26.480
+I'm going to print it.
+
+28
+00:02:34.980 --> 00:02:38.380
+There it is,
+now let's see how it did that.
+
+29
+00:02:38.380 --> 00:02:41.703
+First of all,
+we passed it the file name, and
+
+30
+00:02:41.703 --> 00:02:47.400
+we use the file name to open a file and
+we assign the handle to that file infile.
+
+31
+00:02:47.400 --> 00:02:51.060
+We'll refer to this infile
+throughout the rest of the program,
+
+32
+00:02:51.060 --> 00:02:56.120
+where the line an infile, we'll print
+that line and then we'll close the file.
+
+33
+00:02:56.120 --> 00:03:02.000
+The reason we have and equal blank is
+that the text files have a new line at
+
+34
+00:03:02.000 --> 00:03:08.060
+the end of every line, print has
+a new line at the end of every line.
+
+35
+00:03:08.060 --> 00:03:13.040
+If we had two new lines it would be double
+space so we get rid of the one with print.
+
+36
+00:03:15.070 --> 00:03:17.140
+Now let's do another example.
+
+37
+00:03:18.412 --> 00:03:22.500
+We will copy one file to another so you
+can see how reading and writing differ.
+
+38
+00:03:23.860 --> 00:03:25.740
+Right, I'm going to copy
+
+39
+00:03:34.459 --> 00:03:42.903
+humptydumpty.txt to xhumpty.txt.
+
+40
+00:03:44.702 --> 00:03:48.754
+Okay, and you didn't see anything happened
+here because all that had happened
+
+41
+00:03:48.754 --> 00:03:49.555
+right up here.
+
+42
+00:03:49.555 --> 00:03:52.822
+There is humpty, there he is,
+it's been copied.
+
+43
+00:03:54.222 --> 00:03:55.372
+Now lets see how we did that.
+
+44
+00:03:57.160 --> 00:04:01.201
+We had two files, an in-file name and
+an out-file name.
+
+45
+00:04:03.150 --> 00:04:04.490
+Here they are.
+
+46
+00:04:04.490 --> 00:04:05.050
+Okay.
+
+47
+00:04:05.050 --> 00:04:09.137
+We open the in-file name and
+we all sign the handle in-file,
+
+48
+00:04:09.137 --> 00:04:14.250
+we'll open the out-file name and
+we'll assign a handle out file.
+
+49
+00:04:14.250 --> 00:04:17.990
+This time we are going to write to it so
+we'll use this option W.
+
+50
+00:04:19.570 --> 00:04:24.552
+For every line in that in file,
+we are going to write that line,
+
+51
+00:04:24.552 --> 00:04:29.260
+and use an out file dot write,
+that's a method of out file.
+
+52
+00:04:29.260 --> 00:04:31.869
+Then we are going to close both files.
+
+53
+00:04:33.000 --> 00:04:33.920
+It's just simple as that.
+
+54
+00:04:35.960 --> 00:04:41.571
+Now I want you to write
+a function that we'll
+
+55
+00:04:41.571 --> 00:04:47.952
+take data from the screen and
+write it into a file.
+
+56
+00:04:47.952 --> 00:04:49.329
+Let me show you mine.
+
+57
+00:04:53.331 --> 00:04:59.253
+I've given you a starter
+file,write_to_file(filename,
+
+58
+00:04:59.253 --> 00:05:01.895
+myname, myage, major).
+
+59
+00:05:01.895 --> 00:05:06.825
+And this one almost would
+write the name out.
+
+60
+00:05:06.825 --> 00:05:08.255
+So we got to open the file first.
+
+61
+00:05:08.255 --> 00:05:11.735
+You're going to have to close
+the file eventually, okay.
+
+62
+00:05:12.815 --> 00:05:16.255
+These lines tell you what
+you need to do where.
+
+63
+00:05:16.255 --> 00:05:21.065
+This is mine, this is where I ran it,
+and this is where I displayed it.
+
+64
+00:05:23.010 --> 00:05:26.410
+My name is George, my age is 21,
+I major in physics.
+
+65
+00:05:26.410 --> 00:05:28.420
+You should do something like that.
+
+66
+00:05:36.910 --> 00:05:37.763
+Here's my solution.
+
+67
+00:05:37.763 --> 00:05:42.548
+I'll open that file name for write, and
+
+68
+00:05:42.548 --> 00:05:46.925
+I'll sign out-file as the handle.
+
+69
+00:05:47.945 --> 00:05:51.719
+Out-file.write, my name is,
+then I'll stick in my name and
+
+70
+00:05:51.719 --> 00:05:53.155
+then a character turn.
+
+71
+00:05:55.495 --> 00:05:57.875
+Out-file.write my name is.
+
+72
+00:05:57.875 --> 00:06:02.260
+I'm going to convert my age,
+which is a number to a string so
+
+73
+00:06:02.260 --> 00:06:08.080
+that I can take this string and tack on
+this string and then tack on this string.
+
+74
+00:06:11.950 --> 00:06:16.237
+Then I'm going to pick out found.right and
+but
+
+75
+00:06:16.237 --> 00:06:20.120
+my major I am majoring in but the major.
+
+76
+00:06:20.120 --> 00:06:25.100
+So and the only thing that you
+may have overlooked as you're
+
+77
+00:06:25.100 --> 00:06:30.090
+sticking in that that conversion and
+number trust string.
+
+78
+00:06:30.090 --> 00:06:32.290
+And then of course you close the file.

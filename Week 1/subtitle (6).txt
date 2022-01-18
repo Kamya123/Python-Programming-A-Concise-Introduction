@@ -1,0 +1,74 @@
+Here's another example of a function
+converting Fahrenheit temperature to Celsius temperature. Let's try it out. First, it asks me to enter a Fahrenheit temperature and I'll enter 212 degrees. And it converted that to 100 degrees
+Celsius, so it seems to work fine. So this would seem to be a good program. Now let's take a look at
+the writing of the program, and then we'll talk more about it. First of all, I have the documentation and
+I say that it's bad. It does seem to work. Let's go on and look at it and
+then we'll see why that I say it's bad. The temperature is being
+input from the keyboard. So it says enter a Fahrenheit temperature. There it is, and we enter 212 degrees. We converted that, now this is input as
+a string, anything typed in is a string. So we take that string and
+we convert it to an integer. Can't do arithmetic on it if we don't
+convert it from a string to an integer, to a number, anyway. Okay, then we compute a new
+temperature using the formula for converting Fahrenheit temperatures
+to Celsius temperatures. So now we've got the temperature and
+the new temperature. Now we'll print the Fahrenheit
+temperature, temp, is equivalent to, and we're going to
+keep from going to a new line and then we're going to
+print a new temperature, the computed Celsius temperature,
+degrees Celsius, and so it worked. Okay, now why, if it works,
+do I say that that's bad? Well, let's run it again and
+I'm going to show you what can go wrong. I'm going to press up arrow,
+that repeats the previous command. Okay, and this time,
+instead of typing 212 degrees, I'm just going to simply press Enter. Well, this is an example
+of a Python error. It says here, invalid literal for
+int with base 10 and it gives the thing that I entered. I just pressed Return,
+I didn't give it a real number. And so when it tried to convert it,
+a blank to an integer, it couldn't. And so the program crashed right there. You can see that the statement that it
+crashed on is temp = int(temp_str). So this is not a very robust program. If somebody tried to run the program, they might get this error message and they would be puzzled
+as to what's going on. Let's try to improve the program and
+here's fahrenheit_to_celsius2. Now what we want to do, is we want to
+check to see if they entered something. So after entering the Fahrenheit
+temperature, I'm going to say, if temp_string and
+then I'm going to do all of those things. Now temp_string is considered to be true if it's anything
+other than just empty, okay? This is programming
+technicality kind of things. Let's run it and
+see if it corrects the problem. Now I'm going to press up arrow, Two or
+three times until I get back to this one. I'm going to change it from
+fahrenheit_to_celsius1 to fahrenheit_to_celsius2, save
+me some typing. Okay, enter a Fahrenheit temperature. 212 works, okay, and we'll run it again. And this time,
+I'm going to just press Enter. Now it didn't crash. So we made an improvement on this thing. We could have put an else
+statement in here and say you have to enter a temperature. But this one has problems too. Let's try 212.0. We know it works on 212, 212.0. The problem is that
+212.0 is not an integer. It's considered a real number
+because it's got the 0.0 there. Or in programmer talk, it's a float. They usually say float
+rather than an integer. Here's an improvement on this thing
+that's going to correct that. Here is fahrenheit_to_celsius3. We're going to start off the same way. We're going to input the temperature
+string, and we're going to check, if the temperature string is not empty,
+then we're going to do the rest, okay? But the rest considered is
+we're going to check to see if the temperature string has a digit. Now we haven't seen this before,
+but strings have various methods. These are things that strings can do for
+themselves. And they're separated from the name
+of the string by a period. So isdigit is like a function for that string, it's called a method, okay? If it's entirely digits, it's okay. But if it has a period in it,
+then it's not all digits. So if everything is a digit is true,
+then we're going to say, we're going to apply the integer,
+convert the string to integer. Ad then we're going to compute
+the new temperature and we're going to print out the result. Else we'll print out that you
+must enter a number, say goodbye. Let's see how that one works. Again, we'll press up arrow
+till we get to this and we'll convert it to 3 and we'll enter the temperature, works fine. Try it again, up arrow. Press blank, works fine. We tested to see if we actually
+entered a string, and since we didn't, we didn't go through the code
+that's inside of this if statement. Now let's try it again. And this time, we'll enter 212.0. We got inside here, and we check to
+see if it's a digit and it wasn't, everything wasn't a digit,
+the period's there. Else prints, you must enter a number, bye. Here's a function that
+uses integer division. It converts inches to feet. Let's run it. 77 inches is 6 feet, 5 inches. Now let's look and see how that's done. First of all, we have to have the 6 feet, so we use integer division,
+divide by 12 and we look and see how many times 12
+will go into the number of inches. In this case we use 77. And it went 6 times. Now 6 12s are 72, so
+there are inches left over. When we have these extra inches,
+we compute them by taking the total inches given minus 12 times
+the number of feet we computed. 12 times 6 was 72, so when we subtracted 72
+from 77 we got 5 inches. So we printed inches is 77 inches is, 6 feet and the extra inches, 5 inches. So we used integer divide right here. But we got the remainder
+by multiplying by 12 and subtracting it from the total inches. What I want you to do is to rewrite
+this function so that it uses the remainder function percent to
+compute the inches that are left over. Remember how that works. If we take 19 and divide by 5, we get a remainder of 4. Now I want you to modify this function,
+call it inches_to_feet2, and replace the middle line with
+one that computes the extra inches by using the remainder function,
+the percent operator. Press the Continue button when you
+are finished writing your function. Here's my solution. The only difference is
+right here in this line. You take inches % 12, that gives us the remainder on dividing by 12, that's the extra inches.

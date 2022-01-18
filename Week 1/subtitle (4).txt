@@ -1,0 +1,37 @@
+Now let's write a function that
+takes input from the keyboard and also combines strings. Here's an example. This function is supposed to get
+my name and then write it out. All right, so I write name. My name is Bill, that was first name. My last names Boyd and
+it will write out your name is Bill Boyd. So, let's look and see how that worked. First of all you know we still
+have the documentation and I can see that at the top. I type in Ctrl+I, okay. I'm using an input statement
+to get from the keyboard. Now I have to have a prompt, so that the person will know
+what I want to be entered. So, the input statement
+has a prompt as a string, enter your first name, you see it here. And then I typed in Bill and
+it stored that in this variable called fname, F for first name. And then I ask for
+another input, and I ask for last name this time is started into
+a variable called lname for last name. Now I make the full name
+by taking the first name concatenate or adding the string. A little blank to separate
+the first name from the last name. And then I'll add on the last name. So, I've got the full name
+put together here and then I'm going to print it together,
+print it out. Print "your name is" and
+we'll print the full name. So, what's new here is with
+the input statement and with concatenation, or adding of strings. Now, you try it. I want you to take the same function and
+add a couple of features to it. In addition to getting your name, putting
+it together into a string and printing it. I want you to get the city
+that you live in and the state or nation that you live in. And write that out in the fashion
+that I'm showing you here. Here is my run. Enter your first name, Bill. Enter your last name, Boyd. Enter the city you live in, Middletown. Enter the state you live in,
+my case Connecticut, okay? Your name is Bill Boyd. This is from the previous program example. And now, you live in Middletown, and I've
+put that Middletown down, Connecticut. And I made a longer string that has
+Middletown, Connecticut in it, but they're separated by a comma. So, when you go and try and write this
+your self and then when you get through, press the continuation button and
+I'll show you my example. Okay, here is my solution. I have documentation, if you like to see that. Input first and last name,
+this documentation is useful and that gives you instructions
+to some work to do. Input first and last name. Combine to one string and print. Also input the city and state and print. Now, this is exactly what we
+had before that's not new but here's an input statement
+that gets the city. Here's an input statement
+that gets the state and then I combine the city and
+state into one string. And that string has got comma space in the
+middle of it to separate city from state. Now I can print your name is and print you live in, city, state. And you don't want to put
+this input statement after you've printed out the name. Because then over here it wouldn't
+have collected all the data and then written out the result. It would have connected part of the data
+or written out part of the result, collected some more data and
+written out the rest of the result. That just wouldn't be coot.

@@ -1,0 +1,5 @@
+Let's do one more thing. Let's run this as a standalone
+program from a command line. First of all, let me create this file. You want to go back up to the beginning,
+The final version. I'm going to copy it. Create a new file. I'm going to paste it. I'm going to save it. Now we see the new file, phones.py. Now let's create command prompt, and we'll run python phones.py, then show. There's our data. I add a new one. Elaine Denis phone number, (212) 123-4321. Show that. She's there. We will quit. Now let's run it again. So there's Elaine Denis,
+we're going to delete her. She's gone, quit. And that's our program. It will run from the command line. And we'll update this csv
+file that contains our data.

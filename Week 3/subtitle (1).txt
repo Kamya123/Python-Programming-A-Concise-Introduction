@@ -1,0 +1,53 @@
+Before we go on, I want to talk about
+a few operating system commands and how you can execute those
+from within IPython console. First of all,
+I'm going to get a fresh IPython console. Now if you want to see
+what directory you're in, on a Linux machine or a Mac,
+you can type PWD, and I'll show you. That won't work on a PC, but it will work in an IPython console
+window on a PC, or on a Mac. If you want to see what files are there,
+you can type LS on a Mac, or a Linux machine to see them. That won't work on a PC, but
+it will work in an IPython console window. On a PC if you want to
+see what your working directory is you have to type "cd Now if you type an exclamation
+point in front of a command, IPython will pass that on down to the
+underlying operating system so this works. It won't work within the IPython window. But it will work if I pass it
+down to the PC operating system. And in a PC if you want to see what
+files are there you type DIR in iPython console when I have to type an exclamation
+point in front of pass it all down. Anyway, there are a couple
+of really basic things that you should know about iPython and
+about the operating systems. Now, we want to move on to reading and
+writing files. Now, before starting that,
+I want to get a fresh console window. I click that on a way,
+open an act IPython console here. Now, let's talk about reading and
+writing text files. Here's an example. I have a function, I have a textile
+up here, humptydumpty.text and I'm going to print it. There it is,
+now let's see how it did that. First of all,
+we passed it the file name, and we use the file name to open a file and
+we assign the handle to that file infile. We'll refer to this infile
+throughout the rest of the program, where the line an infile, we'll print
+that line and then we'll close the file. The reason we have and equal blank is
+that the text files have a new line at the end of every line, print has
+a new line at the end of every line. If we had two new lines it would be double
+space so we get rid of the one with print. Now let's do another example. We will copy one file to another so you
+can see how reading and writing differ. Right, I'm going to copy humptydumpty.txt to xhumpty.txt. Okay, and you didn't see anything happened
+here because all that had happened right up here. There is humpty, there he is,
+it's been copied. Now lets see how we did that. We had two files, an in-file name and
+an out-file name. Here they are. Okay. We open the in-file name and
+we all sign the handle in-file, we'll open the out-file name and
+we'll assign a handle out file. This time we are going to write to it so
+we'll use this option W. For every line in that in file,
+we are going to write that line, and use an out file dot write,
+that's a method of out file. Then we are going to close both files. It's just simple as that. Now I want you to write
+a function that we'll take data from the screen and
+write it into a file. Let me show you mine. I've given you a starter
+file,write_to_file(filename, myname, myage, major). And this one almost would
+write the name out. So we got to open the file first. You're going to have to close
+the file eventually, okay. These lines tell you what
+you need to do where. This is mine, this is where I ran it,
+and this is where I displayed it. My name is George, my age is 21,
+I major in physics. You should do something like that. Here's my solution. I'll open that file name for write, and I'll sign out-file as the handle. Out-file.write, my name is,
+then I'll stick in my name and then a character turn. Out-file.write my name is. I'm going to convert my age,
+which is a number to a string so that I can take this string and tack on
+this string and then tack on this string. Then I'm going to pick out found.right and
+but my major I am majoring in but the major. So and the only thing that you
+may have overlooked as you're sticking in that that conversion and
+number trust string. And then of course you close the file.

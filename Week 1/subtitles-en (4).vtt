@@ -1,0 +1,313 @@
+WEBVTT
+
+1
+00:00:12.589 --> 00:00:18.058
+Now let's write a function that
+takes input from the keyboard and
+
+2
+00:00:18.058 --> 00:00:20.156
+also combines strings.
+
+3
+00:00:20.156 --> 00:00:20.882
+Here's an example.
+
+4
+00:00:26.179 --> 00:00:30.818
+This function is supposed to get
+my name and then write it out.
+
+5
+00:00:30.818 --> 00:00:32.240
+All right, so I write name.
+
+6
+00:00:36.130 --> 00:00:39.320
+My name is Bill, that was first name.
+
+7
+00:00:39.320 --> 00:00:45.130
+My last names Boyd and
+it will write out your name is Bill Boyd.
+
+8
+00:00:48.060 --> 00:00:49.970
+So, let's look and see how that worked.
+
+9
+00:00:50.990 --> 00:00:53.850
+First of all you know we still
+have the documentation and
+
+10
+00:00:53.850 --> 00:00:55.140
+I can see that at the top.
+
+11
+00:00:55.140 --> 00:01:00.010
+I type in Ctrl+I, okay.
+
+12
+00:01:00.010 --> 00:01:03.120
+I'm using an input statement
+to get from the keyboard.
+
+13
+00:01:03.120 --> 00:01:05.495
+Now I have to have a prompt, so
+
+14
+00:01:05.495 --> 00:01:09.580
+that the person will know
+what I want to be entered.
+
+15
+00:01:09.580 --> 00:01:13.642
+So, the input statement
+has a prompt as a string,
+
+16
+00:01:13.642 --> 00:01:16.946
+enter your first name, you see it here.
+
+17
+00:01:16.946 --> 00:01:22.325
+And then I typed in Bill and
+it stored that in this
+
+18
+00:01:22.325 --> 00:01:27.320
+variable called fname, F for first name.
+
+19
+00:01:27.320 --> 00:01:31.410
+And then I ask for
+another input, and I ask for
+
+20
+00:01:31.410 --> 00:01:37.840
+last name this time is started into
+a variable called lname for last name.
+
+21
+00:01:37.840 --> 00:01:42.793
+Now I make the full name
+by taking the first name
+
+22
+00:01:42.793 --> 00:01:46.610
+concatenate or adding the string.
+
+23
+00:01:46.610 --> 00:01:52.362
+A little blank to separate
+the first name from the last name.
+
+24
+00:01:52.362 --> 00:01:56.900
+And then I'll add on the last name.
+
+25
+00:01:56.900 --> 00:01:59.160
+So, I've got the full name
+put together here and
+
+26
+00:01:59.160 --> 00:02:01.430
+then I'm going to print it together,
+print it out.
+
+27
+00:02:01.430 --> 00:02:04.540
+Print "your name is" and
+we'll print the full name.
+
+28
+00:02:06.020 --> 00:02:10.450
+So, what's new here is with
+the input statement and
+
+29
+00:02:10.450 --> 00:02:15.540
+with concatenation, or adding of strings.
+
+30
+00:02:15.540 --> 00:02:16.331
+Now, you try it.
+
+31
+00:02:16.331 --> 00:02:23.525
+I want you to take the same function and
+add a couple of features to it.
+
+32
+00:02:23.525 --> 00:02:28.412
+In addition to getting your name, putting
+it together into a string and printing it.
+
+33
+00:02:28.412 --> 00:02:34.136
+I want you to get the city
+that you live in and
+
+34
+00:02:34.136 --> 00:02:39.075
+the state or nation that you live in.
+
+35
+00:02:39.075 --> 00:02:45.300
+And write that out in the fashion
+that I'm showing you here.
+
+36
+00:02:45.300 --> 00:02:46.090
+Here is my run.
+
+37
+00:02:47.660 --> 00:02:50.000
+Enter your first name, Bill.
+
+38
+00:02:50.000 --> 00:02:51.710
+Enter your last name, Boyd.
+
+39
+00:02:51.710 --> 00:02:54.100
+Enter the city you live in, Middletown.
+
+40
+00:02:54.100 --> 00:02:58.590
+Enter the state you live in,
+my case Connecticut, okay?
+
+41
+00:02:58.590 --> 00:03:00.400
+Your name is Bill Boyd.
+
+42
+00:03:00.400 --> 00:03:04.090
+This is from the previous program example.
+
+43
+00:03:04.090 --> 00:03:11.180
+And now, you live in Middletown, and I've
+put that Middletown down, Connecticut.
+
+44
+00:03:11.180 --> 00:03:15.305
+And I made a longer string that has
+Middletown, Connecticut in it, but
+
+45
+00:03:15.305 --> 00:03:17.179
+they're separated by a comma.
+
+46
+00:03:19.785 --> 00:03:25.608
+So, when you go and try and write this
+your self and then when you get through,
+
+47
+00:03:25.608 --> 00:03:30.282
+press the continuation button and
+I'll show you my example.
+
+48
+00:03:36.374 --> 00:03:37.682
+Okay, here is my solution.
+
+49
+00:03:42.130 --> 00:03:46.230
+I have documentation,
+
+50
+00:03:46.230 --> 00:03:50.333
+if you like to see that.
+
+51
+00:03:54.217 --> 00:03:57.263
+Input first and last name,
+this documentation is useful and
+
+52
+00:03:57.263 --> 00:04:00.460
+that gives you instructions
+to some work to do.
+
+53
+00:04:00.460 --> 00:04:02.320
+Input first and last name.
+
+54
+00:04:02.320 --> 00:04:04.640
+Combine to one string and print.
+
+55
+00:04:05.660 --> 00:04:09.498
+Also input the city and state and print.
+
+56
+00:04:09.498 --> 00:04:15.548
+Now, this is exactly what we
+had before that's not new but
+
+57
+00:04:15.548 --> 00:04:20.504
+here's an input statement
+that gets the city.
+
+58
+00:04:20.504 --> 00:04:24.958
+Here's an input statement
+that gets the state and
+
+59
+00:04:24.958 --> 00:04:29.420
+then I combine the city and
+state into one string.
+
+60
+00:04:29.420 --> 00:04:34.970
+And that string has got comma space in the
+middle of it to separate city from state.
+
+61
+00:04:36.180 --> 00:04:40.380
+Now I can print your name is and
+
+62
+00:04:40.380 --> 00:04:45.262
+print you live in, city, state.
+
+63
+00:04:45.262 --> 00:04:49.909
+And you don't want to put
+this input statement after
+
+64
+00:04:49.909 --> 00:04:52.662
+you've printed out the name.
+
+65
+00:04:52.662 --> 00:04:56.616
+Because then over here it wouldn't
+have collected all the data and
+
+66
+00:04:56.616 --> 00:04:58.970
+then written out the result.
+
+67
+00:04:58.970 --> 00:05:03.154
+It would have connected part of the data
+or written out part of the result,
+
+68
+00:05:03.154 --> 00:05:06.810
+collected some more data and
+written out the rest of the result.
+
+69
+00:05:06.810 --> 00:05:07.790
+That just wouldn't be coot.

@@ -1,0 +1,46 @@
+So far we've been writing and
+running functions. Now we want to start writing and
+running whole programs. And on a Macintosh and on Linux machines,
+Python 2 comes installed. Your machine may attempt to
+run our programs in Python 2, which doesn't work, or
+it may run them in Python 3. We're going to determine that right now. Go up to spotlight, type in terminal,
+press enter, run it. Type Python, press return. On my machine it returns
+Python 3 point something, so mine is going to run Python 3
+automatically, yours may too. If it does, skip to the next video, you
+don't need to create an environment for Python 3. If yours displays Python 2 point
+something, then you need to create an environment, and I'm going to
+show you how to do that very quick. Okay, let me exit from Python. First, let me show you how to determine
+what version of Python you're using. Okay, if I bring Spyder up,
+mine says 3.6.2, you should do that and
+write down the version. If you installed an environment for
+that version, I think it will go a little bit
+faster than if you install it for a different version,
+although it'll work perfectly fine. Once you've done that, Go back to this. Now I will show you how to determine if
+you have an environments already on your machine. You use conda info --envs. And you can see that I have
+four environments out there. Yours will probably have just one,
+and that'll be root. Now we're going to create
+other environments. And this is the command that you use
+to do that, conda create -n for name. And then I'm going to create
+one called python362, because I'm going to create
+an environment for running Python 3.6.2, which is a version that I
+had when I looked at Spyder. You've written it down, you can- Do whatever version your machine has. Now this name is can be anything,
+you can name it whatever you want. And you put for Python version,
+whatever version you got, and Spyder. Once you've entered that, press return and it'll start fetching what it
+needs to from the web to install. When it gets through, it'll ask you
+whether you want to proceed and you say yes. And now it's installing that additional
+software and creating an environment. This may take a few minutes. Yours may display additional
+lines as it does, depending on how much work it has to do. Now it tells you to
+activate that environment. You type source activate and
+then the name for your environment. So I'm going to activate mine,
+source activate- python362. The name for
+yours will likely be different from mine. Now I can test that in a couple of ways. One, is I can run Python, and it should
+display Python 3 something really, it's not critical on what it does just as
+long as it displays the Python 3 version. Also, I can say conda info --envs, and I can see the environments out there. This asterisk shows
+which one is activated. Since we use source activate
+to activate Python362, it's the one that's activated. Now, let's repeat the process
+that you'll need to use in order to activate this environment. First of all, I'm going to close terminal,
+and we just going to quit it altogether. I'm going to we go up here, I'm going to type in terminal,
+Press enter, and I bring it up. Now, I'm going to type source activate python362, and now I'm ready to go. So now go onto the next video and
+we'll show you how to run Python programs. Remember, you need to bring up
+a terminal and type source activate and the name of your Python 3 environment,
+and then you're ready to go.

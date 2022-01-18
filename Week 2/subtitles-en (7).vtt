@@ -1,0 +1,468 @@
+WEBVTT
+
+1
+00:00:13.126 --> 00:00:20.220
+Now let's look at a slightly more
+sophisticated program using the same list.
+
+2
+00:00:20.220 --> 00:00:28.130
+Where the data is in the sub-lists.
+
+3
+00:00:37.527 --> 00:00:43.510
+This function computes the total of
+population of the states of New England.
+
+4
+00:00:43.510 --> 00:00:48.510
+It writes out the total
+population of this list
+
+5
+00:00:48.510 --> 00:00:53.280
+of states is 14 million and something.
+
+6
+00:00:53.280 --> 00:00:57.240
+There's six states in this list of states,
+so it does two things.
+
+7
+00:00:57.240 --> 00:01:00.300
+It adds up the population and
+it counts the states.
+
+8
+00:01:00.300 --> 00:01:02.560
+Let's look and
+see how this function works.
+
+9
+00:01:04.090 --> 00:01:07.250
+First of all,
+we're going to have to have a loop.
+
+10
+00:01:07.250 --> 00:01:08.840
+And here's our loop.
+
+11
+00:01:08.840 --> 00:01:15.038
+And we're going to start off
+the loop by initializing sum.
+
+12
+00:01:15.038 --> 00:01:20.310
+We're going to add up and
+sum the populations of the states.
+
+13
+00:01:22.010 --> 00:01:29.430
+We're also going to use num_states for
+the length of the state data.
+
+14
+00:01:31.570 --> 00:01:35.180
+Then we step through the loop.
+
+15
+00:01:35.180 --> 00:01:40.202
+We will build the sum and
+then we will print our results
+
+16
+00:01:40.202 --> 00:01:44.455
+making use of the sum we
+computed in the loop.
+
+17
+00:01:44.455 --> 00:01:46.110
+Let's take a look at the loop.
+
+18
+00:01:46.110 --> 00:01:51.180
+The loop goes from zero
+through the number of states.
+
+19
+00:01:55.283 --> 00:01:59.847
+We're going to pull out
+a particular state, the ith state,
+
+20
+00:01:59.847 --> 00:02:05.040
+we'll call it one_state, and
+then we'll get the population of that.
+
+21
+00:02:05.040 --> 00:02:12.420
+Remember, the population of the state
+is the sublist item of index one,
+
+22
+00:02:13.680 --> 00:02:16.990
+and then we'll add that
+population into the sum.
+
+23
+00:02:18.140 --> 00:02:23.380
+So we've got sum initialized,
+we pull out the population, and
+
+24
+00:02:23.380 --> 00:02:27.910
+then we add the population to
+the sum to produce a larger sum.
+
+25
+00:02:27.910 --> 00:02:33.310
+Then we'll double back and
+we'll get the next item i of the list.
+
+26
+00:02:33.310 --> 00:02:37.930
+i will go from zero to one to
+two up to the number of states.
+
+27
+00:02:39.762 --> 00:02:41.990
+And we will have built the sum and
+printed it.
+
+28
+00:02:43.195 --> 00:02:47.746
+Also number of states tells
+us how many states there are.
+
+29
+00:02:47.746 --> 00:02:50.325
+And then we're printing that as well.
+
+30
+00:02:51.865 --> 00:02:54.225
+Let's write this function one more time
+
+31
+00:02:54.225 --> 00:02:56.469
+to illustrate a few more
+things about programming.
+
+32
+00:03:11.811 --> 00:03:14.220
+As you can see,
+it gives the same answer as before.
+
+33
+00:03:14.220 --> 00:03:15.800
+Let's look at the code just a moment.
+
+34
+00:03:15.800 --> 00:03:21.200
+We're going to say population
+is equal to one and
+
+35
+00:03:21.200 --> 00:03:23.710
+the sum is equal to zero,
+which we did before.
+
+36
+00:03:23.710 --> 00:03:29.850
+We initialized this variable that will
+accumulate the sum of the populations n.
+
+37
+00:03:29.850 --> 00:03:34.150
+The number of states is the link
+to the state data, same thing.
+
+38
+00:03:35.160 --> 00:03:38.319
+Now for the state in the range
+of zero to number of states,
+
+39
+00:03:40.833 --> 00:03:43.409
+Instead of using the variable i,
+
+40
+00:03:43.409 --> 00:03:47.920
+which doesn't mean anything really,
+we'll use state.
+
+41
+00:03:50.066 --> 00:03:55.121
+And then,
+we add to the sum the state_data,
+
+42
+00:03:55.121 --> 00:04:03.000
+state_data is our big list of the state.
+
+43
+00:04:05.740 --> 00:04:08.200
+this is the particular sublist that we're
+
+44
+00:04:08.200 --> 00:04:11.600
+working with on this
+passage through the loop.
+
+45
+00:04:11.600 --> 00:04:18.760
+And the population, the population is
+always in item one of the sublist.
+
+46
+00:04:20.040 --> 00:04:22.500
+And zero being the name of the state.
+
+47
+00:04:26.524 --> 00:04:28.570
+The bottom two lines are exactly the same.
+
+48
+00:04:28.570 --> 00:04:31.700
+What's different here is mainly using
+
+49
+00:04:31.700 --> 00:04:36.512
+variable names that might be more
+meaningful, like state instead of i.
+
+50
+00:04:36.512 --> 00:04:41.780
+And population instead of one.
+
+51
+00:04:41.780 --> 00:04:46.017
+Now I want you to write a function
+that'll compute the average of a list.
+
+52
+00:04:48.970 --> 00:04:51.373
+Your output should look
+something like this.
+
+53
+00:04:54.178 --> 00:04:56.640
+Here are a couple of lists to test on.
+
+54
+00:05:03.891 --> 00:05:04.860
+Here's my run.
+
+55
+00:05:06.750 --> 00:05:11.840
+Now my version of this function
+on these two test lists.
+
+56
+00:05:11.840 --> 00:05:19.314
+Average of numlis which is
+this first list is 53.1.
+
+57
+00:05:19.314 --> 00:05:24.415
+The average of numlis2 is 8.28.
+
+58
+00:05:24.415 --> 00:05:30.320
+Notice that I wrote out these lists so
+I can be sure I got them entirely.
+
+59
+00:05:32.290 --> 00:05:35.620
+Numlis starts with 65 and ends with 42.
+
+60
+00:05:35.620 --> 00:05:36.970
+65 here.
+
+61
+00:05:36.970 --> 00:05:38.110
+42 here.
+
+62
+00:05:39.220 --> 00:05:42.910
+Numlis2 begins at four and ends with 19.
+
+63
+00:05:42.910 --> 00:05:45.565
+Four and 19.
+
+64
+00:05:45.565 --> 00:05:48.450
+It is not necessary to write them now.
+
+65
+00:05:48.450 --> 00:05:52.590
+But it is useful to make sure
+that you included the whole list.
+
+66
+00:05:55.030 --> 00:06:00.320
+Now you write this function, average
+of numlis, gives you a starter.
+
+67
+00:06:00.320 --> 00:06:03.348
+You need to replace this
+pass with actual code.
+
+68
+00:06:03.348 --> 00:06:09.839
+When you've finished press continue and
+I'll show you my solution.
+
+69
+00:06:15.812 --> 00:06:16.884
+Here is my solution.
+
+70
+00:06:20.316 --> 00:06:27.908
+Average(nlis), see I have
+the same starting function.
+
+71
+00:06:29.581 --> 00:06:33.710
+Commented out the pass so
+that I can write my code.
+
+72
+00:06:35.102 --> 00:06:41.360
+I'm going to sum up,
+The numbers in the list.
+
+73
+00:06:42.705 --> 00:06:46.520
+I'm going to count the number
+of elements in the list.
+
+74
+00:06:46.520 --> 00:06:52.291
+And to compute the average, I'm going to
+take the sum and divide by that number.
+
+75
+00:06:52.291 --> 00:06:54.480
+That's the way you compute averages.
+
+76
+00:06:54.480 --> 00:06:57.140
+Now here is my loop.
+
+77
+00:06:57.140 --> 00:07:02.790
+For i in the range of zero to num,
+num is the length of list,
+
+78
+00:07:02.790 --> 00:07:07.700
+I'm going to take sum and
+add to the ith element of the list.
+
+79
+00:07:10.326 --> 00:07:12.358
+I'm going to print that ith element so
+
+80
+00:07:12.358 --> 00:07:14.874
+that I can actually
+see that I got them all.
+
+81
+00:07:14.874 --> 00:07:21.580
+And I'm going to put end = " " so
+that these
+
+82
+00:07:21.580 --> 00:07:26.610
+numbers are separated by spaces, and I
+don't use a whole lot of lines to do this.
+
+83
+00:07:29.337 --> 00:07:33.141
+To make sure that I go to the next
+line before printing out the average,
+
+84
+00:07:33.141 --> 00:07:36.180
+I have a print statement
+with nothing in it.
+
+85
+00:07:36.180 --> 00:07:43.180
+And that'll finish off the line that we're
+working on, by printing a new line.
+
+86
+00:07:51.581 --> 00:07:55.350
+Here's another version of that function
+that I think illustrates
+
+87
+00:07:55.350 --> 00:07:58.000
+some pretty good points.
+
+88
+00:07:58.000 --> 00:07:59.623
+First let's execute it.
+
+89
+00:08:14.418 --> 00:08:17.350
+As you can see,
+it gives the same solutions.
+
+90
+00:08:19.720 --> 00:08:21.500
+Let's take a look at this.
+
+91
+00:08:21.500 --> 00:08:25.890
+First of all,
+we should initialize our sum to zero.
+
+92
+00:08:25.890 --> 00:08:30.700
+On and we will divide that sum
+by the length of the list.
+
+93
+00:08:30.700 --> 00:08:33.540
+That's the same as the number
+of items in the list.
+
+94
+00:08:33.540 --> 00:08:35.790
+So that gives us the average.
+
+95
+00:08:35.790 --> 00:08:41.790
+Now instead of using i to step
+through a range as we did earlier,
+
+96
+00:08:41.790 --> 00:08:44.920
+we'll use num and
+step through the list itself.
+
+97
+00:08:46.410 --> 00:08:48.690
+Then we will add to sum num, and
+
+98
+00:08:51.550 --> 00:08:56.800
+then print the nums with a space after
+it so that we're sure we got them all.
+
+99
+00:08:56.800 --> 00:09:01.379
+This way we're stepping through
+the list rather than stepping through
+
+100
+00:09:01.379 --> 00:09:06.195
+a range of numbers that's equal to
+the number of items that are in the list.

@@ -1,0 +1,47 @@
+Now let's replace some more of
+these stubs with real functions. Let's start by creating a new phone. First, let me show you what
+this version will run like. They're the ones that we built in, here's a new one,
+enter the data for the new phone. George Costanza, (212) 835-1419. Then we show, and there's George. Now we can delete something too. Well, which one do you want to delete? We'll delete George. And now he's gone. That's what's new in this version. First, let's start with
+how you create a phone. When you create a phone, it's going to
+print enter the data for a new phone. There it is. Then you're going to use
+an input to get the new name. You're going to get the input
+to get a new phone number. Then you're going to build the sub list,
+name, and phone number. And then you gotta append
+it onto the phones list. And then you skip a line. That's all there is to it. Enter the name, enter the number. Build a phone new sub list. Append it to the phones list. Here with the phone's list here. Starts with Jerry Seinfeld and
+Cosmo Kramer. Now, let's look at delete,
+that's a little bit more complex. Now down in the main loop. When you choose delete, it's going to
+ask which item do you want to delete. And we print, which one it is for
+the time being, and then we'll try to delete that one. Here's the delete function. First of all, we check to see
+if there's a proper menu choice. At the time we did this deletion,
+there were only three people in there. I asked for number 17. He couldn't do it. So we're going to check to see if
+that's a legitimate menu choice. Also, if you typed in a letter or
+something like that. If we want to filter that out. So we're going to write a routine
+that'll check to see if that is a proper menu choice and
+if it's not, we're just going to return
+without deleting the funnel. If it is a proper menu choice,
+I want to change it to an integer. And then I'm going to delete one of them. Now remember, we count these one,
+two, three, four, five, those are the phone lines. But Python counts zero, one, two, three. So what we have to do is
+reduce that by one and then we delete that item
+from the phone's list. And then we'll print that we deleted it. Now let's take a look at this
+proper menu choice business. We pass this switch onto that
+proper menu choice function. Now remember which came from an input
+statement, so it's a string. Now we're going to have
+to convert to a number. So first of all, we're going to need
+to check to see if it's digits in them. If it has something in it, which is not a digit then which
+is digit will return false? So not is digit would be true and
+we would print this which needs to be a number
+of a phone and return false. If it returns false to delete phone, then not false would be true and it
+would return without deleting the phone. So the first thing that happens is
+we check to see if it's a number. And if it is a number,
+we'll convert it to an integer. Now there's another problem. It could be a negative number. We could have three phones and
+it be the number 217. We check to see what this negative or whether it's a bigger
+number than our phones. If so, we'll print that it needs
+to be the number of the phone. And then we'll return false so that delete
+phone will not attempt to delete it. Now if it passes this test that it's
+a number, it converts to a number and it's a number that's within the proper
+range, then we're going to consider it an acceptable number to delete and
+we'll return true. So to summarize, delete phones will
+be passed which phone to delete. It will check to see if that's a number,
+and it's a number within the proper range, and if it is,
+it'll convert it to an integer and it'll delete that particular
+phone from the phone's list.

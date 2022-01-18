@@ -1,0 +1,17 @@
+Now let's talk about Python data types. Here are a number of examples. I'll just execute that so
+you can see them. First of all, x up there is an integer,
+y is called a float, that's a real number,
+it's got a fractional part. And z is a string, a string of characters. z1 is also a string,
+it's a string of digits. z2 is a string of digits as well. Here is a list, it's a list of vowels. Here, a list of numbers. Actually, it's a list of strings
+each of which is a number string. Here is another list, and
+this is a list of strings. Twas brillig and slithy toves. Did gyre and gimble in the wabe,
+so it has two strings in it. Here is a boolean that's true,
+here's a boolean that's false. Now generally speaking, you've gotta
+be a little bit careful about these. For example, if you're trying to add z1+2,
+it can't convert it. That's because z1 is a string. I can actually do that if I change z1 to an integer, then I can do it that way. Also, if you take,
+let's write z1 is that, z2 is that. Now z1 + z2, what's going to happen there? Well, those are not integers and they're not floating point numbers,
+so they won't add as numbers. They won't give me 70. They'll give me a string,
+which consists of z1 followed by z2. Now I want to add those two as numbers, I can do it this way. Often you can convert
+from one type to another. So if I want to take y,
+convert it to a string, I just apply the string function. I can do the same thing with x, but I can't do that with z,
+because that's a walrus. I can't convert the walrus and the carpenter to a string.

@@ -1,0 +1,68 @@
+Now let's look at a slightly more
+sophisticated program using the same list. Where the data is in the sub-lists. This function computes the total of
+population of the states of New England. It writes out the total
+population of this list of states is 14 million and something. There's six states in this list of states,
+so it does two things. It adds up the population and
+it counts the states. Let's look and
+see how this function works. First of all,
+we're going to have to have a loop. And here's our loop. And we're going to start off
+the loop by initializing sum. We're going to add up and
+sum the populations of the states. We're also going to use num_states for
+the length of the state data. Then we step through the loop. We will build the sum and
+then we will print our results making use of the sum we
+computed in the loop. Let's take a look at the loop. The loop goes from zero
+through the number of states. We're going to pull out
+a particular state, the ith state, we'll call it one_state, and
+then we'll get the population of that. Remember, the population of the state
+is the sublist item of index one, and then we'll add that
+population into the sum. So we've got sum initialized,
+we pull out the population, and then we add the population to
+the sum to produce a larger sum. Then we'll double back and
+we'll get the next item i of the list. i will go from zero to one to
+two up to the number of states. And we will have built the sum and
+printed it. Also number of states tells
+us how many states there are. And then we're printing that as well. Let's write this function one more time to illustrate a few more
+things about programming. As you can see,
+it gives the same answer as before. Let's look at the code just a moment. We're going to say population
+is equal to one and the sum is equal to zero,
+which we did before. We initialized this variable that will
+accumulate the sum of the populations n. The number of states is the link
+to the state data, same thing. Now for the state in the range
+of zero to number of states, Instead of using the variable i, which doesn't mean anything really,
+we'll use state. And then,
+we add to the sum the state_data, state_data is our big list of the state. this is the particular sublist that we're working with on this
+passage through the loop. And the population, the population is
+always in item one of the sublist. And zero being the name of the state. The bottom two lines are exactly the same. What's different here is mainly using variable names that might be more
+meaningful, like state instead of i. And population instead of one. Now I want you to write a function
+that'll compute the average of a list. Your output should look
+something like this. Here are a couple of lists to test on. Here's my run. Now my version of this function
+on these two test lists. Average of numlis which is
+this first list is 53.1. The average of numlis2 is 8.28. Notice that I wrote out these lists so
+I can be sure I got them entirely. Numlis starts with 65 and ends with 42. 65 here. 42 here. Numlis2 begins at four and ends with 19. Four and 19. It is not necessary to write them now. But it is useful to make sure
+that you included the whole list. Now you write this function, average
+of numlis, gives you a starter. You need to replace this
+pass with actual code. When you've finished press continue and
+I'll show you my solution. Here is my solution. Average(nlis), see I have
+the same starting function. Commented out the pass so
+that I can write my code. I'm going to sum up,
+The numbers in the list. I'm going to count the number
+of elements in the list. And to compute the average, I'm going to
+take the sum and divide by that number. That's the way you compute averages. Now here is my loop. For i in the range of zero to num,
+num is the length of list, I'm going to take sum and
+add to the ith element of the list. I'm going to print that ith element so that I can actually
+see that I got them all. And I'm going to put end = " " so
+that these numbers are separated by spaces, and I
+don't use a whole lot of lines to do this. To make sure that I go to the next
+line before printing out the average, I have a print statement
+with nothing in it. And that'll finish off the line that we're
+working on, by printing a new line. Here's another version of that function
+that I think illustrates some pretty good points. First let's execute it. As you can see,
+it gives the same solutions. Let's take a look at this. First of all,
+we should initialize our sum to zero. On and we will divide that sum
+by the length of the list. That's the same as the number
+of items in the list. So that gives us the average. Now instead of using i to step
+through a range as we did earlier, we'll use num and
+step through the list itself. Then we will add to sum num, and then print the nums with a space after
+it so that we're sure we got them all. This way we're stepping through
+the list rather than stepping through a range of numbers that's equal to
+the number of items that are in the list.

@@ -1,0 +1,614 @@
+WEBVTT
+
+1
+00:00:11.747 --> 00:00:16.119
+Here's another example of a function
+converting Fahrenheit temperature to
+
+2
+00:00:16.119 --> 00:00:17.880
+Celsius temperature.
+
+3
+00:00:17.880 --> 00:00:19.133
+Let's try it out.
+
+4
+00:00:27.720 --> 00:00:31.849
+First, it asks me to enter
+
+5
+00:00:31.849 --> 00:00:36.543
+a Fahrenheit temperature and
+
+6
+00:00:36.543 --> 00:00:41.245
+I'll enter 212 degrees.
+
+7
+00:00:41.245 --> 00:00:44.930
+And it converted that to 100 degrees
+Celsius, so it seems to work fine.
+
+8
+00:00:44.930 --> 00:00:47.510
+So this would seem to be a good program.
+
+9
+00:00:47.510 --> 00:00:52.490
+Now let's take a look at
+the writing of the program, and
+
+10
+00:00:52.490 --> 00:00:54.620
+then we'll talk more about it.
+
+11
+00:00:54.620 --> 00:01:00.541
+First of all, I have the documentation and
+I say that it's bad.
+
+12
+00:01:00.541 --> 00:01:02.140
+It does seem to work.
+
+13
+00:01:02.140 --> 00:01:06.549
+Let's go on and look at it and
+then we'll see why that I say it's bad.
+
+14
+00:01:06.549 --> 00:01:14.600
+The temperature is being
+input from the keyboard.
+
+15
+00:01:14.600 --> 00:01:16.980
+So it says enter a Fahrenheit temperature.
+
+16
+00:01:16.980 --> 00:01:19.461
+There it is, and we enter 212 degrees.
+
+17
+00:01:19.461 --> 00:01:25.490
+We converted that, now this is input as
+a string, anything typed in is a string.
+
+18
+00:01:25.490 --> 00:01:29.250
+So we take that string and
+we convert it to an integer.
+
+19
+00:01:32.580 --> 00:01:38.430
+Can't do arithmetic on it if we don't
+convert it from a string to an integer,
+
+20
+00:01:38.430 --> 00:01:40.140
+to a number, anyway.
+
+21
+00:01:40.140 --> 00:01:44.095
+Okay, then we compute a new
+temperature using the formula for
+
+22
+00:01:44.095 --> 00:01:48.810
+converting Fahrenheit temperatures
+to Celsius temperatures.
+
+23
+00:01:48.810 --> 00:01:53.135
+So now we've got the temperature and
+the new temperature.
+
+24
+00:01:53.135 --> 00:01:57.448
+Now we'll print the Fahrenheit
+temperature, temp,
+
+25
+00:01:57.448 --> 00:02:02.696
+is equivalent to, and we're going to
+keep from going to a new line and
+
+26
+00:02:02.696 --> 00:02:06.165
+then we're going to
+print a new temperature,
+
+27
+00:02:06.165 --> 00:02:12.004
+the computed Celsius temperature,
+degrees Celsius, and so it worked.
+
+28
+00:02:14.423 --> 00:02:19.344
+Okay, now why, if it works,
+do I say that that's bad?
+
+29
+00:02:19.344 --> 00:02:24.390
+Well, let's run it again and
+I'm going to show you what can go wrong.
+
+30
+00:02:24.390 --> 00:02:28.850
+I'm going to press up arrow,
+that repeats the previous command.
+
+31
+00:02:28.850 --> 00:02:32.746
+Okay, and this time,
+instead of typing 212 degrees,
+
+32
+00:02:32.746 --> 00:02:35.218
+I'm just going to simply press Enter.
+
+33
+00:02:35.218 --> 00:02:42.370
+Well, this is an example
+of a Python error.
+
+34
+00:02:43.960 --> 00:02:50.166
+It says here, invalid literal for
+int with base 10 and
+
+35
+00:02:50.166 --> 00:02:54.530
+it gives the thing that I entered.
+
+36
+00:02:54.530 --> 00:02:57.660
+I just pressed Return,
+I didn't give it a real number.
+
+37
+00:02:59.010 --> 00:03:05.910
+And so when it tried to convert it,
+a blank to an integer, it couldn't.
+
+38
+00:03:07.510 --> 00:03:10.335
+And so the program crashed right there.
+
+39
+00:03:10.335 --> 00:03:17.696
+You can see that the statement that it
+crashed on is temp = int(temp_str).
+
+40
+00:03:17.696 --> 00:03:22.050
+So this is not a very robust program.
+
+41
+00:03:22.050 --> 00:03:26.147
+If somebody tried to run the program,
+
+42
+00:03:26.147 --> 00:03:30.115
+they might get this error message and
+
+43
+00:03:30.115 --> 00:03:34.992
+they would be puzzled
+as to what's going on.
+
+44
+00:03:34.992 --> 00:03:40.656
+Let's try to improve the program and
+here's fahrenheit_to_celsius2.
+
+45
+00:03:40.656 --> 00:03:45.284
+Now what we want to do, is we want to
+check to see if they entered something.
+
+46
+00:03:45.284 --> 00:03:50.938
+So after entering the Fahrenheit
+temperature, I'm going to say,
+
+47
+00:03:50.938 --> 00:03:56.850
+if temp_string and
+then I'm going to do all of those things.
+
+48
+00:03:56.850 --> 00:04:02.036
+Now temp_string is considered to
+
+49
+00:04:02.036 --> 00:04:10.460
+be true if it's anything
+other than just empty, okay?
+
+50
+00:04:10.460 --> 00:04:13.440
+This is programming
+technicality kind of things.
+
+51
+00:04:16.275 --> 00:04:19.614
+Let's run it and
+see if it corrects the problem.
+
+52
+00:04:23.399 --> 00:04:31.389
+Now I'm going to press up arrow, Two or
+three times until I get back to this one.
+
+53
+00:04:31.389 --> 00:04:35.076
+I'm going to change it from
+fahrenheit_to_celsius1 to
+
+54
+00:04:35.076 --> 00:04:38.542
+fahrenheit_to_celsius2, save
+me some typing.
+
+55
+00:04:38.542 --> 00:04:42.227
+Okay, enter a Fahrenheit temperature.
+
+56
+00:04:42.227 --> 00:04:46.159
+212 works, okay, and we'll run it again.
+
+57
+00:04:46.159 --> 00:04:50.195
+And this time,
+I'm going to just press Enter.
+
+58
+00:04:50.195 --> 00:04:53.700
+Now it didn't crash.
+
+59
+00:04:55.300 --> 00:04:57.550
+So we made an improvement on this thing.
+
+60
+00:04:57.550 --> 00:04:59.920
+We could have put an else
+statement in here and
+
+61
+00:04:59.920 --> 00:05:02.110
+say you have to enter a temperature.
+
+62
+00:05:03.410 --> 00:05:07.550
+But this one has problems too.
+
+63
+00:05:07.550 --> 00:05:10.742
+Let's try 212.0.
+
+64
+00:05:13.255 --> 00:05:16.635
+We know it works on 212, 212.0.
+
+65
+00:05:16.635 --> 00:05:22.780
+The problem is that
+212.0 is not an integer.
+
+66
+00:05:23.820 --> 00:05:28.000
+It's considered a real number
+because it's got the 0.0 there.
+
+67
+00:05:28.000 --> 00:05:32.703
+Or in programmer talk, it's a float.
+
+68
+00:05:32.703 --> 00:05:35.472
+They usually say float
+rather than an integer.
+
+69
+00:05:35.472 --> 00:05:39.560
+Here's an improvement on this thing
+that's going to correct that.
+
+70
+00:05:42.680 --> 00:05:48.350
+Here is fahrenheit_to_celsius3.
+
+71
+00:05:48.350 --> 00:05:50.152
+We're going to start off the same way.
+
+72
+00:05:50.152 --> 00:05:55.123
+We're going to input the temperature
+string, and we're going to check,
+
+73
+00:05:55.123 --> 00:06:00.864
+if the temperature string is not empty,
+then we're going to do the rest, okay?
+
+74
+00:06:00.864 --> 00:06:05.679
+But the rest considered is
+we're going to check to see if
+
+75
+00:06:05.679 --> 00:06:09.006
+the temperature string has a digit.
+
+76
+00:06:09.006 --> 00:06:15.650
+Now we haven't seen this before,
+but strings have various methods.
+
+77
+00:06:17.850 --> 00:06:22.500
+These are things that strings can do for
+themselves.
+
+78
+00:06:22.500 --> 00:06:29.120
+And they're separated from the name
+of the string by a period.
+
+79
+00:06:29.120 --> 00:06:32.983
+So isdigit is like a function for
+
+80
+00:06:32.983 --> 00:06:38.431
+that string, it's called a method, okay?
+
+81
+00:06:38.431 --> 00:06:40.380
+If it's entirely digits, it's okay.
+
+82
+00:06:41.380 --> 00:06:47.050
+But if it has a period in it,
+then it's not all digits.
+
+83
+00:06:47.050 --> 00:06:52.490
+So if everything is a digit is true,
+then we're going to say,
+
+84
+00:06:52.490 --> 00:06:57.813
+we're going to apply the integer,
+convert the string to integer.
+
+85
+00:06:57.813 --> 00:07:00.790
+Ad then we're going to compute
+the new temperature and
+
+86
+00:07:00.790 --> 00:07:03.330
+we're going to print out the result.
+
+87
+00:07:03.330 --> 00:07:07.380
+Else we'll print out that you
+must enter a number, say goodbye.
+
+88
+00:07:07.380 --> 00:07:08.716
+Let's see how that one works.
+
+89
+00:07:10.965 --> 00:07:16.491
+Again, we'll press up arrow
+till we get to this and
+
+90
+00:07:16.491 --> 00:07:19.318
+we'll convert it to 3 and
+
+91
+00:07:19.318 --> 00:07:24.220
+we'll enter the temperature, works fine.
+
+92
+00:07:24.220 --> 00:07:26.110
+Try it again, up arrow.
+
+93
+00:07:26.110 --> 00:07:28.120
+Press blank, works fine.
+
+94
+00:07:30.120 --> 00:07:33.650
+We tested to see if we actually
+entered a string, and since we didn't,
+
+95
+00:07:34.710 --> 00:07:38.650
+we didn't go through the code
+that's inside of this if statement.
+
+96
+00:07:40.990 --> 00:07:45.084
+Now let's try it again.
+
+97
+00:07:45.084 --> 00:07:50.998
+And this time, we'll enter 212.0.
+
+98
+00:07:50.998 --> 00:07:55.376
+We got inside here, and we check to
+see if it's a digit and it wasn't,
+
+99
+00:07:55.376 --> 00:07:59.090
+everything wasn't a digit,
+the period's there.
+
+100
+00:07:59.090 --> 00:08:02.590
+Else prints, you must enter a number, bye.
+
+101
+00:08:02.590 --> 00:08:05.247
+Here's a function that
+uses integer division.
+
+102
+00:08:10.353 --> 00:08:14.387
+It converts inches to feet.
+
+103
+00:08:17.697 --> 00:08:18.779
+Let's run it.
+
+104
+00:08:25.925 --> 00:08:29.505
+77 inches is 6 feet, 5 inches.
+
+105
+00:08:31.935 --> 00:08:33.535
+Now let's look and see how that's done.
+
+106
+00:08:36.020 --> 00:08:39.240
+First of all, we have to have the 6 feet,
+
+107
+00:08:39.240 --> 00:08:42.960
+so we use integer division,
+divide by 12 and
+
+108
+00:08:42.960 --> 00:08:48.350
+we look and see how many times 12
+will go into the number of inches.
+
+109
+00:08:48.350 --> 00:08:50.748
+In this case we use 77.
+
+110
+00:08:50.748 --> 00:08:52.039
+And it went 6 times.
+
+111
+00:08:53.410 --> 00:08:58.862
+Now 6 12s are 72, so
+there are inches left over.
+
+112
+00:08:58.862 --> 00:09:03.579
+When we have these extra inches,
+we compute them by taking the total
+
+113
+00:09:03.579 --> 00:09:07.898
+inches given minus 12 times
+the number of feet we computed.
+
+114
+00:09:07.898 --> 00:09:11.012
+12 times 6 was 72, so
+
+115
+00:09:11.012 --> 00:09:17.510
+when we subtracted 72
+from 77 we got 5 inches.
+
+116
+00:09:17.510 --> 00:09:23.375
+So we printed inches is 77 inches is,
+
+117
+00:09:23.375 --> 00:09:29.610
+6 feet and the extra inches, 5 inches.
+
+118
+00:09:30.850 --> 00:09:33.870
+So we used integer divide right here.
+
+119
+00:09:33.870 --> 00:09:36.845
+But we got the remainder
+by multiplying by 12 and
+
+120
+00:09:36.845 --> 00:09:38.950
+subtracting it from the total inches.
+
+121
+00:09:38.950 --> 00:09:44.278
+What I want you to do is to rewrite
+this function so that it uses
+
+122
+00:09:44.278 --> 00:09:50.763
+the remainder function percent to
+compute the inches that are left over.
+
+123
+00:09:50.763 --> 00:09:52.890
+Remember how that works.
+
+124
+00:09:52.890 --> 00:09:57.642
+If we take 19 and divide by 5,
+
+125
+00:09:57.642 --> 00:10:01.339
+we get a remainder of 4.
+
+126
+00:10:03.046 --> 00:10:08.243
+Now I want you to modify this function,
+call it inches_to_feet2,
+
+127
+00:10:08.243 --> 00:10:13.175
+and replace the middle line with
+one that computes the extra inches
+
+128
+00:10:13.175 --> 00:10:17.510
+by using the remainder function,
+the percent operator.
+
+129
+00:10:21.170 --> 00:10:25.237
+Press the Continue button when you
+are finished writing your function.
+
+130
+00:10:31.310 --> 00:10:33.150
+Here's my solution.
+
+131
+00:10:33.150 --> 00:10:37.040
+The only difference is
+right here in this line.
+
+132
+00:10:37.040 --> 00:10:41.938
+You take inches % 12,
+
+133
+00:10:41.938 --> 00:10:47.305
+that gives us the remainder
+
+134
+00:10:47.305 --> 00:10:51.503
+on dividing by 12,
+
+135
+00:10:51.503 --> 00:10:56.883
+that's the extra inches.

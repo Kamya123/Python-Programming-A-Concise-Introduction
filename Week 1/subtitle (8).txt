@@ -1,0 +1,56 @@
+Now let’s take a look at another
+kind of loop, the for loop. Here is the cheer program
+rewritten using a for loop. Let me run it. It prints two, four, six,
+eight, who do we appreciate? Coursera. Now let's take a look at this loop. Let's start count at two,
+we'll go up two, but not including none, and
+we'll go in steps of two. So it'll be two, and then the next
+time through, it'll be two more, four, then the next time through
+it'll be two more, six, and the next time through it'll be two more,
+eight. There won't be a next time,
+because the next time it would be 10, and that would exceed nine. Every time through the loop
+we're going to print the count, and we're going to print a space. It's just like the other program,
+otherwise. We print,
+use the print to get a fresh line, print, who do we appreciate, and
+then we print Coursera. Let me emphasize that this one
+is the first one that it does. This one,
+when count takes on the value nine, it will not do that one. It will not go through the loop
+when count is equal to nine. It's up to but not including nine and
+the step size will be two. So, this will go two, and
+then four, then six, then eight. Now I want you to try and write a function and using the for loop. I want you to write the countdown
+program using that. Now remember that this
+step can be negative. Let me show you my run of this program. Countdown one writes 10,
+9, 8, 7 ,6, 5, 4, 3, 2, 1. And then Blast Off,
+this is a rocket launch countdown. Now, I want to emphasize that the range, we have a starting position, we have
+a stopping position, it won't do that one. And this is the step size. The step sign could be positive or
+negative. Okay, so take a moment to write this
+program, and then when you get it written, press the continue button and
+I'll show you mine. All right,
+here is my version of doing the countdown. Countdown1, for
+count in a range of ten, so we will start at ten going down to
+zero but we won't do the zeroth one. And since we want to go down we
+want to use a negative step size, we want to go down one at a time from ten
+to nine, to eight until negative one. We're going to print the count. We're going to print a space, instead
+of a new line, each time through so that we end up ten, nine, eight, seven,
+six, five, four, three, two, one. Since we won't use zero,
+there isn't a zero. And then we print a new line,
+and then we print, Blast off. Now let's speak a minute about
+finding errors in programs. Here's an example of a function written
+in Python that has errors in it. And I want you to think about how
+you would go about finding errors. Of course, you can look through
+this thing very carefully, and probably determine what the errors are,
+but let's do it by trial and error. Let's run the function and
+see what python tells us. Okay, control enter. Here's the function and it says here we have an indention here, unexpected
+indent, and it points to this print. So if we look over here,
+you see this line is indented four space, one, two, three, four, but
+this one is indented five spaces. So this one needs to be moved over and that's what it's telling this,
+the indent is an unexpected amount. So, back it up one, then we'll try again. Now we didn't get an error. So, let's try running it and
+see if it runs properly. What is my favorite toy. So, I'm going to type in football. And we get an error. Name error. The name Ma is not defined. Now we were talking about
+my tor why is it say my. Well its interpreting this
+as being a subtraction. It wants to take my minus toy. Now let's look back at our program. We defined a variable called underscore
+toy, and we wrote my hyphen toy. So this needs to be corrected
+to be the right name, and now let's run this again and
+see what happens. Again, of course, it works as far
+as the loading of the program. So now the program works. We found two errors in it. I'm going to put this back like we had it. Space, and notice that the editor is telling us
+right here that there's an error. So that the editor can detect some of
+the errors before they even run it. Python itself helps you
+to track down the errors.

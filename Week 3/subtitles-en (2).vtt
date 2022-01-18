@@ -1,0 +1,353 @@
+WEBVTT
+
+1
+00:00:12.090 --> 00:00:18.355
+This video shows how to run Python programs on Windows 10 PC without using Spyder.
+
+2
+00:00:18.355 --> 00:00:21.415
+The remaining videos use Spyder to do the same thing,
+
+3
+00:00:21.415 --> 00:00:23.035
+using a feature Spyder,
+
+4
+00:00:23.035 --> 00:00:26.380
+which may be phased out by the time you get to this point.
+
+5
+00:00:26.380 --> 00:00:30.230
+That feature, I'll discuss at the end of this video.
+
+6
+00:00:30.230 --> 00:00:34.250
+This is the program that we're going to run, print("Hello World!"),
+
+7
+00:00:34.250 --> 00:00:37.415
+just a simple program,
+
+8
+00:00:37.415 --> 00:00:41.155
+doesn't have to be complicated to illustrate running programs.
+
+9
+00:00:41.155 --> 00:00:43.745
+Here it is in my directory.
+
+10
+00:00:43.745 --> 00:00:46.220
+Now, to open a command prompt,
+
+11
+00:00:46.220 --> 00:00:49.000
+I'm going to get in here to Cortana, search field,
+
+12
+00:00:49.000 --> 00:00:51.340
+then I'll type CMD,
+
+13
+00:00:51.340 --> 00:00:55.295
+then I'll choose command prompt,
+
+14
+00:00:55.295 --> 00:00:57.384
+and there it opens.
+
+15
+00:00:57.384 --> 00:00:59.395
+Then I will type, cd space documents/pythoncoursera/lesson3.
+
+16
+00:00:59.395 --> 00:01:15.190
+That's where that pattern is on my machine.
+
+17
+00:01:15.190 --> 00:01:17.445
+Yours may be at a different place.
+
+18
+00:01:17.445 --> 00:01:23.395
+Now type, python hello, and run it.
+
+19
+00:01:23.395 --> 00:01:25.890
+That's all there's to.
+
+20
+00:01:25.890 --> 00:01:30.450
+Let me give you a couple of other things that you might need, and might not know.
+
+21
+00:01:30.450 --> 00:01:34.380
+If you need to know whether the program is saying you can type dir.
+
+22
+00:01:34.380 --> 00:01:36.560
+Now, in this case,
+
+23
+00:01:36.560 --> 00:01:38.605
+there's so many files there, I can't find it.
+
+24
+00:01:38.605 --> 00:01:41.635
+So, I type dir and hello,
+
+25
+00:01:41.635 --> 00:01:46.425
+and I use this wildcard asterisk
+
+26
+00:01:46.425 --> 00:01:51.855
+to show me everything that begins with "hello", and ends in.py.
+
+27
+00:01:51.855 --> 00:01:54.240
+And there are two things out there.
+
+28
+00:01:54.240 --> 00:01:57.620
+So, I can see that the file is there.
+
+29
+00:01:57.620 --> 00:01:59.830
+Also in getting there,
+
+30
+00:01:59.830 --> 00:02:02.993
+you may need to move upper directory.
+
+31
+00:02:02.993 --> 00:02:07.290
+Say, if we are from lesson three to the directory above it,
+
+32
+00:02:07.290 --> 00:02:13.125
+it may need to move down a directory,
+
+33
+00:02:13.125 --> 00:02:16.850
+and you can do that.
+
+34
+00:02:16.850 --> 00:02:23.190
+Now, let me show you another way to do this.
+
+35
+00:02:23.190 --> 00:02:28.425
+First, I'm going to shrink this to kind of get it over either way,
+
+36
+00:02:28.425 --> 00:02:31.690
+then I'm opening up this directory.
+
+37
+00:02:31.690 --> 00:02:33.995
+This is Windows Explorer,
+
+38
+00:02:33.995 --> 00:02:35.280
+and it shows "hello,
+
+39
+00:02:35.280 --> 00:02:39.010
+right there!", in this directory.
+
+40
+00:02:39.010 --> 00:02:43.140
+Now, let's go run hello again.
+
+41
+00:02:43.140 --> 00:02:46.995
+Click the end of the Cortana search field,
+
+42
+00:02:46.995 --> 00:02:51.487
+and type CMD, run the command prompt.
+
+43
+00:02:51.487 --> 00:02:55.120
+And I'm going to move this parallel to that,
+
+44
+00:02:55.120 --> 00:02:58.015
+so that they're both visible easily.
+
+45
+00:02:58.015 --> 00:03:02.335
+Up here, notice that this tells you where I am,
+
+46
+00:03:02.335 --> 00:03:05.700
+but it's not in a path for me.
+
+47
+00:03:05.700 --> 00:03:07.640
+But if I click here in the white,
+
+48
+00:03:07.640 --> 00:03:09.745
+it changes and highlights,
+
+49
+00:03:09.745 --> 00:03:12.770
+and I can type, Control+C and copy it.
+
+50
+00:03:12.770 --> 00:03:14.550
+Then I go over here, and type cd space,
+
+51
+00:03:14.550 --> 00:03:18.545
+Control+V to paste it there.
+
+52
+00:03:18.545 --> 00:03:22.420
+That keeps you from having to do all of this typing
+
+53
+00:03:22.420 --> 00:03:27.425
+and avoid errors and typos or somethings like that.
+
+54
+00:03:27.425 --> 00:03:30.195
+So, now we're at the right directory.
+
+55
+00:03:30.195 --> 00:03:36.530
+We can type python hello.py, and it runs again.
+
+56
+00:03:36.530 --> 00:03:41.059
+So, you just click here, paste here.
+
+57
+00:03:41.059 --> 00:03:46.820
+Now, let's look at a third way of doing this.
+
+58
+00:03:46.820 --> 00:03:49.375
+Back here in Spyder,
+
+59
+00:03:49.375 --> 00:03:53.100
+we've got the directory up there, "Hello" is here.
+
+60
+00:03:53.100 --> 00:03:56.015
+I'm going to use that to get there.
+
+61
+00:03:56.015 --> 00:04:00.515
+Click down here, CMD,
+
+62
+00:04:00.515 --> 00:04:05.895
+bring this up, put it up here parallel.
+
+63
+00:04:05.895 --> 00:04:09.230
+Now, I'm going to click over here, and highlight that,
+
+64
+00:04:09.230 --> 00:04:13.775
+press Control+C to copy it over the Window,
+
+65
+00:04:13.775 --> 00:04:19.370
+cd space, Control+V, put on the python hello.py,
+
+66
+00:04:19.370 --> 00:04:22.805
+and then run it.
+
+67
+00:04:22.805 --> 00:04:28.430
+Now, earlier in the course,
+
+68
+00:04:28.430 --> 00:04:31.160
+we wrote our programs here,
+
+69
+00:04:31.160 --> 00:04:37.025
+and then we ran them in the IPython console down here.
+
+70
+00:04:37.025 --> 00:04:40.270
+What we're going to do when we have whole words,
+
+71
+00:04:40.270 --> 00:04:41.900
+we're going to write them here,
+
+72
+00:04:41.900 --> 00:04:43.415
+and run them over here.
+
+73
+00:04:43.415 --> 00:04:45.880
+So, we've got a different pane that's outside of
+
+74
+00:04:45.880 --> 00:04:50.180
+Spyder running the program, but it works no different.
+
+75
+00:04:50.180 --> 00:04:52.820
+Let me type the change to this program.
+
+76
+00:04:52.820 --> 00:04:59.186
+Print("Goodbye"),
+
+77
+00:04:59.186 --> 00:05:04.502
+save that change over here,
+
+78
+00:05:04.502 --> 00:05:06.510
+paste that there, bring it in,
+
+79
+00:05:06.510 --> 00:05:10.050
+run it, do you see a change?
+
+80
+00:05:12.430 --> 00:05:17.850
+Now, let's look ahead at what's going to be coming up.
+
+81
+00:05:17.850 --> 00:05:20.505
+I'm going to be writing programs like this.
+
+82
+00:05:20.505 --> 00:05:24.160
+In my case, I have a copy of Spyder,
+
+83
+00:05:24.160 --> 00:05:25.690
+then in the tools menu,
+
+84
+00:05:25.690 --> 00:05:28.635
+there is an open command prompt, watch down here.
+
+85
+00:05:28.635 --> 00:05:32.029
+When I click on open command prompt,
+
+86
+00:05:32.029 --> 00:05:37.015
+I got a command prompt just like this one. Colors are reversed.
+
+87
+00:05:37.015 --> 00:05:44.423
+It's just like this one. I can type python hello.py,
+
+88
+00:05:44.423 --> 00:05:46.920
+and run this program.

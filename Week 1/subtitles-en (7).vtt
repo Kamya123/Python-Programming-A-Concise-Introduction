@@ -1,0 +1,319 @@
+WEBVTT
+
+1
+00:00:11.393 --> 00:00:16.230
+Often, we need to execute a section
+of code with many variations over and
+
+2
+00:00:16.230 --> 00:00:17.669
+over and over again.
+
+3
+00:00:19.330 --> 00:00:21.780
+Such a construction is called a loop.
+
+4
+00:00:21.780 --> 00:00:24.648
+Here is an example of a program with
+a particular kind of loop called
+
+5
+00:00:24.648 --> 00:00:25.270
+a while loop.
+
+6
+00:00:25.270 --> 00:00:27.781
+The while loop executes over and
+
+7
+00:00:27.781 --> 00:00:32.620
+over again while a particular
+condition is true.
+
+8
+00:00:32.620 --> 00:00:35.505
+Here's the example.
+
+9
+00:00:45.551 --> 00:00:51.055
+In this case,
+we write the numbers 2, 4, 6, 8.
+
+10
+00:00:51.055 --> 00:00:53.432
+Who do we appreciate?
+
+11
+00:00:53.432 --> 00:00:55.090
+COURSERA.
+
+12
+00:00:55.090 --> 00:01:00.270
+Now the loop produces the 2 and
+the 4 and the 6 and the 8.
+
+13
+00:01:00.270 --> 00:01:01.270
+Let's see how that's done.
+
+14
+00:01:02.280 --> 00:01:07.671
+First of all, we have a counter, a little
+variable called ct, stands for count.
+
+15
+00:01:07.671 --> 00:01:13.420
+While ct <= 8,
+we're going to print the ct.
+
+16
+00:01:13.420 --> 00:01:19.390
+And then we're not going to go start
+a new line, we're going to skip a space.
+
+17
+00:01:19.390 --> 00:01:24.295
+And then we're going to add 2 to the ct,
+and then we double back, and
+
+18
+00:01:24.295 --> 00:01:30.070
+we try to test whether or not this
+thing is still less than or equal to 8.
+
+19
+00:01:30.070 --> 00:01:35.502
+So the first time through,
+when we get to the while ct <= 8,
+
+20
+00:01:35.502 --> 00:01:40.980
+ct = 2 so it's definitely less than or
+equal to 8.
+
+21
+00:01:40.980 --> 00:01:44.320
+So we then print the 2,
+and we see it over here.
+
+22
+00:01:45.340 --> 00:01:50.090
+And then we print,
+instead of a carriage return line feed or
+
+23
+00:01:50.090 --> 00:01:53.220
+a new line, we print a space.
+
+24
+00:01:53.220 --> 00:01:56.780
+Then we add 2 to ct, then we double back.
+
+25
+00:01:56.780 --> 00:01:58.490
+Now ct is 4.
+
+26
+00:01:58.490 --> 00:01:59.658
+4 is still less than or
+
+27
+00:01:59.658 --> 00:02:02.860
+equal to 8, so we'll repeat
+the two lines of the loop again.
+
+28
+00:02:04.820 --> 00:02:10.400
+And after that repetition, ct is now at 6.
+
+29
+00:02:10.400 --> 00:02:12.110
+6 is still less than or equal to 8.
+
+30
+00:02:12.110 --> 00:02:15.080
+So we go through print the 6 and a space.
+
+31
+00:02:15.080 --> 00:02:17.970
+And then we add 2 to it, and now go back.
+
+32
+00:02:17.970 --> 00:02:22.170
+And it's still less than or
+equal to 8, it's actually equal to 8.
+
+33
+00:02:22.170 --> 00:02:23.610
+And we go through the loop one more time.
+
+34
+00:02:23.610 --> 00:02:26.950
+And then we add 2 to it, and now it's 10.
+
+35
+00:02:26.950 --> 00:02:31.315
+So we go back and do the test,
+while 10 <= 8, and
+
+36
+00:02:31.315 --> 00:02:35.896
+it's not, so
+then we don't repeat the loop anymore.
+
+37
+00:02:35.896 --> 00:02:39.655
+We go down to the next line after the
+loop, which is this print statement and
+
+38
+00:02:39.655 --> 00:02:42.950
+a print without anything in it like that,
+just starts a new line.
+
+39
+00:02:44.280 --> 00:02:49.030
+And then we print Who do we appreciate?,
+and there it is.
+
+40
+00:02:49.030 --> 00:02:50.468
+And then we print COURSERA.
+
+41
+00:02:50.468 --> 00:02:55.117
+That's the while loop.
+
+42
+00:02:55.117 --> 00:02:59.260
+Now, it is your turn to write
+a function with a loop in it.
+
+43
+00:02:59.260 --> 00:03:02.890
+This next exercise is to
+write a function count_down
+
+44
+00:03:02.890 --> 00:03:05.920
+that pretends to be
+a rocket launch countdown.
+
+45
+00:03:05.920 --> 00:03:07.035
+It'll start at 10.
+
+46
+00:03:07.035 --> 00:03:13.731
+It'll type 10, 9, 8, 7, 6, 5,
+4, 3, 2, 1, and then BLASTOFF.
+
+47
+00:03:13.731 --> 00:03:16.820
+Here's my run of that program.
+
+48
+00:03:18.170 --> 00:03:20.010
+Yours should look the same way.
+
+49
+00:03:20.010 --> 00:03:21.370
+Before you get started on this,
+
+50
+00:03:21.370 --> 00:03:25.770
+I want to point out the three parts of
+the loop that you need to be conscious of.
+
+51
+00:03:25.770 --> 00:03:29.960
+First of all, a variable is
+initialized before you enter the loop.
+
+52
+00:03:29.960 --> 00:03:33.490
+Second is, variable is compared to
+some value of units at the loop, and
+
+53
+00:03:33.490 --> 00:03:37.780
+while this comparison turns out to be
+true, you continue to do the loop.
+
+54
+00:03:37.780 --> 00:03:42.020
+And third, inside the loop, this variable
+needs to be changed in some manner,
+
+55
+00:03:42.020 --> 00:03:44.940
+otherwise, the loop will loop forever.
+
+56
+00:03:44.940 --> 00:03:49.629
+Now you write your function, and
+when you get through, press Continue and
+
+57
+00:03:49.629 --> 00:03:51.427
+I'll show you my solution.
+
+58
+00:03:57.344 --> 00:04:03.971
+Here is my solution, def count_down():
+Rocket count down routine.
+
+59
+00:04:03.971 --> 00:04:07.580
+I initialized the variable ct at 10.
+
+60
+00:04:09.260 --> 00:04:11.436
+I check to see that it's greater than 0,
+
+61
+00:04:11.436 --> 00:04:13.994
+if it is,
+I'm going to continue through the loop.
+
+62
+00:04:13.994 --> 00:04:17.306
+And what I do inside the loop,
+I'm going to print that ct and
+
+63
+00:04:17.306 --> 00:04:22.136
+then I'm going to reduce the ct by 1
+because we're going from 10, to 9, to 8,
+
+64
+00:04:22.136 --> 00:04:24.590
+to 7, and so on down the line.
+
+65
+00:04:24.590 --> 00:04:30.210
+When we get through, we're going to print
+a line, and then we'll write BLASTOFF.
+
+66
+00:04:30.210 --> 00:04:34.841
+Now every time I write the number I print,
+
+67
+00:04:34.841 --> 00:04:39.604
+instead of having a new line immediately,
+
+68
+00:04:39.604 --> 00:04:44.550
+I print end = That'll give me a space
+between each of the numbers and
+
+69
+00:04:44.550 --> 00:04:46.700
+it won't give me a new line.
+
+70
+00:04:46.700 --> 00:04:50.073
+I'll get that new line just
+before I do the BLASTOFF.

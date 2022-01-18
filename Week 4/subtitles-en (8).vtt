@@ -1,0 +1,214 @@
+WEBVTT
+
+1
+00:00:13.207 --> 00:00:17.880
+Now we need to write the function that
+reads in the CSV file, and we're done.
+
+2
+00:00:20.985 --> 00:00:24.110
+We're going to import another library OS.
+
+3
+00:00:25.260 --> 00:00:27.710
+This library deals with
+the operating system,
+
+4
+00:00:27.710 --> 00:00:30.690
+you'll see how that plays
+a role in just a moment.
+
+5
+00:00:34.723 --> 00:00:39.850
+Scroll down and look at load function,
+notice that it's relatively small.
+
+6
+00:00:39.850 --> 00:00:43.870
+In fact, most of these functions that
+we've been writing are very small.
+
+7
+00:00:45.656 --> 00:00:51.299
+That's one of the values of breaking
+the program up into little functions,
+
+8
+00:00:51.299 --> 00:00:55.884
+you only have to write small
+manageable functions to put it all
+
+9
+00:00:55.884 --> 00:00:58.375
+together to do a much bigger job.
+
+10
+00:01:02.931 --> 00:01:06.880
+First, we're going to check to
+see if the CSV file is there.
+
+11
+00:01:06.880 --> 00:01:09.645
+This method of the OS library,
+
+12
+00:01:09.645 --> 00:01:15.420
+OS.access will check and look for
+
+13
+00:01:17.590 --> 00:01:22.460
+a file called MyPhones.csv in
+the current Directory, and
+
+14
+00:01:22.460 --> 00:01:26.250
+if it returns os.F_OK then it's there.
+
+15
+00:01:26.250 --> 00:01:30.000
+If it's there, then we can open it.
+
+16
+00:01:31.480 --> 00:01:35.930
+We can read in the rows
+using csv.reader and
+
+17
+00:01:35.930 --> 00:01:40.330
+we can append each row onto our
+phones list, then we close it.
+
+18
+00:01:42.990 --> 00:01:49.710
+That is, if it's there, if it's not there,
+we don't need to load it.
+
+19
+00:01:49.710 --> 00:01:53.195
+One of the thing to point out here,
+let's go back up to the beginning.
+
+20
+00:01:53.195 --> 00:02:00.240
+Since we're going to read the phones and
+we can eliminate our phone's list
+
+21
+00:02:00.240 --> 00:02:04.910
+that had two entries in it already and we
+can make this phone's list an empty list.
+
+22
+00:02:09.486 --> 00:02:11.520
+Let's see where it is
+it's actually called.
+
+23
+00:02:16.088 --> 00:02:21.964
+In the main loop, the first thing
+we do is load the fund list and
+
+24
+00:02:21.964 --> 00:02:26.145
+the last thing we do is
+save the fund list, so
+
+25
+00:02:26.145 --> 00:02:32.890
+that we save it when we exit,
+we read it in fresh when we enter.
+
+26
+00:02:32.890 --> 00:02:38.620
+So that it's always either saved
+on disc or loaded in the program.
+
+27
+00:02:41.591 --> 00:02:44.690
+Now let's run our program,
+and see the whole thing work.
+
+28
+00:02:50.075 --> 00:02:55.465
+Show, there's Jerry Seinfeld,
+and Cosmo Kramer that we
+
+29
+00:02:55.465 --> 00:03:01.683
+saved when we tested our
+previous version of the program.
+
+30
+00:03:01.683 --> 00:03:05.687
+You can
+
+31
+00:03:05.687 --> 00:03:11.693
+add new log.
+
+32
+00:03:11.693 --> 00:03:15.693
+[SOUND]
+And
+
+33
+00:03:15.693 --> 00:03:22.693
+there is there.
+
+34
+00:03:22.693 --> 00:03:24.590
+But, you can hit it.
+
+35
+00:03:25.940 --> 00:03:28.740
+Let's say that item 2, Cosmo Kramer 2.
+
+36
+00:03:29.740 --> 00:03:34.560
+We'll press return and keep the name,
+we will change the phone.
+
+37
+00:03:42.550 --> 00:03:43.910
+There's the phone is changed.
+
+38
+00:03:46.260 --> 00:03:49.200
+We can show that the phone
+is actually changed.
+
+39
+00:03:50.370 --> 00:03:54.710
+Cosmo Kramer's phone now is 8789.
+
+40
+00:03:56.541 --> 00:04:02.000
+We can delete 1, delete Cosmo Kramer.
+
+41
+00:04:04.297 --> 00:04:09.090
+Sure that he's deleted now,
+and then we quit.
+
+42
+00:04:11.000 --> 00:04:12.320
+Now, let's run the program again.
+
+43
+00:04:12.320 --> 00:04:17.130
+And when we run the program,
+
+44
+00:04:17.130 --> 00:04:22.140
+the same file should be right in and
+there's what we have,
+
+45
+00:04:22.140 --> 00:04:26.720
+George Seinfeld and George Costanza,
+we don't have Cosmo Kramer anymore.
+
+46
+00:04:30.130 --> 00:04:30.946
+That's our program.

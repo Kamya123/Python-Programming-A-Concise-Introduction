@@ -1,0 +1,82 @@
+WEBVTT
+
+1
+00:00:12.457 --> 00:00:17.259
+Now, let's replace the stub that says
+writing to CSV file with one that
+
+2
+00:00:17.259 --> 00:00:20.100
+actually writes the CSV file.
+
+3
+00:00:20.100 --> 00:00:23.102
+First we import the CSV library.
+
+4
+00:00:26.339 --> 00:00:30.413
+Here is save the phone list.
+
+5
+00:00:30.413 --> 00:00:37.785
+First we open the CSV file,
+myPhones.csv for write.
+
+6
+00:00:37.785 --> 00:00:44.060
+Then we write every item in
+the phones list to that CSV file.
+
+7
+00:00:44.060 --> 00:00:49.525
+We use csv.writer on the file handle f,
+and then we write a whole row,
+
+8
+00:00:49.525 --> 00:00:53.980
+which consists of one item
+out of the phones list.
+
+9
+00:00:53.980 --> 00:00:54.912
+And then we close.
+
+10
+00:00:54.912 --> 00:00:57.050
+When do we use this?
+
+11
+00:00:58.090 --> 00:01:00.720
+Let's go down to the main loop.
+
+12
+00:01:01.735 --> 00:01:05.560
+save_phone_list is the last thing
+we do before we exit the program.
+
+13
+00:01:06.910 --> 00:01:08.045
+Now let's run it.
+
+14
+00:01:14.382 --> 00:01:19.167
+We have our usual list of phones,
+Jerry Seinfeld and Cosmo Kramer, and
+
+15
+00:01:19.167 --> 00:01:20.140
+then we quit.
+
+16
+00:01:22.360 --> 00:01:27.510
+And when we quit,
+we should execute save_phone_list.
+
+17
+00:01:27.510 --> 00:01:30.875
+So, let's look at myPhones.csv.
+
+18
+00:01:30.875 --> 00:01:34.804
+And you see that Jerry Seinfeld and
+Cosmo Kramer are there.

@@ -1,0 +1,359 @@
+WEBVTT
+
+1
+00:00:12.754 --> 00:00:16.420
+Now let's replace some more of
+these stubs with real functions.
+
+2
+00:00:16.420 --> 00:00:20.010
+Let's start by creating a new phone.
+
+3
+00:00:22.210 --> 00:00:26.350
+First, let me show you what
+this version will run like.
+
+4
+00:00:29.710 --> 00:00:33.534
+They're the ones that we built in,
+
+5
+00:00:33.534 --> 00:00:39.148
+here's a new one,
+enter the data for the new phone.
+
+6
+00:00:39.148 --> 00:00:43.681
+George Costanza,
+
+7
+00:00:43.681 --> 00:00:51.619
+(212) 835-1419.
+
+8
+00:00:53.591 --> 00:00:55.340
+Then we show, and there's George.
+
+9
+00:00:57.160 --> 00:01:00.570
+Now we can delete something too.
+
+10
+00:01:00.570 --> 00:01:02.500
+Well, which one do you want to delete?
+
+11
+00:01:02.500 --> 00:01:04.168
+We'll delete George.
+
+12
+00:01:05.771 --> 00:01:07.580
+And now he's gone.
+
+13
+00:01:07.580 --> 00:01:10.528
+That's what's new in this version.
+
+14
+00:01:10.528 --> 00:01:14.103
+First, let's start with
+how you create a phone.
+
+15
+00:01:14.103 --> 00:01:20.155
+When you create a phone, it's going to
+print enter the data for a new phone.
+
+16
+00:01:21.465 --> 00:01:22.025
+There it is.
+
+17
+00:01:23.465 --> 00:01:25.985
+Then you're going to use
+an input to get the new name.
+
+18
+00:01:25.985 --> 00:01:30.005
+You're going to get the input
+to get a new phone number.
+
+19
+00:01:30.005 --> 00:01:34.460
+Then you're going to build the sub list,
+name, and phone number.
+
+20
+00:01:34.460 --> 00:01:37.530
+And then you gotta append
+it onto the phones list.
+
+21
+00:01:37.530 --> 00:01:38.360
+And then you skip a line.
+
+22
+00:01:39.820 --> 00:01:41.311
+That's all there is to it.
+
+23
+00:01:43.489 --> 00:01:45.140
+Enter the name, enter the number.
+
+24
+00:01:46.810 --> 00:01:49.360
+Build a phone new sub list.
+
+25
+00:01:49.360 --> 00:01:51.180
+Append it to the phones list.
+
+26
+00:01:52.880 --> 00:01:56.110
+Here with the phone's list here.
+
+27
+00:01:56.110 --> 00:01:59.240
+Starts with Jerry Seinfeld and
+Cosmo Kramer.
+
+28
+00:02:02.740 --> 00:02:05.680
+Now, let's look at delete,
+that's a little bit more complex.
+
+29
+00:02:09.970 --> 00:02:12.850
+Now down in the main loop.
+
+30
+00:02:14.170 --> 00:02:19.400
+When you choose delete, it's going to
+ask which item do you want to delete.
+
+31
+00:02:20.760 --> 00:02:24.600
+And we print, which one it is for
+the time being, and
+
+32
+00:02:24.600 --> 00:02:27.230
+then we'll try to delete that one.
+
+33
+00:02:30.626 --> 00:02:32.590
+Here's the delete function.
+
+34
+00:02:35.100 --> 00:02:39.255
+First of all, we check to see
+if there's a proper menu choice.
+
+35
+00:02:39.255 --> 00:02:43.740
+At the time we did this deletion,
+there were only three people in there.
+
+36
+00:02:43.740 --> 00:02:44.890
+I asked for number 17.
+
+37
+00:02:44.890 --> 00:02:45.760
+He couldn't do it.
+
+38
+00:02:46.980 --> 00:02:52.770
+So we're going to check to see if
+that's a legitimate menu choice.
+
+39
+00:02:52.770 --> 00:02:57.180
+Also, if you typed in a letter or
+something like that.
+
+40
+00:02:57.180 --> 00:02:59.104
+If we want to filter that out.
+
+41
+00:02:59.104 --> 00:03:02.882
+So we're going to write a routine
+that'll check to see if
+
+42
+00:03:02.882 --> 00:03:05.873
+that is a proper menu choice and
+if it's not,
+
+43
+00:03:05.873 --> 00:03:09.590
+we're just going to return
+without deleting the funnel.
+
+44
+00:03:12.070 --> 00:03:15.519
+If it is a proper menu choice,
+I want to change it to an integer.
+
+45
+00:03:17.888 --> 00:03:21.050
+And then I'm going to delete one of them.
+
+46
+00:03:21.050 --> 00:03:25.150
+Now remember, we count these one,
+two, three, four,
+
+47
+00:03:25.150 --> 00:03:27.610
+five, those are the phone lines.
+
+48
+00:03:29.150 --> 00:03:33.320
+But Python counts zero, one, two, three.
+
+49
+00:03:34.950 --> 00:03:37.920
+So what we have to do is
+reduce that by one and
+
+50
+00:03:37.920 --> 00:03:42.250
+then we delete that item
+from the phone's list.
+
+51
+00:03:42.250 --> 00:03:44.280
+And then we'll print that we deleted it.
+
+52
+00:03:47.260 --> 00:03:50.930
+Now let's take a look at this
+proper menu choice business.
+
+53
+00:03:50.930 --> 00:03:57.350
+We pass this switch onto that
+proper menu choice function.
+
+54
+00:03:57.350 --> 00:04:01.880
+Now remember which came from an input
+statement, so it's a string.
+
+55
+00:04:01.880 --> 00:04:04.850
+Now we're going to have
+to convert to a number.
+
+56
+00:04:04.850 --> 00:04:07.950
+So first of all, we're going to need
+to check to see if it's digits in them.
+
+57
+00:04:07.950 --> 00:04:09.580
+If it has something in it,
+
+58
+00:04:09.580 --> 00:04:15.340
+which is not a digit then which
+is digit will return false?
+
+59
+00:04:16.930 --> 00:04:20.870
+So not is digit would be true and
+we would print
+
+60
+00:04:20.870 --> 00:04:25.250
+this which needs to be a number
+of a phone and return false.
+
+61
+00:04:25.250 --> 00:04:30.145
+If it returns false to delete phone,
+
+62
+00:04:30.145 --> 00:04:37.270
+then not false would be true and it
+would return without deleting the phone.
+
+63
+00:04:37.270 --> 00:04:40.220
+So the first thing that happens is
+we check to see if it's a number.
+
+64
+00:04:41.560 --> 00:04:44.910
+And if it is a number,
+we'll convert it to an integer.
+
+65
+00:04:47.250 --> 00:04:48.560
+Now there's another problem.
+
+66
+00:04:50.830 --> 00:04:52.040
+It could be a negative number.
+
+67
+00:04:53.670 --> 00:04:58.195
+We could have three phones and
+it be the number 217.
+
+68
+00:04:58.195 --> 00:04:59.780
+We check to see what this negative or
+
+69
+00:04:59.780 --> 00:05:02.540
+whether it's a bigger
+number than our phones.
+
+70
+00:05:02.540 --> 00:05:06.740
+If so, we'll print that it needs
+to be the number of the phone.
+
+71
+00:05:08.960 --> 00:05:15.240
+And then we'll return false so that delete
+phone will not attempt to delete it.
+
+72
+00:05:16.260 --> 00:05:21.800
+Now if it passes this test that it's
+a number, it converts to a number and
+
+73
+00:05:21.800 --> 00:05:26.480
+it's a number that's within the proper
+range, then we're going to consider it
+
+74
+00:05:26.480 --> 00:05:31.150
+an acceptable number to delete and
+we'll return true.
+
+75
+00:05:33.255 --> 00:05:39.045
+So to summarize, delete phones will
+be passed which phone to delete.
+
+76
+00:05:39.045 --> 00:05:43.624
+It will check to see if that's a number,
+and it's a number within the proper range,
+
+77
+00:05:43.624 --> 00:05:46.204
+and if it is,
+it'll convert it to an integer and
+
+78
+00:05:46.204 --> 00:05:49.578
+it'll delete that particular
+phone from the phone's list.

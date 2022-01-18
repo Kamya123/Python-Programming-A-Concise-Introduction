@@ -1,0 +1,484 @@
+WEBVTT
+
+1
+00:00:12.002 --> 00:00:16.770
+Let's talk a moment about the range
+function and converting it to a list.
+
+2
+00:00:18.560 --> 00:00:19.390
+Here are an example.
+
+3
+00:00:21.530 --> 00:00:24.635
+First of all, I've got a range function.
+
+4
+00:00:24.635 --> 00:00:30.280
+It starts at 2, it stops at 20,
+and it goes up at steps of 3.
+
+5
+00:00:30.280 --> 00:00:34.210
+In this version I've converted
+it to a list and printed it.
+
+6
+00:00:34.210 --> 00:00:36.525
+Let's take a look at that.
+
+7
+00:00:36.525 --> 00:00:42.370
+2, that's the starting one,
+goes up by 3 to 5, 3 more to 8,
+
+8
+00:00:42.370 --> 00:00:48.900
+3 to 11, 3 to 14, 3 to 17, and
+3 to 20, but it doesn't do 20.
+
+9
+00:00:48.900 --> 00:00:54.230
+That works as we would expect.
+
+10
+00:00:54.230 --> 00:00:56.640
+It takes the range and
+converts it to a list and prints it.
+
+11
+00:00:56.640 --> 00:01:03.933
+If you don't convert it to a list,
+however, you just get the phrase,
+
+12
+00:01:03.933 --> 00:01:09.260
+range 2 through 20 in
+steps of 3 back again.
+
+13
+00:01:09.260 --> 00:01:13.820
+In Python 2, the range function
+actually produced a list, and
+
+14
+00:01:13.820 --> 00:01:19.750
+they had to introduce a different function
+called x range that would work like ours.
+
+15
+00:01:19.750 --> 00:01:26.410
+The reason had to do with using
+the range function with a large range.
+
+16
+00:01:26.410 --> 00:01:30.480
+It would produce a list which were
+just huge and use up lots of memory
+
+17
+00:01:36.061 --> 00:01:41.000
+Now let's take a look at integers.
+
+18
+00:01:41.000 --> 00:01:42.910
+We have a big integer right here.
+
+19
+00:01:42.910 --> 00:01:47.980
+We could mark off every
+three digits with commas,
+
+20
+00:01:47.980 --> 00:01:52.460
+like this, but you gotta be careful
+about that because Python interprets
+
+21
+00:01:52.460 --> 00:01:56.440
+those as three different numbers as
+you can see when you print them out.
+
+22
+00:01:57.860 --> 00:01:59.090
+So, that's not a good idea.
+
+23
+00:02:01.190 --> 00:02:06.690
+Here's another caution that
+Python has keywords, and
+
+24
+00:02:06.690 --> 00:02:08.315
+this is the list of them right here.
+
+25
+00:02:08.315 --> 00:02:12.194
+You don't want to use those as a variable.
+
+26
+00:02:12.194 --> 00:02:16.070
+Let's see what happens if you use except
+
+27
+00:02:16.070 --> 00:02:18.610
+which is one of
+the keywords as a variable.
+
+28
+00:02:20.410 --> 00:02:21.640
+It gives you a syntax error.
+
+29
+00:02:24.680 --> 00:02:29.520
+Now what I have done when I
+felt like I needed to use
+
+30
+00:02:29.520 --> 00:02:34.350
+one of the keywords as
+a variable is I just put
+
+31
+00:02:34.350 --> 00:02:39.830
+an underscore after it and
+that makes it different.
+
+32
+00:02:41.710 --> 00:02:44.450
+Let's recall a function
+that we wrote previously.
+
+33
+00:02:44.450 --> 00:02:46.700
+Here's another copy, which I'll execute.
+
+34
+00:02:47.960 --> 00:02:52.750
+We defined a list New England, consisting
+of the states of New England, Maine,
+
+35
+00:02:52.750 --> 00:02:54.660
+New Hampshire, Vermont, and
+
+36
+00:02:54.660 --> 00:02:59.457
+then we wrote a function that stepped
+through the list printing each state.
+
+37
+00:03:01.270 --> 00:03:07.150
+Now what I want to do is do a little
+bit more sophisticated version of that.
+
+38
+00:03:09.440 --> 00:03:13.540
+Here is New England redefined and
+this time,
+
+39
+00:03:13.540 --> 00:03:18.790
+redefined each state to have a population.
+
+40
+00:03:18.790 --> 00:03:23.880
+That meant that each state really
+is represented by a sublist.
+
+41
+00:03:23.880 --> 00:03:27.150
+Massachusetts and
+its population is that sublist.
+
+42
+00:03:27.150 --> 00:03:30.090
+Connecticut and
+its population is this sublist.
+
+43
+00:03:30.090 --> 00:03:30.770
+And so on.
+
+44
+00:03:30.770 --> 00:03:35.213
+So each item of the list New England.
+
+45
+00:03:40.250 --> 00:03:45.300
+Is a sublist consisting of the name
+of the state and its population.
+
+46
+00:03:47.030 --> 00:03:49.700
+Now before we write our functions,
+
+47
+00:03:49.700 --> 00:03:55.340
+let's make sure that we understand how to
+access the various parts of this list.
+
+48
+00:03:55.340 --> 00:03:58.050
+This is an exercise that
+you can do along with me.
+
+49
+00:04:01.030 --> 00:04:02.950
+What is the first item of New England?
+
+50
+00:04:04.110 --> 00:04:09.460
+Well the first item of New England
+is the one with index zero, and
+
+51
+00:04:09.460 --> 00:04:12.280
+that is Massachusetts and its population.
+
+52
+00:04:12.280 --> 00:04:16.070
+It's a sublist,
+it's not just Massachusetts.
+
+53
+00:04:16.070 --> 00:04:17.770
+What is the second item?
+
+54
+00:04:17.770 --> 00:04:22.649
+Well, that's the item with index one and
+that's Connecticut.
+
+55
+00:04:24.960 --> 00:04:27.390
+Now what is the name of the state
+
+56
+00:04:27.390 --> 00:04:30.850
+in the second element that
+is the element of index one?
+
+57
+00:04:32.550 --> 00:04:36.750
+Well, we know that this
+will give us the name and
+
+58
+00:04:36.750 --> 00:04:40.820
+then give us the sublist that consists
+of Connecticut to us and its population.
+
+59
+00:04:40.820 --> 00:04:42.280
+If we want the name of the state,
+
+60
+00:04:42.280 --> 00:04:47.460
+we need the 0th element of that list,
+and that's Connecticut.
+
+61
+00:04:47.460 --> 00:04:53.210
+If we want the population of Connecticut,
+we go to the item of index one.
+
+62
+00:04:53.210 --> 00:04:57.996
+Let me give you a more complete
+
+63
+00:04:57.996 --> 00:05:03.554
+solution here that you can study.
+
+64
+00:05:22.201 --> 00:05:23.282
+This is for port one.
+
+65
+00:05:23.282 --> 00:05:26.980
+It will take the New England list and
+
+66
+00:05:26.980 --> 00:05:32.783
+print both its population and
+state name for each item.
+
+67
+00:05:42.076 --> 00:05:44.720
+There's our little report.
+
+68
+00:05:44.720 --> 00:05:49.590
+We put population at the top of that
+column, state at the top of that column.
+
+69
+00:05:49.590 --> 00:05:54.260
+We give the population of Massachusetts
+and the state name of Massachusetts.
+
+70
+00:05:54.260 --> 00:05:57.500
+Now let's take a look at the function and
+see how that works.
+
+71
+00:05:58.700 --> 00:06:02.450
+The function is for port one and
+we passed state data in.
+
+72
+00:06:02.450 --> 00:06:06.695
+In this case we passed
+the New England state data.
+
+73
+00:06:10.451 --> 00:06:14.431
+It will print, first of all,
+the population and the state, and
+
+74
+00:06:14.431 --> 00:06:15.550
+we see that here.
+
+75
+00:06:17.880 --> 00:06:22.920
+Now, for each state item in state data,
+state data is the big list
+
+76
+00:06:22.920 --> 00:06:27.931
+that we passed into the function,
+we will print state item of one.
+
+77
+00:06:27.931 --> 00:06:32.835
+State item of one is going to be item one
+
+78
+00:06:32.835 --> 00:06:37.720
+of each one of these sublists.
+
+79
+00:06:37.720 --> 00:06:39.370
+And that's the population.
+
+80
+00:06:39.370 --> 00:06:41.140
+Then we'll print a blank.
+
+81
+00:06:41.140 --> 00:06:45.290
+And then we'll print state item of zero.
+
+82
+00:06:45.290 --> 00:06:49.089
+The state item of zero is the 0th item of
+each of these lists which is the name of
+
+83
+00:06:49.089 --> 00:06:49.680
+the state.
+
+84
+00:06:50.770 --> 00:06:51.850
+That's how it works.
+
+85
+00:06:51.850 --> 00:06:54.733
+It's very simple and straightforward.
+
+86
+00:06:54.733 --> 00:06:59.920
+Now notice that since we used state
+data here, we didn't use New England,
+
+87
+00:06:59.920 --> 00:07:06.780
+this can work on any big list
+that has this general shape.
+
+88
+00:07:06.780 --> 00:07:13.530
+So for example, I can define mid-Atlantic
+states to be this, New York and
+
+89
+00:07:13.530 --> 00:07:17.272
+its population, New Jersey, its
+population, Pennsylvania, its population.
+
+90
+00:07:17.272 --> 00:07:22.380
+Let me write that out so
+that it is more obvious.
+
+91
+00:07:22.380 --> 00:07:29.536
+We can use this function on the mid
+Atlantic states, report one mid Atlantic.
+
+92
+00:07:33.062 --> 00:07:35.182
+And it prints the proper report for
+
+93
+00:07:35.182 --> 00:07:40.270
+the mid Atlantic state because it was not
+written specifically for New England.
+
+94
+00:07:40.270 --> 00:07:44.540
+It will work on other regional
+lists in the proper manner.
+
+95
+00:07:46.600 --> 00:07:50.157
+It is instructive to write this function
+in a slightly different way, so
+
+96
+00:07:50.157 --> 00:07:51.044
+here it is again.
+
+97
+00:08:01.662 --> 00:08:02.459
+Report two.
+
+98
+00:08:10.537 --> 00:08:12.370
+Now what's different about this?
+
+99
+00:08:12.370 --> 00:08:16.570
+Well, we still print
+the headings in the same way,
+
+100
+00:08:16.570 --> 00:08:20.970
+but this time we just use i and
+
+101
+00:08:20.970 --> 00:08:24.600
+we ranged from zero to
+the length of the left.
+
+102
+00:08:26.280 --> 00:08:31.950
+Instead of stepping through each
+item in the list, we do it this way.
+
+103
+00:08:31.950 --> 00:08:39.360
+And i of course is just an integer, 0,
+1, 2, 3, 4 up to the length of the list.
+
+104
+00:08:39.360 --> 00:08:43.092
+And so we'll print the state data of i,
+
+105
+00:08:45.826 --> 00:08:51.446
+Bracket one for the population and
+bracket zero for the state name.

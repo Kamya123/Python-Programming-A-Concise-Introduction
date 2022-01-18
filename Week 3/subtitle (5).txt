@@ -1,0 +1,127 @@
+So far in this course, we've been
+writing functions and running them. Now, we want to start writing whole
+programs or scripts, as Python calls them. And we need to be able to run those from
+a command window or a terminal window. And on a PC,
+you can do that by typing cmd.exe. And you will get
+a Command Prompt like this. And now, you have to move to
+the directory where your programs are. And you will say change directory, documents, pythoncoursera, this is where I keep mine. And then, I can look at,
+see there by typing dir. And I can see where I am
+because of the Prompt. Or I can type this. On the Macintosh,
+you would use the search window, in the top right and typing terminal. And run terminal. The terminal window on Mac is just
+like this Command window on a PC, except that it uses Linux Command. You'll type ls, to see what's there. And not dir. And you would type pwd, to see what
+directory you're in and not cd. Now, we're not really
+going to do things this way. I just want you to know
+that it can be done. And as long as you have only the Python
+that we've installed on your machine. That this works just fine. However, Macintosh's some other machines
+come with Python already installed. This, in the case of a Mac,
+this is Python 2.7, which is not compatible with
+3.4 that we've been writing, without making some minor
+modifications in the code. So we're going to not use this. We're going to took that away because
+Spider provides us with the equivalent. If you go to Tools menu,
+you can click Open command prompt. And there,
+you have this same command prompt. And I can type dir to see
+the files in the directory. Type cd and
+see what directory that I'm in. On the Macintosh, of course,
+those would be ls and pwd. Now, the advantage of this is
+that it is set up for Python 3.4. Whether you're on a Mac or PC. And we don't have to deal
+with those differences. Now, what we want to do is, Run a program. Now, one way to do that is that
+we can create this program. But first, I'm going to run it. I've got it already out there. And to run that program, we type
+python then the name of the program. Our first one's going to be print_file. Now, since we cannot pass in
+arguments we have to pass it command line arguments and
+we want to print humptydumpty. And there it is. So notice, we type python first,
+then the program we want to run. And then, more and
+more arguments afterwards. This would be equivalent to
+the arguments in a function. Now, let's create that from this. We're going to copy everything between the
+pound, percent signs marked at the cell. Cmd+C. I'm going to go up here to File menu. I'm going to create a New file. I'm going to paste this
+in to that new file. Now, this new file got it started but
+wait, we've already got everything. I think there something, so,
+I'm just going to delete. Now, it doesn't have a name. So, I'm going to File>Save As and notice that I'm in my default directory. And I'm going to save it as print_file
+which is what I called it [SOUND]. This already exists,
+now we've got that file ready to go. And we can run it as we
+did just a moment ago. Now, let's see how we did that. First of all,
+we had to use the system library, system library is going to enable
+us to read this, for example. The first thing we do is use argument
+of value of one to get the file name. This program is starting at zero,
+then here's argument one. If there were more, then it'd be
+argument two, three and four and so on. Now, from that file name, we'll open it,
+and we'll get a file name in file. This is just like our print_file
+earlier all the way through. We're relining in file,
+we'll print that line. We won't put a carriage return on it. And then, we'll close the file. This is the difference. To get our arguments, we do that. Let me run it one more time. So satisfying to see these things run. Now, let's do an exercise. And we're going to do this together. And this is going to
+be another conversion. You want to take a New file,
+Paste this in. I don't need this stuff. And we have instructions on
+how to convert it right here. To convert this function to
+a stand alone program's Script. That takes two file names from
+the command line copies, one to another. Let's run this thing just so
+y'all know what it does before I save it. Python, you remember to run the program,
+this one's going to be called copy_file. So we give it the name of the program. Then we're going to copy humptydumpty,
+our old standby. And we're going to call it, tie it to
+humpty.txt so I can find it easily. It would be at the end. And it doesn't say anything here. But hopefully, it did it right up here. And there's humpty dumpty all copied. Now, what I want to do is write
+this program from this function. So I'm going to say Save As and
+I'm going to call it copy_file. It's going to complain
+because it's already there. But I've got the instruction
+here on how to do that. Delete this def line. And notice, the def line gives us
+the infile and outfile name and we're going to loss that when delete this. The next thing we do is we're going to
+use the Edit menu to Unindent all lines The next thing we're going to
+do is import the system library. Now, along the way you might want
+to save this thing occasionally so that you don't lose any changes. Now, we lost an infile name and
+an outfile name. Since it's no longer
+a function with arguments. So we gotta get the infile
+name from somewhere and that's where the sys is useful. sys.argv(1) is the first
+thing after the program name. sys.argv of 0 is the program. sys.argv1 is this, this is sys.argv of 2. Outfilename = sys.argv(2). So now, we've gotten these two
+arguments from the command line, And the rest of the program is the same. We're going to open the infilename. We're going to open the outfilename for
+write. We're going to step through the infile,
+line at a time, and write it out to the outfile. Then we're going to close them both. Let's save this, function. And now,
+just to see that it actually works. I'm going to run it again. That way, let me Delete this. So you will also have [SOUND] cheating. And there it is, and it should be a copy. Now, let's look at another Script
+run from the command line. You can copy this into a file or
+you can use mine, clwc.py. To run this from the command line,
+I need a console. What this has done is taken our file,
+humptydumpty and counted how many letters are in the file, how many words are in the
+file, and how many lines are in the file. Now, let's look and see how it does this. First of all,
+we import our system library. We get the file name from sys.argv(1). Remember, this is sysrv(0),
+this is sysrv(1). We're going to count the lines and
+characters. So we set up a variable
+initialized to zero to do that. For every line in the text file we're
+going to add one to the line count. For every word, And
+the lines split up into words. We're going to add one to the word count. And then, we're going to add the length
+of a line which is the number of characters in the line
+to the character count. And we close the file and
+we print out the result. Let's look back at this line split for
+a second. Let me grab that line,
+go back over into Python itself. And I'll define line equal to that line. There it is. line.split() fills a list
+of the words in that line. So we're saying for every word in this
+list of words, add one to that word count. That's the program. Now, let's look at another program
+that reads from a file and also uses a dictionary. This will illustrate the value
+of using dictionaries. First, let's put it into play and write. What this does is it reads
+through the file Humpty Dumpty. Picks out each word. As you can see,
+there's a long list of them. And counts how many times that
+word is used in the text file. Now, let's see how it
+goes about doing that. First of all, as you expect. We're going to open the text file, we get
+the name as an argument, we open it and we have a handle called, text_file. Ultimately, we'll close that. Meanwhile, we'll use one of
+our standard loop paradigms. We'll set up an empty dictionary,
+word dic. And then,
+we will add to that inside the loop. So we step through the loop for
+every line in the text_file. We'll take each word in that line
+after we change it to lower case. So all the words can be compared even
+if they are capitalized in one place or another. And then, we'll split the line into words. So for every word in this line,
+converted to lower case split into words. That's a list. We will strip the word of punctuation. If the word is not in the word dictionary, we'll put it in there
+with a count of zero. Where it's in there or not,
+whether we just inserted it or whether it was already in there. We'll add one to the words count. So the first time it's there,
+it'll be in there with a count of one. The next time,
+its count will be increased by one. So that's our loop. We'll go through every line,
+we'll go through every word in that line, we'll strip out punctuation like
+commas and semicolons and so on. And then, we will insert that word
+into the dictionary if it's not already there and add one to its count. Then when we close the file,
+we'll have a dictionary. And the key will be the word and the value will be the number of
+times that word appears in the file. We'll print out what we're going to do. And then, we will sort the dictionary and
+convert it to a list. Actually, that will sort the keys and
+convert that to a list. For every word in that list, we're going to print the value
+of that word in the dictionary. That's the count,
+the number of times it appears. And we'll print the word. And there you see that
+printout right there. The exercise that I want you to do now is
+to convert this to a standalone program or grab my standalone program and
+run it from the command line. Let me show you running
+it from a command line. This is the program, and notice that
+the indentions have been removed. We'll open a Command Prompt. Python count_words.py and it'll run it on HumptyDumpty.txt. I have another file out there
+that you can run it on too, ADream.txt which is a longer file,
+it has more words in it. Let me bring that up. This is A Dream Within a Dream,
+by Edgar Allan Poe. It's a poem.

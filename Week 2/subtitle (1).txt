@@ -1,0 +1,55 @@
+Now let's look at a function
+that makes use of lists. First of all,
+I'm going to define two lists. Here's a list that has one A in it, and
+here's a list that has four A's in it. I want to write a function that's just
+going to count the number of A's in the list. And this is it. Count A. To run it, type count_a of and
+then we'll pass it a list. Now. And it says there one
+letter A is in the list. we'll say count A less one,
+we'll get four letter As in the list. These are correct. Let's see how that works. First of all, we start off by
+setting a counter equal to zero. We're going to count one, two, three,
+four, five, however many letters, A, and we have to start with zero count. When we go through the loop
+a number of times, and then when we get out of the loop, we're going to make use of that count and
+print our count letters A in the list. Now let's see how the loop works. This says for every letter in a list, so it's going to look at the first letter
+in a list, and then later it's going to look to the next letter in a list and
+the next letter in a list. If that letter is an A,
+we use the double equals for a comparison,
+we're going to add one to count. Then we're going to double back and a get
+it another letter, compared it to A and then add one to count if it is a letter A. If it's not a letter
+A we won't do anything. That's the way the function works. Now let's look at the various
+aspects of writing this loop. First of all, there was the initialization
+of this list counter, CT. Next we went to the loop
+a number of times, and in the loop we changed that counter. And then when we got out we
+made use of the counter here. So those three parts. Initialize the counter, change the counter
+every time through the loop, and then print the result out. This is a design pattern that you will see
+over and over and over again in loops. Now I want you to write a function
+that makes use of a loop and makes use of a list. This exercise is to write a function
+that computes the average of the numbers in the list. That means that you're going to have
+to write a loop that steps through each element in the list, you're going to
+have to add up these elements, you're going to have to
+count those elements, and then you're going to have to
+divide that sum by the count. Here are a couple of test lists that
+you can use to test your function. This list should have an average of 41.5, this list should have
+an average of minus 9.215. Here's my run, this is a run on n list. I listed the elements, I computed
+the average, and I wrote the count. Here is my run on our r list,
+and I wrote each element out. Here's the average and here's the count. Now why did I write each element out? Well, often when you go through a list,
+you miss the first element or the last element. And if you write the list out ,you
+can be sure that you got them all. For example, n list starts with two and
+ends with one. Mine starts with two and ends with one,
+so I know I got the whole list. Our list starts with 3.14 and
+ends with four. Here's 3.14 and here's four, so
+I know I got the whole list. And your function should
+be average numlist and use numlist as your list
+of variables throughout. Don't use end list because
+it'll only work on this list. Don't use our r list because
+it'll only work on this r list. You've got to use a variable
+that will work on both of them. Now you write this function and
+press Continue when you're finished and I'll show you my solution. Here's my solution, and
+there are others by the way. Define average numlist colon now I
+start off with the sum equals zero, and I write an underscore here because sum
+is a keyword and I want to use sum but I don't want to use the keyword. For i in the range from zero
+to the length of the list. This is one way to step through the list. Go through the proper number of times and
+add to that, I'm going to take sum,
+sum plus the number. And that will give me a new sum. And then I'm going to print
+the number that I just used. I got all of these. And then the average is going to be
+the sum divided by the length of the list. Now I'm going to print average is and
+I'll print the average. Its count is n under the note. That's one way to do this.

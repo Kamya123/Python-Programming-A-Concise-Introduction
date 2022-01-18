@@ -1,0 +1,90 @@
+WEBVTT
+
+1
+00:00:11.578 --> 00:00:16.922
+Now let's do another example of a function
+using a loop to step through a list.
+
+2
+00:00:29.067 --> 00:00:32.643
+Notice that we have a list called
+newEngland that has the states
+
+3
+00:00:32.643 --> 00:00:36.096
+of newEngland, Maine,
+New Hampshire, Vermont and so on.
+
+4
+00:00:36.096 --> 00:00:42.051
+And we have a function for_state, and
+it will step through this last slis,
+
+5
+00:00:42.051 --> 00:00:46.440
+and for each state in slis,
+it'll print the state.
+
+6
+00:00:46.440 --> 00:00:47.586
+Now let's see this run.
+
+7
+00:00:54.420 --> 00:00:59.156
+Note that instead of using slis,
+we're giving it
+
+8
+00:00:59.156 --> 00:01:04.760
+the actual list, newEngland,
+and there they are.
+
+9
+00:01:04.760 --> 00:01:05.590
+In this case,
+
+10
+00:01:05.590 --> 00:01:09.816
+we stepped through the items on the list
+one at a time, and printed them.
+
+11
+00:01:11.921 --> 00:01:15.635
+Now, what you need to write is a simple
+function that will print a list.
+
+12
+00:01:23.173 --> 00:01:25.398
+Here's some lists to test it out on.
+
+13
+00:01:33.148 --> 00:01:35.115
+Here's my run of my solution,
+
+14
+00:01:35.115 --> 00:01:39.898
+press return when you have finished
+your solution and I will show you mine.
+
+15
+00:01:49.167 --> 00:01:52.817
+Here is the function print list,
+for each item in the list,
+
+16
+00:01:52.817 --> 00:01:54.570
+just simply print the item.
+
+17
+00:01:55.880 --> 00:01:58.480
+This will step through
+the list one item at a time,
+
+18
+00:01:58.480 --> 00:02:00.120
+and then that will print the item.
+
+19
+00:02:01.530 --> 00:02:05.374
+That's all there is to it,
+notice that it works on any kind of list.

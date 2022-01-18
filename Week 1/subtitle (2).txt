@@ -1,0 +1,40 @@
+Now let's look at a simple
+function in Python. The kernel that we have,
+percent, pound percent sent, and pound percent sent, and
+they mark out a cell. These lines show you
+the boundaries of the cell. Here we have a function
+defined within a cell, and we can execute that by typing Ctrl, Enter. On a Macintosh it would be command return. Now this function can be run by typing in the console
+the name of the function. Hello, world! A couple of things to note about this. One is it's got a single statement. Print hello world. And it does that. And this statement is indented four
+spaces, one, two, three, four. We always indent four spaces we don't
+use tabs that can sometimes cause confusion on the part of python. I've also got a string here
+enclosed in triple quotes. This string can be used to
+document the program, and if you notice up here in [INAUDIBLE]
+inspector, you can get the definitions
+of various functions and we can get the definition of our
+function by clicking on hello. Yeah, I'm here type in control I. Then our function shows up here in this
+triple queried string is a documentation so that you can put instructions on how to
+run your program for example in that or your function. Now let's write another function. Here's the area of a circle
+of a given radius. Again we've got pound percent
+cent to mark out the cell. We can execute this [INAUDIBLE]
+anywhere in the cell and type in control enter or
+command return on a Macintosh. That puts, that loads it into
+the console window over here. And now we can run it by typing, Area
+of a circle, the name of the function. And I'll give it a value of five for
+the radius. It prints out the area of
+a circle of radius 5 is 78.5. Now let's look at does that first of all, we have the formula for
+the area of a circle. Area is equal to pi,
+3.14 times the radius, squared. Just a simple formula for
+the area of a circle. Now, we print the phrase,
+the area of a circle of radius, all about the radius is all
+about the area that we computed. Now you try writing a function,
+here is an exercise to do. Write a function def area triangle
+BH where B is the base and H is the height of the triangle, to compute
+the area of a triangle the formula is area equals one half base times the height,
+output should look like the following. The area of a triangle of base 3 and
+height 5 is 7 and a half. You can test your function by
+executing the following code. Here's a triangle of base 3 and height 5, here's one of base 2 and height 20. Here is my run of this. The area of a triangle of base 3 and
+height 5 is 7.5. The area of a triangle of base 2 and
+height 20 is 20. Now you try it, when you get through,
+press continue and I'll show you my solution. Okay, here is my solution. Definition area of triangle, bh is area equal one-half base times
+the height, just that same formula. Print the area of a triangle of base,
+b, and height h, is area.

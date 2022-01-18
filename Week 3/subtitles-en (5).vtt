@@ -1,0 +1,979 @@
+WEBVTT
+
+1
+00:00:12.283 --> 00:00:15.835
+So far in this course, we've been
+writing functions and running them.
+
+2
+00:00:15.835 --> 00:00:22.905
+Now, we want to start writing whole
+programs or scripts, as Python calls them.
+
+3
+00:00:22.905 --> 00:00:31.368
+And we need to be able to run those from
+a command window or a terminal window.
+
+4
+00:00:31.368 --> 00:00:37.615
+And on a PC,
+you can do that by typing cmd.exe.
+
+5
+00:00:37.615 --> 00:00:43.083
+And you will get
+a Command Prompt like this.
+
+6
+00:00:43.083 --> 00:00:46.496
+And now, you have to move to
+the directory where your programs are.
+
+7
+00:00:46.496 --> 00:00:51.405
+And you will say change directory,
+
+8
+00:00:51.405 --> 00:00:55.823
+documents, pythoncoursera,
+
+9
+00:00:55.823 --> 00:00:59.429
+this is where I keep mine.
+
+10
+00:00:59.429 --> 00:01:02.645
+And then, I can look at,
+see there by typing dir.
+
+11
+00:01:06.442 --> 00:01:11.000
+And I can see where I am
+because of the Prompt.
+
+12
+00:01:11.000 --> 00:01:11.980
+Or I can type this.
+
+13
+00:01:14.500 --> 00:01:17.478
+On the Macintosh,
+you would use the search window,
+
+14
+00:01:17.478 --> 00:01:19.654
+in the top right and typing terminal.
+
+15
+00:01:19.654 --> 00:01:21.744
+And run terminal.
+
+16
+00:01:21.744 --> 00:01:27.513
+The terminal window on Mac is just
+like this Command window on a PC,
+
+17
+00:01:27.513 --> 00:01:30.614
+except that it uses Linux Command.
+
+18
+00:01:30.614 --> 00:01:33.420
+You'll type ls, to see what's there.
+
+19
+00:01:33.420 --> 00:01:35.033
+And not dir.
+
+20
+00:01:35.033 --> 00:01:41.930
+And you would type pwd, to see what
+directory you're in and not cd.
+
+21
+00:01:41.930 --> 00:01:44.414
+Now, we're not really
+going to do things this way.
+
+22
+00:01:44.414 --> 00:01:47.699
+I just want you to know
+that it can be done.
+
+23
+00:01:47.699 --> 00:01:54.990
+And as long as you have only the Python
+that we've installed on your machine.
+
+24
+00:01:54.990 --> 00:01:56.650
+That this works just fine.
+
+25
+00:01:57.710 --> 00:02:03.740
+However, Macintosh's some other machines
+come with Python already installed.
+
+26
+00:02:03.740 --> 00:02:07.404
+This, in the case of a Mac,
+this is Python 2.7,
+
+27
+00:02:07.404 --> 00:02:11.926
+which is not compatible with
+3.4 that we've been writing,
+
+28
+00:02:11.926 --> 00:02:16.630
+without making some minor
+modifications in the code.
+
+29
+00:02:16.630 --> 00:02:18.380
+So we're going to not use this.
+
+30
+00:02:18.380 --> 00:02:25.940
+We're going to took that away because
+Spider provides us with the equivalent.
+
+31
+00:02:25.940 --> 00:02:30.247
+If you go to Tools menu,
+you can click Open command prompt.
+
+32
+00:02:30.247 --> 00:02:33.820
+And there,
+you have this same command prompt.
+
+33
+00:02:34.910 --> 00:02:39.286
+And I can type dir to see
+the files in the directory.
+
+34
+00:02:39.286 --> 00:02:43.120
+Type cd and
+see what directory that I'm in.
+
+35
+00:02:43.120 --> 00:02:49.156
+On the Macintosh, of course,
+those would be ls and pwd.
+
+36
+00:02:49.156 --> 00:02:57.469
+Now, the advantage of this is
+that it is set up for Python 3.4.
+
+37
+00:02:57.469 --> 00:03:01.324
+Whether you're on a Mac or PC.
+
+38
+00:03:01.324 --> 00:03:03.460
+And we don't have to deal
+with those differences.
+
+39
+00:03:06.510 --> 00:03:09.365
+Now, what we want to do is,
+
+40
+00:03:11.908 --> 00:03:16.480
+Run a program.
+
+41
+00:03:16.480 --> 00:03:21.112
+Now, one way to do that is that
+we can create this program.
+
+42
+00:03:21.112 --> 00:03:22.528
+But first, I'm going to run it.
+
+43
+00:03:22.528 --> 00:03:24.170
+I've got it already out there.
+
+44
+00:03:25.660 --> 00:03:31.520
+And to run that program, we type
+python then the name of the program.
+
+45
+00:03:31.520 --> 00:03:34.073
+Our first one's going to be print_file.
+
+46
+00:03:34.073 --> 00:03:39.406
+Now, since we cannot pass in
+arguments we have to pass
+
+47
+00:03:39.406 --> 00:03:45.579
+it command line arguments and
+we want to print humptydumpty.
+
+48
+00:03:48.016 --> 00:03:49.654
+And there it is.
+
+49
+00:03:49.654 --> 00:03:54.368
+So notice, we type python first,
+then the program we want to run.
+
+50
+00:03:54.368 --> 00:03:59.100
+And then, more and
+more arguments afterwards.
+
+51
+00:03:59.100 --> 00:04:02.080
+This would be equivalent to
+the arguments in a function.
+
+52
+00:04:05.110 --> 00:04:07.617
+Now, let's create that from this.
+
+53
+00:04:14.281 --> 00:04:19.365
+We're going to copy everything between the
+pound, percent signs marked at the cell.
+
+54
+00:04:19.365 --> 00:04:20.944
+Cmd+C.
+
+55
+00:04:20.944 --> 00:04:23.313
+I'm going to go up here to File menu.
+
+56
+00:04:23.313 --> 00:04:25.565
+I'm going to create a New file.
+
+57
+00:04:25.565 --> 00:04:28.398
+I'm going to paste this
+in to that new file.
+
+58
+00:04:28.398 --> 00:04:34.191
+Now, this new file got it started but
+wait, we've already got everything.
+
+59
+00:04:34.191 --> 00:04:36.537
+I think there something, so,
+I'm just going to delete.
+
+60
+00:04:36.537 --> 00:04:38.777
+Now, it doesn't have a name.
+
+61
+00:04:38.777 --> 00:04:42.326
+So, I'm going to File>Save As and
+
+62
+00:04:42.326 --> 00:04:46.904
+notice that I'm in my default directory.
+
+63
+00:04:46.904 --> 00:04:55.205
+And I'm going to save it as print_file
+which is what I called it [SOUND].
+
+64
+00:04:55.205 --> 00:05:02.369
+This already exists,
+now we've got that file ready to go.
+
+65
+00:05:02.369 --> 00:05:08.197
+And we can run it as we
+did just a moment ago.
+
+66
+00:05:08.197 --> 00:05:09.706
+Now, let's see how we did that.
+
+67
+00:05:09.706 --> 00:05:14.011
+First of all,
+we had to use the system library,
+
+68
+00:05:14.011 --> 00:05:19.621
+system library is going to enable
+us to read this, for example.
+
+69
+00:05:19.621 --> 00:05:26.920
+The first thing we do is use argument
+of value of one to get the file name.
+
+70
+00:05:26.920 --> 00:05:32.370
+This program is starting at zero,
+then here's argument one.
+
+71
+00:05:32.370 --> 00:05:34.920
+If there were more, then it'd be
+argument two, three and four and so on.
+
+72
+00:05:37.490 --> 00:05:42.992
+Now, from that file name, we'll open it,
+and we'll get a file name in file.
+
+73
+00:05:42.992 --> 00:05:48.321
+This is just like our print_file
+earlier all the way through.
+
+74
+00:05:48.321 --> 00:05:50.934
+We're relining in file,
+we'll print that line.
+
+75
+00:05:50.934 --> 00:05:52.872
+We won't put a carriage return on it.
+
+76
+00:05:52.872 --> 00:05:53.770
+And then, we'll close the file.
+
+77
+00:05:54.830 --> 00:05:57.244
+This is the difference.
+
+78
+00:05:57.244 --> 00:05:59.460
+To get our arguments, we do that.
+
+79
+00:06:02.890 --> 00:06:03.860
+Let me run it one more time.
+
+80
+00:06:05.080 --> 00:06:07.738
+So satisfying to see these things run.
+
+81
+00:06:07.738 --> 00:06:13.240
+Now, let's do an exercise.
+
+82
+00:06:13.240 --> 00:06:15.600
+And we're going to do this together.
+
+83
+00:06:17.380 --> 00:06:19.200
+And this is going to
+be another conversion.
+
+84
+00:06:19.200 --> 00:06:24.853
+You want to take a New file,
+Paste this in.
+
+85
+00:06:24.853 --> 00:06:27.106
+I don't need this stuff.
+
+86
+00:06:27.106 --> 00:06:30.790
+And we have instructions on
+how to convert it right here.
+
+87
+00:06:30.790 --> 00:06:34.350
+To convert this function to
+a stand alone program's Script.
+
+88
+00:06:34.350 --> 00:06:37.800
+That takes two file names from
+the command line copies, one to another.
+
+89
+00:06:37.800 --> 00:06:43.560
+Let's run this thing just so
+y'all know what it does before I save it.
+
+90
+00:06:43.560 --> 00:06:49.120
+Python, you remember to run the program,
+this one's going to be called copy_file.
+
+91
+00:06:49.120 --> 00:06:51.244
+So we give it the name of the program.
+
+92
+00:06:51.244 --> 00:06:55.017
+Then we're going to copy humptydumpty,
+our old standby.
+
+93
+00:06:57.838 --> 00:07:03.353
+And we're going to call it, tie it to
+humpty.txt so I can find it easily.
+
+94
+00:07:03.353 --> 00:07:07.695
+It would be at the end.
+
+95
+00:07:07.695 --> 00:07:10.354
+And it doesn't say anything here.
+
+96
+00:07:10.354 --> 00:07:13.024
+But hopefully, it did it right up here.
+
+97
+00:07:13.024 --> 00:07:14.380
+And there's humpty dumpty all copied.
+
+98
+00:07:17.040 --> 00:07:23.080
+Now, what I want to do is write
+this program from this function.
+
+99
+00:07:24.470 --> 00:07:28.869
+So I'm going to say Save As and
+I'm going to call it copy_file.
+
+100
+00:07:35.011 --> 00:07:39.272
+It's going to complain
+because it's already there.
+
+101
+00:07:39.272 --> 00:07:41.810
+But I've got the instruction
+here on how to do that.
+
+102
+00:07:41.810 --> 00:07:44.224
+Delete this def line.
+
+103
+00:07:44.224 --> 00:07:47.643
+And notice, the def line gives us
+the infile and outfile name and
+
+104
+00:07:47.643 --> 00:07:49.870
+we're going to loss that when delete this.
+
+105
+00:07:53.580 --> 00:07:57.910
+The next thing we do is we're going to
+use the Edit menu to Unindent all lines
+
+106
+00:08:06.281 --> 00:08:09.984
+The next thing we're going to
+do is import the system library.
+
+107
+00:08:19.040 --> 00:08:26.935
+Now, along the way you might want
+to save this thing occasionally so
+
+108
+00:08:26.935 --> 00:08:30.985
+that you don't lose any changes.
+
+109
+00:08:30.985 --> 00:08:35.116
+Now, we lost an infile name and
+an outfile name.
+
+110
+00:08:35.116 --> 00:08:39.161
+Since it's no longer
+a function with arguments.
+
+111
+00:08:39.161 --> 00:08:44.427
+So we gotta get the infile
+name from somewhere and
+
+112
+00:08:44.427 --> 00:08:48.030
+that's where the sys is useful.
+
+113
+00:08:48.030 --> 00:08:56.440
+sys.argv(1) is the first
+thing after the program name.
+
+114
+00:08:58.745 --> 00:09:02.355
+sys.argv of 0 is the program.
+
+115
+00:09:02.355 --> 00:09:07.532
+sys.argv1 is this, this is sys.argv of 2.
+
+116
+00:09:09.912 --> 00:09:18.295
+Outfilename = sys.argv(2).
+
+117
+00:09:18.295 --> 00:09:21.952
+So now, we've gotten these two
+arguments from the command line,
+
+118
+00:09:24.587 --> 00:09:26.782
+And the rest of the program is the same.
+
+119
+00:09:26.782 --> 00:09:28.999
+We're going to open the infilename.
+
+120
+00:09:28.999 --> 00:09:32.820
+We're going to open the outfilename for
+write.
+
+121
+00:09:32.820 --> 00:09:36.651
+We're going to step through the infile,
+line at a time,
+
+122
+00:09:36.651 --> 00:09:38.914
+and write it out to the outfile.
+
+123
+00:09:38.914 --> 00:09:41.030
+Then we're going to close them both.
+
+124
+00:09:41.030 --> 00:09:43.960
+Let's save this, function.
+
+125
+00:09:45.510 --> 00:09:48.365
+And now,
+just to see that it actually works.
+
+126
+00:09:51.871 --> 00:09:52.780
+I'm going to run it again.
+
+127
+00:09:53.830 --> 00:09:56.340
+That way, let me Delete this.
+
+128
+00:09:56.340 --> 00:10:00.066
+So you will also have [SOUND] cheating.
+
+129
+00:10:05.163 --> 00:10:08.414
+And there it is, and it should be a copy.
+
+130
+00:10:12.198 --> 00:10:18.120
+Now, let's look at another Script
+run from the command line.
+
+131
+00:10:18.120 --> 00:10:23.901
+You can copy this into a file or
+you can use mine,
+
+132
+00:10:26.200 --> 00:10:29.079
+clwc.py.
+
+133
+00:10:29.079 --> 00:10:32.330
+To run this from the command line,
+I need a console.
+
+134
+00:10:48.387 --> 00:10:53.643
+What this has done is taken our file,
+humptydumpty and counted how many letters
+
+135
+00:10:53.643 --> 00:10:59.068
+are in the file, how many words are in the
+file, and how many lines are in the file.
+
+136
+00:11:07.114 --> 00:11:09.290
+Now, let's look and see how it does this.
+
+137
+00:11:11.870 --> 00:11:15.120
+First of all,
+we import our system library.
+
+138
+00:11:15.120 --> 00:11:17.570
+We get the file name from sys.argv(1).
+
+139
+00:11:17.570 --> 00:11:22.283
+Remember, this is sysrv(0),
+this is sysrv(1).
+
+140
+00:11:25.395 --> 00:11:27.790
+We're going to count the lines and
+characters.
+
+141
+00:11:27.790 --> 00:11:33.300
+So we set up a variable
+initialized to zero to do that.
+
+142
+00:11:33.300 --> 00:11:38.730
+For every line in the text file we're
+going to add one to the line count.
+
+143
+00:11:40.540 --> 00:11:48.280
+For every word, And
+the lines split up into words.
+
+144
+00:11:48.280 --> 00:11:49.760
+We're going to add one to the word count.
+
+145
+00:11:52.020 --> 00:11:56.509
+And then, we're going to add the length
+of a line which is the number of
+
+146
+00:11:56.509 --> 00:11:59.566
+characters in the line
+to the character count.
+
+147
+00:11:59.566 --> 00:12:02.760
+And we close the file and
+we print out the result.
+
+148
+00:12:02.760 --> 00:12:06.330
+Let's look back at this line split for
+a second.
+
+149
+00:12:08.540 --> 00:12:13.323
+Let me grab that line,
+go back over into Python itself.
+
+150
+00:12:13.323 --> 00:12:17.140
+And I'll define line equal to that line.
+
+151
+00:12:19.720 --> 00:12:21.031
+There it is.
+
+152
+00:12:21.031 --> 00:12:26.970
+line.split() fills a list
+of the words in that line.
+
+153
+00:12:29.600 --> 00:12:35.900
+So we're saying for every word in this
+list of words, add one to that word count.
+
+154
+00:12:37.230 --> 00:12:38.070
+That's the program.
+
+155
+00:12:39.740 --> 00:12:43.760
+Now, let's look at another program
+that reads from a file and
+
+156
+00:12:43.760 --> 00:12:46.060
+also uses a dictionary.
+
+157
+00:12:46.060 --> 00:12:49.260
+This will illustrate the value
+of using dictionaries.
+
+158
+00:12:49.260 --> 00:12:54.275
+First, let's put it into play and write.
+
+159
+00:13:04.654 --> 00:13:08.741
+What this does is it reads
+through the file Humpty Dumpty.
+
+160
+00:13:08.741 --> 00:13:11.446
+Picks out each word.
+
+161
+00:13:11.446 --> 00:13:13.480
+As you can see,
+there's a long list of them.
+
+162
+00:13:13.480 --> 00:13:19.157
+And counts how many times that
+word is used in the text file.
+
+163
+00:13:19.157 --> 00:13:22.390
+Now, let's see how it
+goes about doing that.
+
+164
+00:13:22.390 --> 00:13:24.790
+First of all, as you expect.
+
+165
+00:13:24.790 --> 00:13:30.000
+We're going to open the text file, we get
+the name as an argument, we open it and
+
+166
+00:13:30.000 --> 00:13:34.560
+we have a handle called, text_file.
+
+167
+00:13:34.560 --> 00:13:36.520
+Ultimately, we'll close that.
+
+168
+00:13:37.950 --> 00:13:41.328
+Meanwhile, we'll use one of
+our standard loop paradigms.
+
+169
+00:13:41.328 --> 00:13:44.579
+We'll set up an empty dictionary,
+word dic.
+
+170
+00:13:44.579 --> 00:13:50.120
+And then,
+we will add to that inside the loop.
+
+171
+00:13:50.120 --> 00:13:53.275
+So we step through the loop for
+every line in the text_file.
+
+172
+00:13:55.050 --> 00:13:59.693
+We'll take each word in that line
+after we change it to lower case.
+
+173
+00:13:59.693 --> 00:14:04.504
+So all the words can be compared even
+if they are capitalized in one place or
+
+174
+00:14:04.504 --> 00:14:06.040
+another.
+
+175
+00:14:06.040 --> 00:14:09.840
+And then, we'll split the line into words.
+
+176
+00:14:09.840 --> 00:14:17.815
+So for every word in this line,
+converted to lower case split into words.
+
+177
+00:14:17.815 --> 00:14:19.645
+That's a list.
+
+178
+00:14:19.645 --> 00:14:25.185
+We will strip the word of punctuation.
+
+179
+00:14:27.025 --> 00:14:29.415
+If the word is not in the word dictionary,
+
+180
+00:14:30.880 --> 00:14:34.410
+we'll put it in there
+with a count of zero.
+
+181
+00:14:34.410 --> 00:14:37.947
+Where it's in there or not,
+whether we just inserted it or
+
+182
+00:14:37.947 --> 00:14:39.982
+whether it was already in there.
+
+183
+00:14:39.982 --> 00:14:41.900
+We'll add one to the words count.
+
+184
+00:14:41.900 --> 00:14:45.998
+So the first time it's there,
+it'll be in there with a count of one.
+
+185
+00:14:45.998 --> 00:14:49.140
+The next time,
+its count will be increased by one.
+
+186
+00:14:50.170 --> 00:14:51.800
+So that's our loop.
+
+187
+00:14:51.800 --> 00:14:58.748
+We'll go through every line,
+we'll go through every word in that line,
+
+188
+00:14:58.748 --> 00:15:05.151
+we'll strip out punctuation like
+commas and semicolons and so on.
+
+189
+00:15:05.151 --> 00:15:09.659
+And then, we will insert that word
+into the dictionary if it's not
+
+190
+00:15:09.659 --> 00:15:12.326
+already there and add one to its count.
+
+191
+00:15:12.326 --> 00:15:17.457
+Then when we close the file,
+we'll have a dictionary.
+
+192
+00:15:17.457 --> 00:15:19.767
+And the key will be the word and
+
+193
+00:15:19.767 --> 00:15:24.950
+the value will be the number of
+times that word appears in the file.
+
+194
+00:15:26.720 --> 00:15:28.914
+We'll print out what we're going to do.
+
+195
+00:15:28.914 --> 00:15:33.370
+And then, we will sort the dictionary and
+convert it to a list.
+
+196
+00:15:35.260 --> 00:15:38.850
+Actually, that will sort the keys and
+convert that to a list.
+
+197
+00:15:38.850 --> 00:15:41.346
+For every word in that list,
+
+198
+00:15:41.346 --> 00:15:46.663
+we're going to print the value
+of that word in the dictionary.
+
+199
+00:15:46.663 --> 00:15:49.490
+That's the count,
+the number of times it appears.
+
+200
+00:15:49.490 --> 00:15:51.000
+And we'll print the word.
+
+201
+00:15:51.000 --> 00:15:52.790
+And there you see that
+printout right there.
+
+202
+00:15:55.430 --> 00:16:04.140
+The exercise that I want you to do now is
+to convert this to a standalone program or
+
+203
+00:16:04.140 --> 00:16:10.778
+grab my standalone program and
+run it from the command line.
+
+204
+00:16:10.778 --> 00:16:12.800
+Let me show you running
+it from a command line.
+
+205
+00:16:15.060 --> 00:16:20.250
+This is the program, and notice that
+the indentions have been removed.
+
+206
+00:16:22.200 --> 00:16:23.650
+We'll open a Command Prompt.
+
+207
+00:16:25.938 --> 00:16:31.934
+Python count_words.py and
+
+208
+00:16:31.934 --> 00:16:39.614
+it'll run it on HumptyDumpty.txt.
+
+209
+00:16:39.614 --> 00:16:45.989
+I have another file out there
+that you can run it on too,
+
+210
+00:16:45.989 --> 00:16:53.070
+ADream.txt which is a longer file,
+it has more words in it.
+
+211
+00:16:54.560 --> 00:16:56.640
+Let me bring that up.
+
+212
+00:16:56.640 --> 00:16:59.430
+This is A Dream Within a Dream,
+by Edgar Allan Poe.
+
+213
+00:16:59.430 --> 00:17:00.637
+It's a poem.

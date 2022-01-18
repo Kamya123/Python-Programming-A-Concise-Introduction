@@ -1,0 +1,571 @@
+WEBVTT
+
+1
+00:00:12.454 --> 00:00:17.010
+So far we've talked about one data
+collection type, namely the list.
+
+2
+00:00:17.010 --> 00:00:22.080
+Now we want to take up two other
+data collection types, the tuple and
+
+3
+00:00:22.080 --> 00:00:23.000
+the dictionary.
+
+4
+00:00:23.000 --> 00:00:23.770
+First, the tuple.
+
+5
+00:00:26.630 --> 00:00:30.220
+The tuple comes in various sizes,
+here's a two tuple,
+
+6
+00:00:31.630 --> 00:00:37.055
+here's a three tuple,
+here's a tuple over the letters,
+
+7
+00:00:37.055 --> 00:00:42.898
+here's a tuple of words.
+
+8
+00:00:42.898 --> 00:00:48.910
+Let's define a tuple and then show
+how to access various parts of it.
+
+9
+00:00:52.390 --> 00:00:57.050
+First of all, to print the whole tuple,
+
+10
+00:00:57.050 --> 00:00:59.080
+we just type that and
+the name of the variable.
+
+11
+00:01:00.550 --> 00:01:03.160
+We can print it just as easily.
+
+12
+00:01:04.340 --> 00:01:06.310
+We can access the various parts.
+
+13
+00:01:06.310 --> 00:01:10.081
+Here's the first element of the tuple,
+item 0.
+
+14
+00:01:10.081 --> 00:01:12.410
+Here would be item 1,
+second element of the tuple.
+
+15
+00:01:15.340 --> 00:01:17.170
+Here's the last element of the tuple.
+
+16
+00:01:18.180 --> 00:01:20.980
+And of course,
+the next to the last element of the tuple.
+
+17
+00:01:20.980 --> 00:01:27.075
+We can do a range elements of the tuple.
+
+18
+00:01:27.075 --> 00:01:30.440
+Notice this is 2 through 4.
+
+19
+00:01:30.440 --> 00:01:34.519
+Item 0, 1, 2. i is the first one.
+
+20
+00:01:34.519 --> 00:01:38.576
+3 is the next one, but we don't do item 4,
+
+21
+00:01:38.576 --> 00:01:42.209
+that's typical Python methodology.
+
+22
+00:01:46.005 --> 00:01:50.784
+We can do everything up to item 4.
+
+23
+00:01:50.784 --> 00:01:55.809
+We can do everything beyond item 2.
+
+24
+00:01:55.809 --> 00:01:59.560
+That pretty much covers how to
+access the various parts of a tuple.
+
+25
+00:01:59.560 --> 00:02:05.660
+Now tuple is immutable,
+that means it can't be changed.
+
+26
+00:02:07.650 --> 00:02:11.600
+Now, let's look at the third collection
+data type, the data dictionary.
+
+27
+00:02:11.600 --> 00:02:18.340
+The simplest data dictionary,
+of course, is the empty one.
+
+28
+00:02:18.340 --> 00:02:23.070
+Notice that we use braces to
+indicate a data dictionary.
+
+29
+00:02:23.070 --> 00:02:27.120
+Let's do a more complex one that will
+show what they're really all about.
+
+30
+00:02:28.330 --> 00:02:34.600
+You have a key, in this case,
+Johnny and a value, 5 years old,
+
+31
+00:02:34.600 --> 00:02:39.730
+and another key Sally,
+with a value 7 years old.
+
+32
+00:02:41.930 --> 00:02:45.230
+And it keeps going like that
+through the data dictionary.
+
+33
+00:02:45.230 --> 00:02:49.140
+If you type d,
+you'll see the data dictionary repeated.
+
+34
+00:02:49.140 --> 00:02:55.000
+And notice, that Eva is third up here when
+we defined it, but it's first in here.
+
+35
+00:02:55.000 --> 00:02:57.000
+This is characteristic
+of a data dictionary.
+
+36
+00:02:57.000 --> 00:02:59.495
+You have no idea what order
+it's going to print out.
+
+37
+00:02:59.495 --> 00:03:01.775
+It's not an ordered data type.
+
+38
+00:03:01.775 --> 00:03:07.055
+And if you ask for the zero-th
+item it just gives you an error.
+
+39
+00:03:08.765 --> 00:03:17.420
+The way you access something is by key.
+
+40
+00:03:17.420 --> 00:03:23.060
+So you typed in the key Sally and
+you get out the value 7 years old.
+
+41
+00:03:23.060 --> 00:03:27.470
+Do another key, Eva, you get 10 years old.
+
+42
+00:03:31.180 --> 00:03:36.418
+You can list the items in this manner.
+
+43
+00:03:41.179 --> 00:03:44.070
+You can list the keys in this manner.
+
+44
+00:03:45.680 --> 00:03:48.362
+You can list the values in this manner.
+
+45
+00:03:58.264 --> 00:04:03.736
+Let's write some loops
+showing how you can access
+
+46
+00:04:03.736 --> 00:04:10.651
+these various parts of the data
+dictionary to do useful stuff.
+
+47
+00:04:10.651 --> 00:04:13.610
+All right, here is an example.
+
+48
+00:04:13.610 --> 00:04:20.313
+For the key and
+value in d.items, key, value.
+
+49
+00:04:20.313 --> 00:04:23.320
+Print the key and print the value.
+
+50
+00:04:23.320 --> 00:04:27.767
+Notice that this is a tuple,
+key and value.
+
+51
+00:04:30.782 --> 00:04:32.239
+Here's another example.
+
+52
+00:04:36.460 --> 00:04:42.006
+For item in d.items,
+we'll print the whole item each time.
+
+53
+00:04:42.006 --> 00:04:47.280
+And notice,
+the item is printed as a tuple,
+
+54
+00:04:47.280 --> 00:04:50.500
+Peggy, 7 years old.
+
+55
+00:04:53.940 --> 00:04:56.067
+Let's do another one.
+
+56
+00:04:56.067 --> 00:05:02.224
+For every item in d.items,
+we can have a look at item of 0,
+
+57
+00:05:02.224 --> 00:05:07.500
+that's the key, our item of 1,
+that's the value.
+
+58
+00:05:07.500 --> 00:05:11.968
+Peggy, the value, Peggy, 7 years old.
+
+59
+00:05:17.363 --> 00:05:22.920
+We can also step through the keys and
+we can print the key.
+
+60
+00:05:22.920 --> 00:05:24.959
+And since we have the key,
+
+61
+00:05:24.959 --> 00:05:30.161
+we can also print the value if
+we'd like to, Peggy, 7 years old.
+
+62
+00:05:43.304 --> 00:05:47.639
+In this case, instead of
+stepping through the whole thing,
+
+63
+00:05:47.639 --> 00:05:51.975
+we're stepping through d.keys and
+we get the same result.
+
+64
+00:05:51.975 --> 00:05:56.250
+If you want to see only the values,
+you can step through the values,
+
+65
+00:05:56.250 --> 00:06:01.530
+for every value in d.values,
+print that value out.
+
+66
+00:06:01.530 --> 00:06:05.934
+Now, if you want to add
+something to a data dictionary,
+
+67
+00:06:05.934 --> 00:06:08.290
+that's fairly simple to do.
+
+68
+00:06:11.750 --> 00:06:16.855
+If d of this key has to equal something,
+
+69
+00:06:16.855 --> 00:06:20.739
+let's make him 5 years old.
+
+70
+00:06:20.739 --> 00:06:28.450
+And now, if I type d you can see that Ted
+has been added in the data dictionary.
+
+71
+00:06:28.450 --> 00:06:32.365
+Now let's look at some of
+the things that you can't do.
+
+72
+00:06:32.365 --> 00:06:37.290
+D[sally] won't work because Sally
+is spelled with a capital S
+
+73
+00:06:37.290 --> 00:06:38.790
+in the data dictionary.
+
+74
+00:06:39.770 --> 00:06:45.426
+D [Jim] won't work, I'll show you that.
+
+75
+00:06:45.426 --> 00:06:47.120
+Why won't Jim work?
+
+76
+00:06:47.120 --> 00:06:48.413
+Well, Jim's just not there.
+
+77
+00:06:54.147 --> 00:06:58.510
+And you can't look something
+up by value either.
+
+78
+00:06:58.510 --> 00:07:05.000
+d[5 years old] doesn't
+really get you anywhere.
+
+79
+00:07:09.190 --> 00:07:16.676
+Let's define another data dictionary and
+you try to do some things with it.
+
+80
+00:07:16.676 --> 00:07:21.060
+Here is ascars, that's a data dictionary.
+
+81
+00:07:21.060 --> 00:07:23.080
+That means affordable sports cars.
+
+82
+00:07:24.720 --> 00:07:31.670
+And this says that Ford's sports car is
+a Mustang, Mazda's is a Miata and so on.
+
+83
+00:07:33.360 --> 00:07:38.310
+So, the first thing is if you type ascars,
+it'll display the whole thing.
+
+84
+00:07:40.130 --> 00:07:45.560
+The second thing I ask you to do
+is retrieve the Nissan sports car.
+
+85
+00:07:45.560 --> 00:07:50.501
+So we type ascars['Nissan'], and
+
+86
+00:07:50.501 --> 00:07:57.545
+you can do this with me and
+you can retrieve the 370Z.
+
+87
+00:07:57.545 --> 00:08:06.146
+And you can retrieve the Chevy sports
+car if you like, it's a Camaro.
+
+88
+00:08:06.146 --> 00:08:10.949
+Now the next one I want to do
+is to change the MINI Cooper.
+
+89
+00:08:10.949 --> 00:08:18.217
+Now if I misspell MINI Cooper in
+doing this, I'll wind up adding,
+
+90
+00:08:21.544 --> 00:08:27.120
+A new Key-Value pair.
+
+91
+00:08:28.280 --> 00:08:32.530
+So I want to try and recover this first.
+
+92
+00:08:34.590 --> 00:08:40.351
+Now, I got the Roadster, so
+that is spelled as correctly.
+
+93
+00:08:40.351 --> 00:08:42.160
+I've spelled it correctly.
+
+94
+00:08:42.160 --> 00:08:46.410
+So, I'll set that equal to Coupe.
+
+95
+00:08:48.580 --> 00:08:51.321
+Now, if I type, ascars,
+
+96
+00:08:55.772 --> 00:09:01.940
+I will see that the MINI Cooper
+is now changed to a Coupe.
+
+97
+00:09:03.190 --> 00:09:07.764
+Now the next thing I'd like to ask
+you to do is write a small
+
+98
+00:09:07.764 --> 00:09:11.995
+two-line loop to display all the values,
+and only the values.
+
+99
+00:09:15.776 --> 00:09:17.570
+The Challenger.
+
+100
+00:09:17.570 --> 00:09:22.127
+These just show the values, and
+this is the way to do that.
+
+101
+00:09:22.127 --> 00:09:27.324
+Now for every value in ascar.values,
+print that value.
+
+102
+00:09:27.324 --> 00:09:30.657
+Now, the next thing I want you to
+do is write a two line loop to
+
+103
+00:09:30.657 --> 00:09:32.879
+display all the keys and only the keys.
+
+104
+00:09:34.450 --> 00:09:38.700
+This is what you should get
+when you display only the keys.
+
+105
+00:09:40.900 --> 00:09:44.308
+Here is my solution right here.
+
+106
+00:09:44.308 --> 00:09:47.913
+For key in ascar.keys, print key.
+
+107
+00:09:51.779 --> 00:09:54.676
+To summarize,
+lists can be appended onto and
+
+108
+00:09:54.676 --> 00:09:58.290
+their items can be addressed by number.
+
+109
+00:09:58.290 --> 00:10:01.415
+Tuples cannot be changed;
+they're immutable.
+
+110
+00:10:01.415 --> 00:10:05.670
+Their items can be addressed by numbers,
+just as in lists.
+
+111
+00:10:05.670 --> 00:10:11.550
+Dictionaries can be appended to,
+like in lists, but you cannot
+
+112
+00:10:11.550 --> 00:10:16.100
+address their items by number because
+they don't have it in here in at order.
+
+113
+00:10:17.970 --> 00:10:21.150
+Their values can be
+achieved by using the keys.
+
+114
+00:10:22.300 --> 00:10:27.190
+Now, here's an exercise to help
+clarify all of these things for you.
+
+115
+00:10:29.050 --> 00:10:31.154
+First of all, you can execute the cell.
+
+116
+00:10:39.530 --> 00:10:42.807
+Now you have a name list,
+you have a tuple, mytuple, and
+
+117
+00:10:42.807 --> 00:10:44.460
+you have an age dictionary.
+
+118
+00:10:45.740 --> 00:10:49.549
+We have a dictionary, age dictionary.
+
+119
+00:10:49.549 --> 00:10:54.610
+Now answer this question,
+can you retrieve namelist[1]?
+
+120
+00:10:54.610 --> 00:10:59.650
+Can you retrieve mytuple[1],
+can you retrieve agedict[1]?
+
+121
+00:10:59.650 --> 00:11:03.110
+You answered those questions, and you
+can test it out by copying one of these,
+
+122
+00:11:04.130 --> 00:11:08.250
+pasting it into place,
+and then executing it.
+
+123
+00:11:08.250 --> 00:11:14.800
+So you were able to retrieve
+item one out of namelist.
+
+124
+00:11:14.800 --> 00:11:18.554
+So you go on down through these,
+and you test them out on your own.

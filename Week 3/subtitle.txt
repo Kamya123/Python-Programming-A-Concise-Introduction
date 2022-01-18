@@ -1,0 +1,75 @@
+So far we've talked about one data
+collection type, namely the list. Now we want to take up two other
+data collection types, the tuple and the dictionary. First, the tuple. The tuple comes in various sizes,
+here's a two tuple, here's a three tuple,
+here's a tuple over the letters, here's a tuple of words. Let's define a tuple and then show
+how to access various parts of it. First of all, to print the whole tuple, we just type that and
+the name of the variable. We can print it just as easily. We can access the various parts. Here's the first element of the tuple,
+item 0. Here would be item 1,
+second element of the tuple. Here's the last element of the tuple. And of course,
+the next to the last element of the tuple. We can do a range elements of the tuple. Notice this is 2 through 4. Item 0, 1, 2. i is the first one. 3 is the next one, but we don't do item 4, that's typical Python methodology. We can do everything up to item 4. We can do everything beyond item 2. That pretty much covers how to
+access the various parts of a tuple. Now tuple is immutable,
+that means it can't be changed. Now, let's look at the third collection
+data type, the data dictionary. The simplest data dictionary,
+of course, is the empty one. Notice that we use braces to
+indicate a data dictionary. Let's do a more complex one that will
+show what they're really all about. You have a key, in this case,
+Johnny and a value, 5 years old, and another key Sally,
+with a value 7 years old. And it keeps going like that
+through the data dictionary. If you type d,
+you'll see the data dictionary repeated. And notice, that Eva is third up here when
+we defined it, but it's first in here. This is characteristic
+of a data dictionary. You have no idea what order
+it's going to print out. It's not an ordered data type. And if you ask for the zero-th
+item it just gives you an error. The way you access something is by key. So you typed in the key Sally and
+you get out the value 7 years old. Do another key, Eva, you get 10 years old. You can list the items in this manner. You can list the keys in this manner. You can list the values in this manner. Let's write some loops
+showing how you can access these various parts of the data
+dictionary to do useful stuff. All right, here is an example. For the key and
+value in d.items, key, value. Print the key and print the value. Notice that this is a tuple,
+key and value. Here's another example. For item in d.items,
+we'll print the whole item each time. And notice,
+the item is printed as a tuple, Peggy, 7 years old. Let's do another one. For every item in d.items,
+we can have a look at item of 0, that's the key, our item of 1,
+that's the value. Peggy, the value, Peggy, 7 years old. We can also step through the keys and
+we can print the key. And since we have the key, we can also print the value if
+we'd like to, Peggy, 7 years old. In this case, instead of
+stepping through the whole thing, we're stepping through d.keys and
+we get the same result. If you want to see only the values,
+you can step through the values, for every value in d.values,
+print that value out. Now, if you want to add
+something to a data dictionary, that's fairly simple to do. If d of this key has to equal something, let's make him 5 years old. And now, if I type d you can see that Ted
+has been added in the data dictionary. Now let's look at some of
+the things that you can't do. D[sally] won't work because Sally
+is spelled with a capital S in the data dictionary. D [Jim] won't work, I'll show you that. Why won't Jim work? Well, Jim's just not there. And you can't look something
+up by value either. d[5 years old] doesn't
+really get you anywhere. Let's define another data dictionary and
+you try to do some things with it. Here is ascars, that's a data dictionary. That means affordable sports cars. And this says that Ford's sports car is
+a Mustang, Mazda's is a Miata and so on. So, the first thing is if you type ascars,
+it'll display the whole thing. The second thing I ask you to do
+is retrieve the Nissan sports car. So we type ascars['Nissan'], and you can do this with me and
+you can retrieve the 370Z. And you can retrieve the Chevy sports
+car if you like, it's a Camaro. Now the next one I want to do
+is to change the MINI Cooper. Now if I misspell MINI Cooper in
+doing this, I'll wind up adding, A new Key-Value pair. So I want to try and recover this first. Now, I got the Roadster, so
+that is spelled as correctly. I've spelled it correctly. So, I'll set that equal to Coupe. Now, if I type, ascars, I will see that the MINI Cooper
+is now changed to a Coupe. Now the next thing I'd like to ask
+you to do is write a small two-line loop to display all the values,
+and only the values. The Challenger. These just show the values, and
+this is the way to do that. Now for every value in ascar.values,
+print that value. Now, the next thing I want you to
+do is write a two line loop to display all the keys and only the keys. This is what you should get
+when you display only the keys. Here is my solution right here. For key in ascar.keys, print key. To summarize,
+lists can be appended onto and their items can be addressed by number. Tuples cannot be changed;
+they're immutable. Their items can be addressed by numbers,
+just as in lists. Dictionaries can be appended to,
+like in lists, but you cannot address their items by number because
+they don't have it in here in at order. Their values can be
+achieved by using the keys. Now, here's an exercise to help
+clarify all of these things for you. First of all, you can execute the cell. Now you have a name list,
+you have a tuple, mytuple, and you have an age dictionary. We have a dictionary, age dictionary. Now answer this question,
+can you retrieve namelist[1]? Can you retrieve mytuple[1],
+can you retrieve agedict[1]? You answered those questions, and you
+can test it out by copying one of these, pasting it into place,
+and then executing it. So you were able to retrieve
+item one out of namelist. So you go on down through these,
+and you test them out on your own.

@@ -1,0 +1,37 @@
+The first stub that
+we're going to flesh in, write the full function for,
+is show phones. The reason for that is, if we did delete, we wouldn't know whether
+something was deleted. If we did new, we wouldn't know
+whether something new was done. With show phones, we can see whether these other things
+are working when we write them. Let me run this one just a moment and
+show you what it does. Nothing else really works. Just show. Now, the way we're doing this is,
+I've gotta have something to show. So I create a list of phones here. It has two phones, Jerry Seinfeld and
+his number, Cosmo Kramer and his number. Each phone is a two-element list
+consisting of a name and number. The name position is 0,
+a phone position is 1, and I'm going to use name_pos and
+phone_pos, instead of 0 and 1, to refer to these, so I don't get
+confused as to what I'm looking at. There has to be a header for
+this name and phone number, and so I create a header as though
+it were another phone. Now here's the show phones function. First of all, I'm going to show phone, the
+header, and I'll pass around this blank. I'll show you what this
+blank is about later. Then I'm going to step through the phones. For every phone in phones,
+I'm going to show phone, and I'm going to send this index so
+they're numbered, 1, 2, 3, 4, 5. I'll start the index off at one,
+after I show a phone, I'm going to bump the index up by 1. And I'm going to pass to show phone,
+not only the phone itself, but the index. And I'm not going to show
+the individual phone in this function. I'm going to have another
+function that will do that. And then at the end,
+I'm going to skip a line, so that there's a little space
+after the list of phones. Here's how we show an individual phone. We'll pass the phone, but just remember,
+a list with two things in it, the name and the phone number. And we send the index. We have a string, the index is
+going to occupy three spaces, and it's going to be right justified. The name is going to occupy 20 spaces,
+and it's going to be left justified. The phone number is going to occupy 16
+spaces, and it'll be right justified. We're going to use that output string,
+and we're going to format it, so that index goes into
+the 0th element position. Phone name goes into the 1 position, and phone number goes into the 3rd position. And there it is, index,
+name, phone number. That's all there is to it. You've got show phones,
+which is going to send the header. It's going to step through the list of
+phones and send show phone each phone. And the show phones are going to
+be formatted and printed. Up here, we did create these things,
+and that's to get us by right now. Ultimately, we'll set the phones
+list to the empty list.

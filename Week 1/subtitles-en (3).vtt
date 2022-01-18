@@ -1,0 +1,405 @@
+WEBVTT
+
+1
+00:00:12.504 --> 00:00:16.329
+You can form a string in Python by
+using quotes, either single quotes or
+
+2
+00:00:16.329 --> 00:00:18.380
+double quotes, it doesn't matter.
+
+3
+00:00:20.020 --> 00:00:21.590
+Here are a couple of examples.
+
+4
+00:00:22.930 --> 00:00:29.120
+This is using double
+quotes to form the string.
+
+5
+00:00:29.120 --> 00:00:31.800
+And this just uses single
+quotes to form a string.
+
+6
+00:00:31.800 --> 00:00:34.780
+Now, there is one condition here.
+
+7
+00:00:34.780 --> 00:00:38.540
+This string has a single quote in it.
+
+8
+00:00:38.540 --> 00:00:43.390
+So to use single quotes outside to form
+the string would cause some confusion.
+
+9
+00:00:44.770 --> 00:00:47.714
+Here's one that has double quotes in it,
+and
+
+10
+00:00:47.714 --> 00:00:52.220
+to use double quotes outside to form
+a string would cause confusion.
+
+11
+00:00:52.220 --> 00:00:54.141
+But if you've got a single quote,
+
+12
+00:00:54.141 --> 00:00:58.070
+you can use double quotes
+outside to form the string.
+
+13
+00:00:58.070 --> 00:00:59.510
+If you've got double quotes in it,
+
+14
+00:00:59.510 --> 00:01:02.100
+we can use single quotes
+outside to form a string.
+
+15
+00:01:02.100 --> 00:01:04.420
+As you can see, both of those worked.
+
+16
+00:01:06.260 --> 00:01:10.120
+Now, what if you've got a single quote and
+a double quote in the string?
+
+17
+00:01:10.120 --> 00:01:12.480
+Here's an example on how you can do that.
+
+18
+00:01:15.550 --> 00:01:20.702
+If you have both, here's, My cat's
+
+19
+00:01:20.702 --> 00:01:26.016
+name is Butters is what I want to write.
+
+20
+00:01:26.016 --> 00:01:29.695
+All right, so I use double quotes outside,
+
+21
+00:01:29.695 --> 00:01:34.170
+but I've gotta tell Python
+that this double quote and
+
+22
+00:01:34.170 --> 00:01:39.657
+this double quote are not the double
+quotes that mark the string.
+
+23
+00:01:39.657 --> 00:01:43.111
+So I want it to print an actual quote, so
+
+24
+00:01:43.111 --> 00:01:49.460
+I put a backslash in front of that and
+a backslash in front of this one.
+
+25
+00:01:49.460 --> 00:01:56.080
+And that tells it that this next character
+is actually to be printed as is.
+
+26
+00:01:56.080 --> 00:01:58.880
+So that's called escaping that character.
+
+27
+00:01:58.880 --> 00:02:04.502
+So the escape symbol is a backslash.
+
+28
+00:02:04.502 --> 00:02:08.521
+Now let's write another Python function.
+
+29
+00:02:08.521 --> 00:02:15.010
+I want to compute, I want to convert
+Fahrenheit degrees to Celsius degrees.
+
+30
+00:02:15.010 --> 00:02:19.166
+So this is the function
+that's going to do that.
+
+31
+00:02:19.166 --> 00:02:21.515
+It's called fahrenheit_to_celsius.
+
+32
+00:02:21.515 --> 00:02:26.457
+I want you to run it once or twice so
+that you get an idea of what it does.
+
+33
+00:02:26.457 --> 00:02:29.003
+F-A-R-H.
+
+34
+00:02:43.260 --> 00:02:48.540
+So I converted 212 degrees
+Fahrenheit to 100 degrees Celsius.
+
+35
+00:02:48.540 --> 00:02:50.910
+That should be a familiar
+[COUGH] conversion.
+
+36
+00:02:51.990 --> 00:02:54.610
+Now let's take a look at the function and
+see how that does that.
+
+37
+00:02:56.090 --> 00:03:01.530
+First of all,
+we have a description in triple quotes.
+
+38
+00:03:01.530 --> 00:03:05.427
+And so if I click on this,
+
+39
+00:03:05.427 --> 00:03:13.421
+I'll see that our function
+is documented up here.
+
+40
+00:03:13.421 --> 00:03:19.480
+Next, note that I have two lines
+that begin with pound sign.
+
+41
+00:03:19.480 --> 00:03:24.404
+Anything beyond a pound sign on a given
+line is not executed by Python,
+
+42
+00:03:24.404 --> 00:03:26.411
+it's just simply ignored.
+
+43
+00:03:26.411 --> 00:03:29.098
+So you can add comments to your code.
+
+44
+00:03:29.098 --> 00:03:30.711
+Next we have the formula.
+
+45
+00:03:30.711 --> 00:03:36.989
+The new temperature is 5 times
+the Fahrenheit temperature
+
+46
+00:03:36.989 --> 00:03:42.137
+minus 32 divided 9, it's five-ninths, so
+
+47
+00:03:42.137 --> 00:03:47.173
+whatever number of
+degrees above 32 we have.
+
+48
+00:03:47.173 --> 00:03:51.976
+Then we'll print the Fahrenheit
+temperature, and the temperature,
+
+49
+00:03:51.976 --> 00:03:56.059
+is equivalent to, and
+the newly computed temperature, and
+
+50
+00:03:56.059 --> 00:04:00.640
+then end equal, I'll explain that
+in a minute, degrees Celsius.
+
+51
+00:04:02.325 --> 00:04:06.740
+Now, what has happened here is that my
+print statement is going to go too long,
+
+52
+00:04:06.740 --> 00:04:10.320
+it's going to be too wide to print
+out on a piece of paper if I had to.
+
+53
+00:04:10.320 --> 00:04:18.360
+So I've run up against the edge,
+you might say, of the paper.
+
+54
+00:04:18.360 --> 00:04:21.020
+And I'll need to have
+two print statements.
+
+55
+00:04:21.020 --> 00:04:26.330
+But the problem of two print statements
+is that they would be on different lines.
+
+56
+00:04:26.330 --> 00:04:31.475
+So to eliminate creating
+a new line character and
+
+57
+00:04:31.475 --> 00:04:38.360
+causing it to have two lines,
+I'm going to say end=''.
+
+58
+00:04:38.360 --> 00:04:43.433
+So instead of the new line character,
+I'm just going to print a blank.
+
+59
+00:04:43.433 --> 00:04:47.750
+Well, I'm actually going to print nothing,
+because they're jammed together.
+
+60
+00:04:47.750 --> 00:04:52.241
+So what that effectively does
+is it keeps it all on one line.
+
+61
+00:04:52.241 --> 00:04:55.080
+And here you can see that
+it all kept on one line.
+
+62
+00:04:56.620 --> 00:05:00.529
+Let's run it one more time
+on a familiar temperature.
+
+63
+00:05:09.176 --> 00:05:14.750
+32 degrees Fahrenheit is a commonly
+
+64
+00:05:14.750 --> 00:05:19.104
+known Celsius temperature,
+
+65
+00:05:19.104 --> 00:05:23.465
+that's 0 degrees Celsius.
+
+66
+00:05:23.465 --> 00:05:26.628
+Now it's your turn to
+write such a function.
+
+67
+00:05:26.628 --> 00:05:31.881
+Here's an exercise, write a function
+Celsius to Fahrenheit that
+
+68
+00:05:31.881 --> 00:05:37.545
+will convert Celsius temperatures
+back to Fahrenheit degrees.
+
+69
+00:05:37.545 --> 00:05:45.208
+Now, the formula for that is nine-fifths
+times the temperature plus 32 degrees.
+
+70
+00:05:45.208 --> 00:05:50.911
+Now, I'm giving you my example run,
+and here are three test values,
+
+71
+00:05:50.911 --> 00:05:56.726
+100 degrees Celsius,
+0 degrees Celsius, 50 degrees Celsius.
+
+72
+00:05:56.726 --> 00:06:00.530
+And here's what my program did with those.
+
+73
+00:06:00.530 --> 00:06:05.480
+100 degrees Celsius,
+it wrote the Celsius temperature at 100 is
+
+74
+00:06:05.480 --> 00:06:08.495
+equivalent to 212 degrees Fahrenheit.
+
+75
+00:06:10.220 --> 00:06:15.278
+So you can write your function and
+then use these statements to test
+
+76
+00:06:15.278 --> 00:06:20.348
+your function, and you can see if
+you get the same thing that I get.
+
+77
+00:06:23.084 --> 00:06:27.592
+Now, press the continuation button
+when you've got yours running, and
+
+78
+00:06:27.592 --> 00:06:28.908
+I'll show you mine.
+
+79
+00:06:36.203 --> 00:06:38.460
+Okay, here's my solution.
+
+80
+00:06:38.460 --> 00:06:42.367
+The Celsius to Fahrenheit temperature is,
+and
+
+81
+00:06:42.367 --> 00:06:47.642
+I've got a documentation line here,
+then do the computation,
+
+82
+00:06:47.642 --> 00:06:54.205
+the new temperature is nine-fifths
+times the temperature plus 32 degrees.
+
+83
+00:06:56.573 --> 00:07:01.117
+And then I've got a print line that
+prints the Celsius temperature, and
+
+84
+00:07:01.117 --> 00:07:05.005
+I give it as equivalent to, and
+I give the new computed value.
+
+85
+00:07:05.005 --> 00:07:08.727
+And then I use end='' so
+
+86
+00:07:08.727 --> 00:07:12.966
+that I don't have a new line.
+
+87
+00:07:12.966 --> 00:07:16.020
+And then I can continue this
+statement on the next line.

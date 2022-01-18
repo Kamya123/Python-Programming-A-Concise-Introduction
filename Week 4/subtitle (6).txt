@@ -1,0 +1,26 @@
+Now, let's add the capability
+of editing a former entry. If we look down at the menu,
+if you choose E for edit, it'll ask you which one you want to edit. And then,it'll call
+the edit phone routine. So, we need to look at edit phone routine. Let me run this thing so
+we know where we're going. Show, we have Kosmo Kramer and
+Jerry Seinfeld out there. So, if I choose Edit, it'll ask which one. I'll choose 2. So, I'll choose Cosmo Kramer, and I can press Enter and
+it'll leave the name unchanged. If I type a new name or phone number, however, It will replace the old version. That's what we're about to add. Here's edit_phone. Now, since we're choosing which one, we've got to make sure that
+the user made a proper menu choice. And we'll use the same proper menu choice function as we did with
+the delete function. When we get back from that,
+if it's not a proper menu choice, then it'll return without editing anybody. If it is a proper menu choice,
+we'll convert that to an editor. Then, we'll retrieve
+that particular phone. Now, remember, we're numbering these one,
+two, three, four, five, but Python calls them zero,
+one, two, three, four. So, we have to remove 1. Then we'll write,
+Enter the data for a new phone. Press <enter> to leave unchanged. What we're going to do first
+of all is print the name. Calling a name position,
+calling a 0 is the name. Then we'll ask, Enter the phone
+name to change or press return. We'll do an input and
+we'll get a new name. Now of course, if you press return,
+that new name is just an empty string. Otherwise, it's a new name. If the new name turns out
+to be an empty string, we're just going to set
+it equal to the old name. In either case, we've got a new name. Now, we do the same thing with the phone. We'll print the phone number,
+then we'll ask for a new phone. If it's blank, we'll just use
+the old phone as the new phone. Otherwise, it has a new phone. In both cases, we've got a new name and a new phone, calling that both
+of them could be the old one. We'll make a phone out of the new name and
+new phone number. And we'll put it back where we got it.

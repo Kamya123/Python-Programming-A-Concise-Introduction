@@ -1,0 +1,106 @@
+Now we're going to do a little
+descriptive statistics. First, let's look at Python
+documentation for a moment. I'm going to go to this website. Notice that it brought up 3.5.1. When you do this,
+it might bring up a different version because it's going to bring
+up the latest version. Now, I'm using 3.4 and its table saying,
+I'm going to click on that. That 3.5 is in development. At this point and time. Now look up statistics and that search
+produced a whole batch of things. Statistics as a library
+module is right here. And it's in Lib/statistics.py. And we're going to look
+at several functions. Mean, median, mode,
+standard deviation, and variance. Let me click through on one of those. So here's the mean, you can give it a list
+and it'll compute the mean of the list. You can give it a list of reals and
+it'll compute the mean of that. You go back to Spider you
+can get to the same place I type in Python documentation,
+click on index, statistics, and you see the same page. Mean, median, mode,
+standard deviation, and variance. So let's define some lists so
+that we can do the statistics on them. I'm also going to import the statistics
+library so that we can use it. Now I'm going to compute
+the mean of this N list. There it is. That's adding up the values in N list and dividing it by the number
+values which is seven. We can do the same thing for
+the real list. We're going to add up all these numbers
+and divide by seven to get that. Now lets look at This in list again. And I'm going to print out
+a sorted version of it. Now the median,
+is supposed to be the middle value. From the sorted version,
+we can find the middle value is five. Smaller three larger. Now I have another list, endless even. This has an odd number, so
+there is a middle value. nlist even has a little bit
+more complication than that. There are two middle values,
+three smaller, three larger than the two. What the median function does
+is it averages those two middle values and
+we terms that as the median. With our list we have the same
+kind of situation there have 3.14 as three 3 larger and 3 smaller. So, that's the median. And that's what Python finds. Now I have another r list and
+it has two values in the middle, three smaller, three larger and
+what does Python do with that? It takes the average of
+those two in the middle and returns that as the median, same way. Now let's define another list, mlist, now I want to print mlist and
+a sorted version of it. If you'll notice three occurs
+more times than any other. And that makes it the mode. The mode is the value
+that occurs most often. Now we have standard deviation. Then we have variance. You can look those up in the statistics
+book if you're not familiar with it. The standard deviation is
+a square root of the variance and they're both measures of how spread
+out the data is about the mean. Now, here are three more functions. Maximum, minimum, and sum. Defining another in-list here,
+the maximum of this is 106. Found that using max. Then, we'll find the minimum of this list,
+which is minus 4. And the sum of the list is sum of n list. There it is. Now, let's write some functions that make
+use of these descriptive statistics. First of all,
+I'm going to generate a list, stat_list. Stat_list has 100 random
+reals between 5000 and 6000. How do we get that? Well, random.random produces a random
+number between zero and one. And we have to manage to convert that to
+random numbers from five to six thousand. One of the things that we can
+do is multiply it by thousand, then we have a random
+number between zero and a thousand Clinical add 5000 to that, we have a random number between five and
+six thousand. So this is how we wide up with
+a number between five and six thousand that's pseudo random. And we going to append
+that to the start list. We are going to that 100 times. So if I type stat list,
+see there are a lot of numbers. That list is a list that I'm just
+defining, this small list of integers. Now, I can compute the stats
+on these using my stats. Now what this does is it imports
+the statistics then it prints the mean and uses statistics.mean to do it. Computes the median, computes the mode,
+computes the standard deviation and completes the variance. I wanted to try that out. Add list. Look what's happened here. It crashed. It did manage to compute the mean and
+median and print those out before it crashed. But on the mode, It ran into trouble. And ultimately after it crashed
+it gives you an error message. No unique mode found 100
+equal to common values. Well if you've got real numbers
+between five and six thousand, with only 100 of them the chances of two of
+them coming out to be the same are slim. So, What has happened here is that
+that error occurred in this module, statistics.py, the library
+in fact line 434. And that's where we go the error message. But that was, we wound up in
+that place by calling statistics dot node and we wind up calling statistics
+dot node because we ran our function. So there's a trace down through the series
+of calls that made this error happen. The main problem is from our programmers
+point of view is statistics.mode failed. Now, what I want to do is correct that. I'm not going to keep it
+from having the error. What I'm going to do is
+keep program from crashing. And this is the way you do it in Python. You have a tri-accept pair of statements. We try and then we are trying to
+do the same statement that failed. If it fails, if it's a statistic error,
+we are going to store that error in e and
+we are going to print mode error and e the mode was where had
+the promise saying mode error. If this works just fine
+the exception doesn't get executed. In either case we go on
+to the next statement. We don't crash. Lets actually keep that and
+see that that happens. See? No crash, but we do get that
+same error message at the end. Now let's try another function that involves using a try and
+accept statement. This function, as you input a number then
+its going to print what type that is. Actually inputs are always string so
+it's always going to print string. Okay, we're going to try
+to convert that number, we're going to try to convert that
+number to float and print it. If that fails we gotta
+grab that exception. Stored in e and print the exception was e. But we won't crash. Here is test_try(). Enter a number. Now, what it's supposed to do is
+convert a number like 5 to 5.0. You can see, that it actually
+printed the type, was a string. And it converted to five. We try something else, 3.14,
+the same thing happens. It's a string, converts it to 3.14, which It was to begin with
+except that it was a string. Wonder where it failed. Let's suppose we enter some letters? It couldn't convert that. What if we just typed and
+put an extra period in the number? Can't convert that. But notice that it never crashes. It tries, and then it grabs the exception
+and prints the exception out. Could not convert string to float. Now, here's an exercise. I want you to run this code on your machine,
+it creates a list of temperatures. These are farenheit
+temperatures between 20 and 95. And we built that by using a random seat so
+it comes out to be the same for everybody. We start with an empty list, we go
+through this loop 20 times, we generate a random integer in this range, and
+append it onto that list and there we are. And here is your starter
+function if you want. When you finish it, it should print
+the list, the mean, the median, the standard deviation and the variance. Here is my solution. There.
+What it does is it prints the temperature list. It prints the statistics mean,
+the statistics median, the statistics standard deviation,
+and the statistics variance. I stayed away from mode on this version. Now, I want you to try and
+soup that up to add mode. There won't be a mode on this. So you should get an error. Here's a run of my solution. You add the necessary code to
+your solution, to get this. Here is my solution. No unique mode found for equal,
+notice the program did not crash. What we did was we added a track
+steps statement to the end. We try to print the mode. Just like we did for all the others we
+use mode as setup variance for example. And if there is an exception we
+store it the exception in e and then print mode error e. The mode error was no
+unique mode four equal to

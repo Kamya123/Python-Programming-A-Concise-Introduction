@@ -1,0 +1,63 @@
+Python has libraries that add
+functionality to the basic interpreter of Python. The point here is that if you put
+every capability into every program, even your smallest programs
+would be very small. By having libraries, these are portions of Python that are set aside that
+are not incorporated into every program. You can write smaller programs, and only call in these libraries when
+you need their capabilities. Now, let's take a look at libraries,
+and how you use them a little bit. Here is the key for getting a library in. You import and you give the name library. That's saying that import random
+will import a random library. Here's an example of importing it. Okay, just executing that statement
+import in the random capability. In here, we can execute something of it. Print random random number. Random is a method of this random library,
+and it generates a random number between 0 and
+1. If we repeat this, we'll get a different
+random number between 0 and 1. We can repeat it several times, and it'll keep giving us different numbers,
+because it's generating them randomly. Here is another method
+in the random library. This will generate a random
+integer between 3 and 8. 3 might be given and 8 might be given,
+you'll be in that range. So let's do this again, I'm going to
+print another random number, say it's 4. Here's another one, it's 3,
+see we've got the lower end. 3 again, they're random so
+I never know what's going to come out. Notice that we did manage to get 3 and
+8 in there and these are generating only integers
+3 4 5 6 7 or 8, randomly. Now let's make use of
+another random capability and write a little program that
+will generate a sentence. Now this is not a very sophisticated
+sentence so don't expect too much of it, but here's what we are going to do. I'm going to write a run
+function sentence. And it says, a bicycle chews gingerly. A car shoots gingerly. A bicycle shoots sweetly. It generates grammatically correct
+sentences, not very sophisticated ones. It doesn't have a very large vocabulary. Let's look and see how this works. We have a list of verbs and
+just put these in, cook, goes, cooks, shoots,
+faints, chews, screams. It has a list of nouns,
+bear, lion, mother, so on. Has a list of adverbs. And it has a list of articles. And it would generate
+a random English sentence. So what we do in the function is,
+first of all we create a random article. Now, one of the methods
+of random is choice. That means it will randomly choose
+one of the items out of that list. We randomly choose an article, we randomly choose one of the nouns,
+we randomly choose one of the verbs, we randomly choose one of the adverbs,
+then we put together our sentence. The sentence is always going to
+be an article, followed by space, followed by a noun, followed by space,
+followed by a verb, followed by space, followed by an adverb,
+with a period on the end. Just to make it look more like a sentence
+we're going to use a method of stings called Capitalize that will
+capitalize the first letter. So that it actually looks like a sentence. And then we'll print the sentence. And that's what it does. In this case,
+it generated a random article, this, then a random named bicycle
+then a random verb shoots, and then a random adverb sweetly. We put that together to make
+a sentence with spaces and a period. And then we capitalize the first
+letter and then we printed it out. That's a simple little function
+making use of the library, random. Now you're going to adapt this program
+to write a simple four-line poem. Here's the function repeated again so that you can modify it
+to write a simple poem. Everything inside this simple poem is
+exactly what's in previous sentence, but you need to write a loops so
+that it goes through and generates four sentences, and
+then we will call that point. Now in order to do that you are going to
+have to enclose this in a loop, and that means you need
+indent all these lines. Now, I want to call your
+attention to the edit function, which has an indent capability. If I highlight this, for
+example, I'll indent everything. There it moved it all over,
+if I unindent I can move it all back. So you write a function that
+writes a simple poem by adapting our sentence function or
+adapting this copy of it right here. Let me show you my example so
+that you'll know where you're going. Here is my solution,
+there is one run of a simple poem, here's another run,
+here's a different poem each time. Now you go write yours and
+when you've finished it, press Continue and
+I'll show you our solution. Here is my solution. I simply moved everything over and
+put a loop around it. For i in the range 4, that's 0 through 4. Just does all the whole thing.

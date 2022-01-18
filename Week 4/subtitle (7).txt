@@ -1,0 +1,10 @@
+Now, let's replace the stub that says
+writing to CSV file with one that actually writes the CSV file. First we import the CSV library. Here is save the phone list. First we open the CSV file,
+myPhones.csv for write. Then we write every item in
+the phones list to that CSV file. We use csv.writer on the file handle f,
+and then we write a whole row, which consists of one item
+out of the phones list. And then we close. When do we use this? Let's go down to the main loop. save_phone_list is the last thing
+we do before we exit the program. Now let's run it. We have our usual list of phones,
+Jerry Seinfeld and Cosmo Kramer, and then we quit. And when we quit,
+we should execute save_phone_list. So, let's look at myPhones.csv. And you see that Jerry Seinfeld and
+Cosmo Kramer are there.

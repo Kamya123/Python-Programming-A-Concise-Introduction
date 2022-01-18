@@ -1,0 +1,52 @@
+WEBVTT
+
+1
+00:00:12.046 --> 00:00:14.780
+Let's start learning the syntax of Python.
+
+2
+00:00:15.940 --> 00:00:18.670
+First of all,
+you have arithmetic operations, and
+
+3
+00:00:18.670 --> 00:00:21.200
+I'll quickly go through a sample of those.
+
+4
+00:00:21.200 --> 00:00:25.686
+I'll show you how they work.
+
+5
+00:00:25.686 --> 00:00:31.090
+13 + 3 is 16, 13- 3 gives you 10.
+
+6
+00:00:31.090 --> 00:00:36.873
+13 x 3 is 39.
+
+7
+00:00:36.873 --> 00:00:41.080
+2 raised to the 3rd power is 8.
+
+8
+00:00:41.080 --> 00:00:45.643
+13 divided by 3 is 4.
+
+9
+00:00:45.643 --> 00:00:51.253
+13 divided by 3 in this way, this is
+an integer line, and divide it to and
+
+10
+00:00:51.253 --> 00:00:55.900
+find the integer and
+throw away the fraction, it's just 4.
+
+11
+00:00:55.900 --> 00:01:00.877
+And 13% 3 Is the remainder
+
+12
+00:01:00.877 --> 00:01:05.263
+upon dividing 13 by 3.

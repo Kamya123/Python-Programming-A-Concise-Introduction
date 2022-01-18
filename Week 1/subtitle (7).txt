@@ -1,0 +1,39 @@
+Often, we need to execute a section
+of code with many variations over and over and over again. Such a construction is called a loop. Here is an example of a program with
+a particular kind of loop called a while loop. The while loop executes over and over again while a particular
+condition is true. Here's the example. In this case,
+we write the numbers 2, 4, 6, 8. Who do we appreciate? COURSERA. Now the loop produces the 2 and
+the 4 and the 6 and the 8. Let's see how that's done. First of all, we have a counter, a little
+variable called ct, stands for count. While ct <= 8,
+we're going to print the ct. And then we're not going to go start
+a new line, we're going to skip a space. And then we're going to add 2 to the ct,
+and then we double back, and we try to test whether or not this
+thing is still less than or equal to 8. So the first time through,
+when we get to the while ct <= 8, ct = 2 so it's definitely less than or
+equal to 8. So we then print the 2,
+and we see it over here. And then we print,
+instead of a carriage return line feed or a new line, we print a space. Then we add 2 to ct, then we double back. Now ct is 4. 4 is still less than or equal to 8, so we'll repeat
+the two lines of the loop again. And after that repetition, ct is now at 6. 6 is still less than or equal to 8. So we go through print the 6 and a space. And then we add 2 to it, and now go back. And it's still less than or
+equal to 8, it's actually equal to 8. And we go through the loop one more time. And then we add 2 to it, and now it's 10. So we go back and do the test,
+while 10 <= 8, and it's not, so
+then we don't repeat the loop anymore. We go down to the next line after the
+loop, which is this print statement and a print without anything in it like that,
+just starts a new line. And then we print Who do we appreciate?,
+and there it is. And then we print COURSERA. That's the while loop. Now, it is your turn to write
+a function with a loop in it. This next exercise is to
+write a function count_down that pretends to be
+a rocket launch countdown. It'll start at 10. It'll type 10, 9, 8, 7, 6, 5,
+4, 3, 2, 1, and then BLASTOFF. Here's my run of that program. Yours should look the same way. Before you get started on this, I want to point out the three parts of
+the loop that you need to be conscious of. First of all, a variable is
+initialized before you enter the loop. Second is, variable is compared to
+some value of units at the loop, and while this comparison turns out to be
+true, you continue to do the loop. And third, inside the loop, this variable
+needs to be changed in some manner, otherwise, the loop will loop forever. Now you write your function, and
+when you get through, press Continue and I'll show you my solution. Here is my solution, def count_down():
+Rocket count down routine. I initialized the variable ct at 10. I check to see that it's greater than 0, if it is,
+I'm going to continue through the loop. And what I do inside the loop,
+I'm going to print that ct and then I'm going to reduce the ct by 1
+because we're going from 10, to 9, to 8, to 7, and so on down the line. When we get through, we're going to print
+a line, and then we'll write BLASTOFF. Now every time I write the number I print, instead of having a new line immediately, I print end = That'll give me a space
+between each of the numbers and it won't give me a new line. I'll get that new line just
+before I do the BLASTOFF.

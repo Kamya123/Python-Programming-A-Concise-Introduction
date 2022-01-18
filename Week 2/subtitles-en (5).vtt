@@ -1,0 +1,117 @@
+WEBVTT
+
+1
+00:00:10.604 --> 00:00:15.180
+Now let's look at a function where we need
+to convert from one data type to another.
+
+2
+00:00:19.710 --> 00:00:23.410
+This function will multiply two numbers.
+
+3
+00:00:23.410 --> 00:00:24.064
+Let's watch it work.
+
+4
+00:00:34.778 --> 00:00:40.690
+going to enter a number,
+7, and another number, 3.
+
+5
+00:00:40.690 --> 00:00:43.730
+And we get the product of 21.
+
+6
+00:00:43.730 --> 00:00:46.290
+Let's see how that's done.
+
+7
+00:00:47.450 --> 00:00:51.550
+First we have an input
+statement to get one number in,
+
+8
+00:00:51.550 --> 00:00:52.940
+but it comes in as a string.
+
+9
+00:00:54.990 --> 00:00:59.260
+We then have another input statement
+to enter the other number, and
+
+10
+00:00:59.260 --> 00:01:01.020
+it also will come in as a string.
+
+11
+00:01:02.180 --> 00:01:06.240
+Then we take the string, numstr1 and
+convert it to a float, num1.
+
+12
+00:01:07.590 --> 00:01:12.250
+Then we do the same thing with num2,
+convert it to a float.
+
+13
+00:01:12.250 --> 00:01:17.110
+And then we can take the product
+num1 * num2, and print that out.
+
+14
+00:01:21.560 --> 00:01:27.540
+Now let me emphasize that if we had tried
+to multiply these two, it wouldn't work.
+
+15
+00:01:27.540 --> 00:01:29.630
+Here is an example of that.
+
+16
+00:01:29.630 --> 00:01:32.130
+Let me comment this line out.
+
+17
+00:01:32.130 --> 00:01:36.140
+I'm going to go up here to edit and
+put comment.
+
+18
+00:01:36.140 --> 00:01:40.423
+And then I'm going to
+un-comment this line,
+
+19
+00:01:40.423 --> 00:01:44.020
+go back to edit, un-comment that.
+
+20
+00:01:44.020 --> 00:01:51.542
+Now let's run this again and
+see what goes wrong.
+
+21
+00:01:52.550 --> 00:01:58.364
+That's up arrow, go back to the multiply.
+
+22
+00:01:58.364 --> 00:02:03.293
+Now we're going to enter seven again,
+
+23
+00:02:03.293 --> 00:02:06.170
+times three, boom.
+
+24
+00:02:06.170 --> 00:02:07.310
+We get a type error.
+
+25
+00:02:07.310 --> 00:02:13.919
+Can't multiply sequence by
+non integers of type strain.
+
+26
+00:02:19.144 --> 00:02:21.011
+Now let me restore these.

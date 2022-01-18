@@ -1,0 +1,57 @@
+You can form a string in Python by
+using quotes, either single quotes or double quotes, it doesn't matter. Here are a couple of examples. This is using double
+quotes to form the string. And this just uses single
+quotes to form a string. Now, there is one condition here. This string has a single quote in it. So to use single quotes outside to form
+the string would cause some confusion. Here's one that has double quotes in it,
+and to use double quotes outside to form
+a string would cause confusion. But if you've got a single quote, you can use double quotes
+outside to form the string. If you've got double quotes in it, we can use single quotes
+outside to form a string. As you can see, both of those worked. Now, what if you've got a single quote and
+a double quote in the string? Here's an example on how you can do that. If you have both, here's, My cat's name is Butters is what I want to write. All right, so I use double quotes outside, but I've gotta tell Python
+that this double quote and this double quote are not the double
+quotes that mark the string. So I want it to print an actual quote, so I put a backslash in front of that and
+a backslash in front of this one. And that tells it that this next character
+is actually to be printed as is. So that's called escaping that character. So the escape symbol is a backslash. Now let's write another Python function. I want to compute, I want to convert
+Fahrenheit degrees to Celsius degrees. So this is the function
+that's going to do that. It's called fahrenheit_to_celsius. I want you to run it once or twice so
+that you get an idea of what it does. F-A-R-H. So I converted 212 degrees
+Fahrenheit to 100 degrees Celsius. That should be a familiar
+[COUGH] conversion. Now let's take a look at the function and
+see how that does that. First of all,
+we have a description in triple quotes. And so if I click on this, I'll see that our function
+is documented up here. Next, note that I have two lines
+that begin with pound sign. Anything beyond a pound sign on a given
+line is not executed by Python, it's just simply ignored. So you can add comments to your code. Next we have the formula. The new temperature is 5 times
+the Fahrenheit temperature minus 32 divided 9, it's five-ninths, so whatever number of
+degrees above 32 we have. Then we'll print the Fahrenheit
+temperature, and the temperature, is equivalent to, and
+the newly computed temperature, and then end equal, I'll explain that
+in a minute, degrees Celsius. Now, what has happened here is that my
+print statement is going to go too long, it's going to be too wide to print
+out on a piece of paper if I had to. So I've run up against the edge,
+you might say, of the paper. And I'll need to have
+two print statements. But the problem of two print statements
+is that they would be on different lines. So to eliminate creating
+a new line character and causing it to have two lines,
+I'm going to say end=''. So instead of the new line character,
+I'm just going to print a blank. Well, I'm actually going to print nothing,
+because they're jammed together. So what that effectively does
+is it keeps it all on one line. And here you can see that
+it all kept on one line. Let's run it one more time
+on a familiar temperature. 32 degrees Fahrenheit is a commonly known Celsius temperature, that's 0 degrees Celsius. Now it's your turn to
+write such a function. Here's an exercise, write a function
+Celsius to Fahrenheit that will convert Celsius temperatures
+back to Fahrenheit degrees. Now, the formula for that is nine-fifths
+times the temperature plus 32 degrees. Now, I'm giving you my example run,
+and here are three test values, 100 degrees Celsius,
+0 degrees Celsius, 50 degrees Celsius. And here's what my program did with those. 100 degrees Celsius,
+it wrote the Celsius temperature at 100 is equivalent to 212 degrees Fahrenheit. So you can write your function and
+then use these statements to test your function, and you can see if
+you get the same thing that I get. Now, press the continuation button
+when you've got yours running, and I'll show you mine. Okay, here's my solution. The Celsius to Fahrenheit temperature is,
+and I've got a documentation line here,
+then do the computation, the new temperature is nine-fifths
+times the temperature plus 32 degrees. And then I've got a print line that
+prints the Celsius temperature, and I give it as equivalent to, and
+I give the new computed value. And then I use end='' so that I don't have a new line. And then I can continue this
+statement on the next line.
